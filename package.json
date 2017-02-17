@@ -1,0 +1,57 @@
+{
+  "name": "gp-data-etl",
+  "version": "1.0.0",
+  "description": "ETL to extract data from Syndication and store as JSON",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint --ext .js,.json .",
+    "test": "NODE_ENV=test mocha --recursive test",
+    "watch-test": "npm run test -- --watch --reporter min",
+    "istanbul": "NODE_ENV=test istanbul",
+    "generate-coverage": "npm run istanbul -- cover _mocha -- --recursive",
+    "check-coverage": "istanbul check-coverage --config .istanbul.yml",
+    "upload-coverage-coveralls": "cat ./coverage/lcov.info | coveralls",
+    "precommit": "npm run git-hook",
+    "prepush": "npm run git-hook",
+    "postrewrite": "npm run git-hook",
+    "git-hook": "npm run lint && npm run generate-coverage && npm run check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhsuk/gp-data-etl.git"
+  },
+  "keywords": [
+    "GP",
+    "JSON",
+    "XML",
+    "Synidcation"
+  ],
+  "author": "Mark Harrop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhsuk/gp-data-etl/issues"
+  },
+  "homepage": "https://github.com/nhsuk/gp-data-etl#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "coveralls": "^2.11.15",
+    "eslint": "^3.10.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-mocha": "^4.7.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-watch": "^2.1.14",
+    "husky": "^0.12.0",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "object-mapper": "^3.0.1",
+    "xml2js": "^0.4.17"
+  }
+}
