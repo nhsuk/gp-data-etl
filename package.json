@@ -1,6 +1,6 @@
 {
   "name": "gp-data-etl",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "ETL to extract data from Syndication and store as JSON",
   "main": "app.js",
   "scripts": {
@@ -25,10 +25,10 @@
     "GP",
     "JSON",
     "XML",
-    "Synidcation"
+    "Syndication"
   ],
   "author": "Mark Harrop",
-  "license": "MITnop",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nhsuk/gp-data-etl/issues"
   },
@@ -52,6 +52,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "object-mapper": "^3.0.1",
+    "require-environment-variables": "^1.1.2",
     "xml2js": "^0.4.17"
   }
 }
