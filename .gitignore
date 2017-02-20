@@ -1,3 +1,6 @@
+# Generate file
+gp-data.json
+
 # Logs
 logs
 *.log
@@ -35,3 +38,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# MacOSX stuff
+.DS_Store
+
+# generated files
+gp-data.json
