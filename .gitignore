@@ -41,3 +41,6 @@ jspm_packages
 
 # MacOSX stuff
 .DS_Store
+
+# generated files
+gp-data.json

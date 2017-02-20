@@ -1,9 +1,14 @@
 const async = require('async');
 const fs = require('fs');
+const requireEnv = require('require-environment-variables');
+
 const service = require('./app/lib/syndicationService');
 const xmlParser = require('./app/lib/xmlParser');
 const mapPractice = require('./app/lib/mappers/mapPracticeSummary');
 const mapTotalPages = require('./app/lib/mappers/mapTotalPages');
+const log = require('./app/lib/logger');
+
+requireEnv(['SYNDICATION_API_KEY']);
 
 const WORKERS = 10;
 
@@ -26,25 +31,24 @@ function loadPage(pageNo) {
   return service.getPracticeSummaryPage(pageNo).then(xmlParser)
     .then(mapAll).then(addToGpList);
 }
-/* eslint-disable no-console */
+
 function addPageToQueue(q, pageNo) {
-  q.push({ pageNo }, () => console.log(`${pageNo} done`));
+  q.push({ pageNo }, () => log.info(`${pageNo} done`));
 }
 
 function saveGPs() {
   const json = JSON.stringify(gps);
-  fs.writeFile('gp-data.json', json, 'utf8', () => console.log('File saved'));
+  fs.writeFile('gp-data.json', json, 'utf8', () => log.info('File saved'));
 }
 
 function processQueueItem(task, callback) {
-  console.log(`loading page ${task.pageNo}`);
+  log.info(`loading page ${task.pageNo}`);
   loadPage(task.pageNo).then(callback);
 }
 
 function handleError(err) {
-  console.log(`processing failed: ${err}`);
+  log.info(`processing failed: ${err}`);
 }
-/* eslint-enable no-console */
 
 function startQueue(totalPages) {
   const q = async.queue(processQueueItem, WORKERS);
