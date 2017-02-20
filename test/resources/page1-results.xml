@@ -12,10 +12,10 @@
     <uri>http://www.nhs.uk</uri>
     <email>webservices@nhschoices.nhs.uk</email>
   </author>
-  <link rel="self" type="application/xml" title="NHS Choices - All GP Practices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=BBCCDD" />
-  <link rel="first" type="application/xml" title="first" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=BBCCDD&amp;page=1" />
-  <link rel="next" type="application/xml" title="next" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=BBCCDD&amp;page=2" />
-  <link rel="last" type="application/xml" title="last" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=BBCCDD&amp;page=320" />
+  <link rel="self" type="application/xml" title="NHS Choices - All GP Practices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME" />
+  <link rel="first" type="application/xml" title="first" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=1" />
+  <link rel="next" type="application/xml" title="next" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=2" />
+  <link rel="last" type="application/xml" title="last" length="1000" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=320" />
   <link rel="alternate" title="Find and choose services - GP Practices" href="http://www.nhs.uk/ServiceDirectories/pages/ServiceSearch.aspx?ServiceType=GP" />
   <tracking 
     xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2fall&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;
@@ -26,7 +26,7 @@
     <published>2015-12-16T01:36:52Z</published>
     <updated>2015-12-16T01:36:52Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Croft Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Croft Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Croft Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -54,7 +54,7 @@
     <published>2015-10-28T03:33:25Z</published>
     <updated>2015-10-28T03:33:25Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Lea Vale Medical Group - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41493" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Lea Vale Medical Group - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11442?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Lea Vale Medical Group - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11442?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -82,7 +82,7 @@
     <published>2016-10-29T01:36:58+01:00</published>
     <updated>2016-10-29T01:36:58+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 1 Highdown Avenue - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38454" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Highdown Avenue - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14326?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Highdown Avenue - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14326?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -109,7 +109,7 @@
     <published>2016-09-30T01:36:57+01:00</published>
     <updated>2016-09-30T01:36:57+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 233 Wells Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36629" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 233 Wells Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15773?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 233 Wells Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15773?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -136,7 +136,7 @@
     <published>2015-01-16T03:32:23Z</published>
     <updated>2015-01-16T03:32:23Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 42 Abbotswood, Yate - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41504" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 42 Abbotswood, Yate - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15688?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 42 Abbotswood, Yate - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15688?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -162,7 +162,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 58 Green End Comberton - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40768" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 58 Green End Comberton - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5698?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 58 Green End Comberton - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5698?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -189,7 +189,7 @@
     <published>2016-05-24T01:36:54+01:00</published>
     <updated>2016-05-24T01:36:54+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 85 Battle Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38651" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13257?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13257?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -216,7 +216,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - A Ditri - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38444" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - A Ditri - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14500?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - A Ditri - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14500?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -243,7 +243,7 @@
     <published>2014-01-07T03:31:14Z</published>
     <updated>2014-01-07T03:31:14Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Blakenall Family Practice - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42765" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Blakenall Family Practice - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44654?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Blakenall Family Practice - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44654?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -271,7 +271,7 @@
     <published>2014-01-23T03:31:15Z</published>
     <updated>2014-01-23T03:31:15Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Great Chesterford Surgery (Branch) - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35370" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Great Chesterford Surgery (Branch) - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12195?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Great Chesterford Surgery (Branch) - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12195?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -299,7 +299,7 @@
     <published>2017-02-15T11:51:54Z</published>
     <updated>2017-02-15T11:51:54Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43403" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5877?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5877?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -327,7 +327,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 141 Argyle Street - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35490" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 141 Argyle Street - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24716?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 141 Argyle Street - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24716?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -353,7 +353,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 3D Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38497" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 3D Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44384?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 3D Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44384?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -380,7 +380,7 @@
     <published>2013-12-25T03:31:13Z</published>
     <updated>2013-12-25T03:31:13Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 56 Melbourne St - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36620" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 56 Melbourne St - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4759?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 56 Melbourne St - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4759?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -407,7 +407,7 @@
     <published>2016-03-10T05:51:44Z</published>
     <updated>2016-03-10T05:51:44Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 82 Lillie Road Surgery - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42516" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 82 Lillie Road Surgery - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11876?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 82 Lillie Road Surgery - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11876?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -433,7 +433,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 96 Chesterton Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40031" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 96 Chesterton Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5725?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 96 Chesterton Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5725?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -460,7 +460,7 @@
     <published>2016-06-25T01:36:56+01:00</published>
     <updated>2016-06-25T01:36:56+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - DERRY DOWNS SURGERY - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43924" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - DERRY DOWNS SURGERY - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13726?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - DERRY DOWNS SURGERY - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13726?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -489,7 +489,7 @@
     <published>2017-01-09T01:37:01Z</published>
     <updated>2017-01-09T01:37:01Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Ravensbury Park Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35708" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Ravensbury Park Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14563?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Ravensbury Park Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14563?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -518,7 +518,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 1 Huntingdon Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41214" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Huntingdon Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5654?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Huntingdon Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5654?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -544,7 +544,7 @@
     <published>2013-11-15T03:31:13Z</published>
     <updated>2013-11-15T03:31:13Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 306 Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43550" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 306 Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13837?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 306 Medical Centre - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13837?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -570,7 +570,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 45 High Street, Sawtry - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36906" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 45 High Street, Sawtry - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5689?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 45 High Street, Sawtry - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5689?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -597,7 +597,7 @@
     <published>2016-11-05T01:36:59Z</published>
     <updated>2016-11-05T01:36:59Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 7 Brooks Medical Practice (Dr Alistair Partnership) - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=46226" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 7 Brooks Medical Practice (Dr Alistair Partnership) - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24998?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 7 Brooks Medical Practice (Dr Alistair Partnership) - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24998?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -623,7 +623,7 @@
     <published>2016-05-24T01:36:54+01:00</published>
     <updated>2016-05-24T01:36:54+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 85 Battle Road at Deanland Clinic - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35997" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road at Deanland Clinic - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13256?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road at Deanland Clinic - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13256?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -650,7 +650,7 @@
     <published>2014-08-23T03:31:59+01:00</published>
     <updated>2014-08-23T03:31:59+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Dr N Saddiq - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41401" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Dr N Saddiq - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4233?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr N Saddiq - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4233?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -677,7 +677,7 @@
     <published>2017-02-15T11:51:54Z</published>
     <updated>2017-02-15T11:51:54Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40915" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5876?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5876?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -704,7 +704,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 14 Manor Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=45178" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 14 Manor Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13729?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 14 Manor Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13729?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -731,7 +731,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 34 Plumstead Common Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=37846" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 34 Plumstead Common Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13643?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 34 Plumstead Common Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13643?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -758,7 +758,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 54 Benhill Avenue - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=45095" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 54 Benhill Avenue - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14512?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 54 Benhill Avenue - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14512?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -784,7 +784,7 @@
     <published>2015-01-15T06:59:54Z</published>
     <updated>2015-01-15T06:59:54Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 71A Woodhouse Hill - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42390" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 71A Woodhouse Hill - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4189?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 71A Woodhouse Hill - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4189?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">
@@ -811,7 +811,7 @@
     <published>2013-01-08T04:30:24Z</published>
     <updated>2013-01-08T04:30:24Z</updated>
     <link rel="alternate" type="application/xhtml" title="Overview - 94 Burghley Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=39624" />
-    <link rel="self" type="application/xhtml+xml" title="Overview - 94 Burghley Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44656?apikey=BBCCDD" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 94 Burghley Road - NHS Choices" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44656?apikey=CHANGEME" />
     <content type="application/xml">
       <s:organisationSummary 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">

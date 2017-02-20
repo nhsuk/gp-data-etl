@@ -22,7 +22,7 @@
         "rel": "self",
         "type": "application/xhtml+xml",
         "title": "Overview - Croft Medical Centre - NHS Choices",
-        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=BBCCDD"
+        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME"
       }
     }
   ],
