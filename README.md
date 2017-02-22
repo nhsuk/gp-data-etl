@@ -18,23 +18,28 @@ in a file written to the root of the repository called `gp-data.json`
 
 The output JSON will be an arary of objects in the following format:
 ```
-{
-  "choicesId" : 36931,
-  "name" : "Croft Medical Centre",
-  "phone" : "0121 270 7180",
-  "odsCode" : "M89012",
-  "location" : {
-    "address" : [
-      "Croft Medical centre",
-      "1 Pomeroy Way",
-      "Chelmsley Wood",
-      "Birmingham",
-      "West Midlands"
-    ],
-    "postcode" : "B37 7WB",
-    "latitude" : 52.4778633117676,
-    "longitude" : -1.72773551940918
+  {
+      "choicesId": 40081,
+      "syndicationId": 15429,
+      "_id": 40081,
+      "name": "Abington Park Surgery",
+      "odsCode": "K83029",
+      "location": {
+          "address": [
+              "Christchurch Medical Centre",
+              "Ardington Road",
+              "Northampton",
+              "Northamptonshire"
+          ],
+          "postcode": "NN1 5LT",
+          "latitude": 52.2412185668945,
+          "longitude": -0.867926597595215
+      },
+      "contact": {
+          "telephone": "01604 630396",
+          "fax": "01604 603524",
+          "email": "aps.patients@gp-k83029.nhs.uk"
+      }
   }
-}
 ```
 
