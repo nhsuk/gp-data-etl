@@ -3,4 +3,9 @@ function info(message) {
   console.log(message);
 }
 
-module.exports = { info };
+function error(message) {
+  // eslint-disable-next-line no-console
+  console.log(message);
+}
+
+module.exports = { info, error };

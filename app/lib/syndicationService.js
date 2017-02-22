@@ -8,6 +8,11 @@ function getPracticeSummaryPage(page) {
   return apiRequest(url);
 }
 
+function getOverviewPage(syndicationId) {
+  const url = `${DEFAULT_URL}/${syndicationId}/overview.xml?apikey=${API_KEY}`;
+  return apiRequest(url);
+}
+
 module.exports = {
-  getPracticeSummaryPage,
+  getPracticeSummaryPage, getOverviewPage,
 };
