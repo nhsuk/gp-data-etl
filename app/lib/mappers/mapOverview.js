@@ -30,14 +30,17 @@ function mapOverview(rawOverview) {
   const syndicationId = getSyndicationId(rawOverview.feed.link);
   const content = rawOverview.feed.entry.content['s:overview'];
   return {
+    _id: choicesId,
     choicesId,
     syndicationId,
-    _id: choicesId,
     name: content['s:name']._,
     odsCode: content['s:odsCode'],
-    location: {
-      address: content['s:address']['s:addressLine'],
+    address: {
+      addressLines: content['s:address']['s:addressLine'],
       postcode: content['s:address']['s:postcode'],
+    },
+    location: {
+      type: 'Point',
       latitude: Number(content['s:geographicCoordinates']['s:latitude']),
       longitude: Number(content['s:geographicCoordinates']['s:longitude']),
     },

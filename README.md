@@ -18,28 +18,31 @@ in a file written to the root of the repository called `gp-data.json`
 
 The output JSON will be an arary of objects in the following format:
 ```
-  {
-      "choicesId": 40081,
-      "syndicationId": 15429,
-      "_id": 40081,
-      "name": "Abington Park Surgery",
-      "odsCode": "K83029",
-      "location": {
-          "address": [
-              "Christchurch Medical Centre",
-              "Ardington Road",
-              "Northampton",
-              "Northamptonshire"
-          ],
-          "postcode": "NN1 5LT",
-          "latitude": 52.2412185668945,
-          "longitude": -0.867926597595215
-      },
-      "contact": {
-          "telephone": "01604 630396",
-          "fax": "01604 603524",
-          "email": "aps.patients@gp-k83029.nhs.uk"
-      }
-  }
+{
+    "_id": 40081,
+    "choicesId": 40081,
+    "syndicationId": 15429,
+    "name": "Abington Park Surgery",
+    "odsCode": "K83029",
+    "address": {
+        "addressLines": [
+            "Christchurch Medical Centre",
+            "Ardington Road",
+            "Northampton",
+            "Northamptonshire"
+        ],
+        "postcode": "NN1 5LT"
+    },
+    "location": {
+        "type": "Point",
+        "latitude": 52.2412185668945,
+        "longitude": -0.867926597595215
+    },
+    "contact": {
+        "telephone": "01604 630396",
+        "fax": "01604 603524",
+        "email": "aps.patients@gp-k83029.nhs.uk"
+    }
+}
 ```
 
