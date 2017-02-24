@@ -44,7 +44,56 @@ The output JSON will be an arary of objects in the following format:
         "telephone": "01604 630396",
         "fax": "01604 603524",
         "email": "aps.patients@gp-k83029.nhs.uk"
-    }
+    },
+    "openingTimes" : {
+        "reception" : {
+            "sunday" : [],
+            "monday" : [ 
+                {
+                    "opens" : "08:00",
+                    "closes" : "13:00"
+                }, 
+                {
+                    "opens" : "15:00",
+                    "closes" : "19:00"
+                }
+            ],
+            "tuesday" : [ 
+                {
+                    "opens" : "08:00",
+                    "closes" : "13:00"
+                }, 
+                {
+                    "opens" : "15:00",
+                    "closes" : "19:00"
+                }
+            ...
+        },
+        "surgery" : {
+            "sunday" : [],
+            "monday" : [ 
+                {
+                    "opens" : "08:00",
+                    "closes" : "13:00"
+                }, 
+                {
+                    "opens" : "15:00",
+                    "closes" : "19:00"
+                }
+            ],
+            "tuesday" : [ 
+                {
+                    "opens" : "08:00",
+                    "closes" : "13:00"
+                }, 
+                {
+                    "opens" : "15:00",
+                    "closes" : "19:00"
+                }
+            ],
+            ...
+        }
+    }    
 }
 ```
 
