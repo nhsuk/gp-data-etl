@@ -13,4 +13,11 @@ describe('xmlParser', () => {
       done();
     });
   });
+  it('should throw error for invalid xml', (done) => {
+    xmlParser('notXml').catch((error) => {
+      // eslint-disable-next-line no-unused-expressions
+      expect(error).to.exist;
+      done();
+    });
+  });
 });

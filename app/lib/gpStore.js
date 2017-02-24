@@ -33,4 +33,11 @@ function saveGPs() {
   fs.writeFile('gp-data.json', json, 'utf8', () => log.info('File saved'));
 }
 
-module.exports = { getIds, addIds, getGPs, addGP, saveGPs, addFailedId };
+module.exports = {
+  getIds,
+  addIds,
+  getGPs,
+  addGP,
+  saveGPs,
+  addFailedId,
+};

@@ -1,22 +1,18 @@
 const urlParser = require('../urlParser');
+const log = require('../logger');
 
-function matchSelfHref(link) {
-  return link.$ && link.$.rel === 'self';
+function fromSummary(fullPractice) {
+  return fullPractice ? urlParser.getSyndicationId(fullPractice.id) :
+         log.error(`No id found in ${fullPractice.id}`);
 }
 
-function getSyndicationId(links) {
-  const href = links.find(matchSelfHref);
-  if (href) {
-    return urlParser.getSyndicationId(href.$.href);
-  }
-  return undefined;
+function fromResults(results) {
+  return results.feed && results.feed.entry &&
+         results.feed.entry.constructor === Array ?
+         results.feed.entry.map(fromSummary) : [];
 }
 
-function mapSyndicationId(fullPractice) {
-  if (fullPractice) {
-    return getSyndicationId(fullPractice.link);
-  }
-  return undefined;
-}
-
-module.exports = mapSyndicationId;
+module.exports = {
+  fromResults,
+  fromSummary,
+};

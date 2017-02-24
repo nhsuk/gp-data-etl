@@ -33,6 +33,9 @@ function handleError(err) {
   log.info(`processing failed: ${err}`);
 }
 
-getTotalPages().then(startIdQueue).catch(handleError);
-// run with only a few pages
-// startIdQueue(3);
+if (process.argv[2] === 'small') {
+  // run with only a few pages
+  startIdQueue(3);
+} else {
+  getTotalPages().then(startIdQueue).catch(handleError);
+}

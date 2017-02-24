@@ -5,29 +5,17 @@ function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';
 }
 
-function matchSelfHref(link) {
-  return link.$ && link.$.rel === 'self';
-}
-
 function getChoicesId(links) {
   const href = links.find(matchAltHref);
-  if (href) {
-    return urlParser.getChoicesId(href.$.href);
-  }
-  return undefined;
-}
-
-function getSyndicationId(links) {
-  const href = links.find(matchSelfHref);
-  if (href) {
-    return urlParser.getSyndicationId(href.$.href);
-  }
-  return undefined;
+  return href ? urlParser.getChoicesId(href.$.href) : undefined;
 }
 
 function mapOverview(rawOverview) {
   const choicesId = getChoicesId(rawOverview.feed.link);
-  const syndicationId = getSyndicationId(rawOverview.feed.link);
+  if (choicesId === undefined) {
+    throw new Error(`No Choices ID found for ${rawOverview.feed.id}`);
+  }
+  const syndicationId = urlParser.getSyndicationId(rawOverview.feed.id);
   const content = rawOverview.feed.entry.content['s:overview'];
   return {
     _id: choicesId,

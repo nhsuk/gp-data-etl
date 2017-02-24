@@ -6,9 +6,6 @@ const service = require('../syndicationService');
 const xmlParser = require('../xmlParser');
 const mapSyndicationId = require('../mappers/mapSyndicationId');
 
-function mapAll(results) {
-  return results.feed && results.feed.entry && results.feed.entry.map(mapSyndicationId);
-}
 function handleError(err, pageNo) {
   log.error(`Error processing page ${pageNo}: ${err}`);
 }
@@ -16,7 +13,8 @@ function handleError(err, pageNo) {
 function loadPage(pageNo) {
   return service.getPracticeSummaryPage(pageNo)
   .then(xmlParser)
-  .then(mapAll).then(gpStore.addIds)
+  .then(mapSyndicationId.fromResults)
+  .then(gpStore.addIds)
   .catch(err => handleError(err, pageNo));
 }
 
@@ -24,7 +22,6 @@ function processQueueItem(task, callback) {
   log.info(`loading page ${task.pageNo}`);
   loadPage(task.pageNo).then(callback);
 }
-
 
 function addPageToQueue(q, pageNo) {
   q.push({ pageNo }, () => log.info(`${pageNo} done`));

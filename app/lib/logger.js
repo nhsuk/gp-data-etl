@@ -5,7 +5,7 @@ function info(message) {
 
 function error(message) {
   // eslint-disable-next-line no-console
-  console.log(message);
+  console.error(message);
 }
 
 module.exports = { info, error };

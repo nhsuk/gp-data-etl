@@ -1,7 +1,5 @@
 const async = require('async');
-
 const log = require('../logger');
-
 const mapOverview = require('../mappers/mapOverview');
 const service = require('../syndicationService');
 const xmlParser = require('../xmlParser');
@@ -14,10 +12,10 @@ function handleError(err, id) {
 
 function populatePractice(id) {
   return service.getOverviewPage(id)
-  .then(xmlParser)
-  .then(mapOverview)
-  .then(gpStore.addGP)
-  .catch(err => handleError(err, id));
+    .then(xmlParser)
+    .then(mapOverview)
+    .then(gpStore.addGP)
+    .catch(err => handleError(err, id));
 }
 
 function processQueueItem(task, callback) {
@@ -27,7 +25,11 @@ function processQueueItem(task, callback) {
 
 function queueSyndicationIds(q) {
   gpStore.getIds().forEach((id) => {
-    q.push({ id }, () => log.info(`${id} done`));
+    if (id) {
+      q.push({ id }, () => log.info(`${id} done`));
+    } else {
+      log.error('Undefined ID in syndication list');
+    }
   });
 }
 

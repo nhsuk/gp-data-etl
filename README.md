@@ -16,6 +16,8 @@ variable `SYNDICATION_API_KEY`.
 Running `npm start` will initiate the scrape. A successful scrape will result
 in a file written to the root of the repository called `gp-data.json`
 
+To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`
+
 The output JSON will be an arary of objects in the following format:
 ```
 {
