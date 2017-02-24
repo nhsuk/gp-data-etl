@@ -7,4 +7,7 @@ describe('syndicationService', () => {
   it('should call API Overview XML page', (done) => {
     service.getOverviewPage(17307).then(() => done());
   });
+  it('should return error for unknown ID', (done) => {
+    service.getOverviewPage('notANumber').catch(() => done());
+  });
 });

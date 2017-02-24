@@ -1,0 +1,66 @@
+{
+  "$": {
+    "sessionType": "reception"
+  },
+  "s:daysOfWeek": {
+    "s:dayOfWeek": [
+      {
+        "s:dayName": "Sunday",
+        "s:timesSessions": {
+          "s:timesSession": "Closed"
+        }
+      },
+      {
+        "s:dayName": "Monday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:00",
+            "s:toTime": "18:30"
+          }
+        }
+      },
+      {
+        "s:dayName": "Tuesday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:01",
+            "s:toTime": "18:31"
+          }
+        }
+      },
+      {
+        "s:dayName": "Wednesday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:02",
+            "s:toTime": "18:32"
+          }
+        }
+      },
+      {
+        "s:dayName": "Thursday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:03",
+            "s:toTime": "18:33"
+          }
+        }
+      },
+      {
+        "s:dayName": "Friday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:04",
+            "s:toTime": "18:34"
+          }
+        }
+      },
+      {
+        "s:dayName": "Saturday",
+        "s:timesSessions": {
+          "s:timesSession": "Closed"
+        }
+      }
+    ]
+  }
+}
