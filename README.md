@@ -16,25 +16,35 @@ variable `SYNDICATION_API_KEY`.
 Running `npm start` will initiate the scrape. A successful scrape will result
 in a file written to the root of the repository called `gp-data.json`
 
+To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`
+
 The output JSON will be an arary of objects in the following format:
 ```
 {
-  "choicesId" : 36931,
-  "name" : "Croft Medical Centre",
-  "phone" : "0121 270 7180",
-  "odsCode" : "M89012",
-  "location" : {
-    "address" : [
-      "Croft Medical centre",
-      "1 Pomeroy Way",
-      "Chelmsley Wood",
-      "Birmingham",
-      "West Midlands"
-    ],
-    "postcode" : "B37 7WB",
-    "latitude" : 52.4778633117676,
-    "longitude" : -1.72773551940918
-  }
+    "_id": 40081,
+    "choicesId": 40081,
+    "syndicationId": 15429,
+    "name": "Abington Park Surgery",
+    "odsCode": "K83029",
+    "address": {
+        "addressLines": [
+            "Christchurch Medical Centre",
+            "Ardington Road",
+            "Northampton",
+            "Northamptonshire"
+        ],
+        "postcode": "NN1 5LT"
+    },
+    "location": {
+        "type": "Point",
+        "latitude": 52.2412185668945,
+        "longitude": -0.867926597595215
+    },
+    "contact": {
+        "telephone": "01604 630396",
+        "fax": "01604 603524",
+        "email": "aps.patients@gp-k83029.nhs.uk"
+    }
 }
 ```
 

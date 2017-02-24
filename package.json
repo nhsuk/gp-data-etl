@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start-small": "node app.js small",
     "lint": "eslint --ext .js,.json .",
     "test": "NODE_ENV=test mocha --recursive test",
     "watch-test": "npm run test -- --watch --reporter min",
@@ -51,7 +52,6 @@
   },
   "dependencies": {
     "async": "^2.1.4",
-    "object-mapper": "^3.0.1",
     "require-environment-variables": "^1.1.2",
     "xml2js": "^0.4.17"
   }

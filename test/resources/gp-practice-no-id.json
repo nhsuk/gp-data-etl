@@ -1,0 +1,46 @@
+{
+  "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/",
+  "title": {
+    "_": "Croft Medical Centre - Summary",
+    "$": {
+      "type": "text"
+    }
+  },
+  "published": "2015-12-16T01:36:52Z",
+  "updated": "2015-12-16T01:36:52Z",
+  "link": [
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "content": {
+    "$": {
+      "type": "application/xml"
+    },
+    "s:organisationSummary": {
+      "$": {
+        "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
+      },
+      "s:name": "Croft Medical Centre",
+      "s:odscode": "M89012",
+      "s:address": {
+        "s:addressLine": [
+          "Croft Medical centre",
+          "1 Pomeroy Way",
+          "Chelmsley Wood",
+          "Birmingham",
+          "West Midlands"
+        ],
+        "s:postcode": "B37 7WB"
+      },
+      "s:phone": "0121 270 7180",
+      "s:geographicCoordinates": {
+        "s:latitude": "52.4778633117676",
+        "s:longitude": "-1.72773551940918"
+      }
+    }
+  }
+}
