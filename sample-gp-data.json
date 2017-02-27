@@ -25,7 +25,6 @@
       },
       "openingTimes": {
           "reception": {
-              //note: a day with no opening times is considered closed
               "sunday": [],
               "monday": [
                   {
