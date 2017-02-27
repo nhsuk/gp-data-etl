@@ -6,9 +6,59 @@ const rawTimesMultiSession = require('../resources/openingTimesMultiSession.json
 const expect = chai.expect;
 
 describe('opening times mapper', () => {
+  it('should gracefully handle undefined opening times section', () => {
+    const openingTimes = mapOpeningTimes(undefined);
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes).to.be.empty;
+  });
+  it('should gracefully handle missing daysOfWeek times section', () => {
+    const openingTimes = mapOpeningTimes({});
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes).to.be.empty;
+  });
+
+  it('should gracefully handle missing dayOfWeek section', () => {
+    const openingTimes = mapOpeningTimes({ 's:daysOfWeek': {} });
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes).to.be.empty;
+  });
+
+  it('should gracefully handle missing dayName', () => {
+    const badDay = {
+      's:daysOfWeek': {
+        's:dayOfWeek': [{}],
+      },
+    };
+    const openingTimes = mapOpeningTimes(badDay);
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes).to.be.empty;
+  });
+
+  it('should gracefully handle missing timeSessions', () => {
+    const badDay = {
+      's:daysOfWeek': {
+        's:dayOfWeek': [{ 's:dayName': 'Monday' }],
+      },
+    };
+    const openingTimes = mapOpeningTimes(badDay);
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes).to.be.empty;
+  });
+
+  it('should set missing day session to empty array (closed)', () => {
+    const badDay = {
+      's:daysOfWeek': {
+        's:dayOfWeek': [{ 's:dayName': 'Monday', 's:timesSessions': {} }],
+      },
+    };
+    const openingTimes = mapOpeningTimes(badDay);
+    // eslint-disable-next-line no-unused-expressions
+    expect(openingTimes.monday.length).to.equal(0);
+  });
+
   it('should handle single opening times in a day', () => {
     const openingTimes = mapOpeningTimes(rawTimes);
-     /* eslint-disable no-unused-expressions */
+    /* eslint-disable no-unused-expressions */
     expect(openingTimes.monday).to.exist;
     expect(openingTimes.tuesday).to.exist;
     expect(openingTimes.wednesday).to.exist;
@@ -33,7 +83,7 @@ describe('opening times mapper', () => {
 
   it('should handle multiple opening times in a days', () => {
     const openingTimes = mapOpeningTimes(rawTimesMultiSession);
-     /* eslint-disable no-unused-expressions */
+    /* eslint-disable no-unused-expressions */
     expect(openingTimes.monday).to.exist;
     expect(openingTimes.monday[0].opens).to.equal('08:30');
     expect(openingTimes.monday[0].closes).to.equal('12:30');

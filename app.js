@@ -10,7 +10,7 @@ const log = require('./app/lib/logger');
 
 requireEnv(['SYNDICATION_API_KEY']);
 
-const WORKERS = 10;
+const WORKERS = 1;
 
 function getTotalPages() {
   return service.getPracticeSummaryPage(1).then(xmlParser).then(mapTotalPages);

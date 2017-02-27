@@ -4,6 +4,10 @@ const mapOverview = require('../mappers/mapOverview');
 const service = require('../syndicationService');
 const xmlParser = require('../xmlParser');
 const gpStore = require('../gpStore');
+const limiter = require('../limiter');
+
+const HITS_PER_HOUR = 5000;
+let hitsPerWorker;
 
 function handleError(err, id) {
   gpStore.addFailedId(id);
@@ -20,7 +24,7 @@ function populatePractice(id) {
 
 function processQueueItem(task, callback) {
   log.info(`Populating practice ID ${task.id}`);
-  populatePractice(task.id).then(callback);
+  limiter(hitsPerWorker, () => populatePractice(task.id), callback);
 }
 
 function queueSyndicationIds(q) {
@@ -34,6 +38,7 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
+  hitsPerWorker = HITS_PER_HOUR / workers;
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
   q.drain = drain;
