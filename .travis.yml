@@ -8,6 +8,6 @@ script:
   - npm run git-hook
   - npm run upload-coverage-coveralls
 
-after_sucess:
+after_success:
   - npm run test-integration
 
