@@ -1,5 +1,6 @@
 const reducer = require('./reducer');
 const urlParser = require('../urlParser');
+const mapOpeningTimes = require('./mapOpeningTimes');
 
 function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';
@@ -8,6 +9,26 @@ function matchAltHref(link) {
 function getChoicesId(links) {
   const href = links.find(matchAltHref);
   return href ? urlParser.getChoicesId(href.$.href) : undefined;
+}
+
+function getSession(sessions, type) {
+  // eslint-disable-next-line arrow-body-style
+  return sessions.find((session) => {
+    return session && session.$ && session.$.sessionType === type;
+  });
+}
+
+function getOpeningTimes(content) {
+  if (content['s:openingTimes'] &&
+      content['s:openingTimes']['s:timesSessionTypes'] &&
+      content['s:openingTimes']['s:timesSessionTypes']['s:timesSessionType']) {
+    const sessions = content['s:openingTimes']['s:timesSessionTypes']['s:timesSessionType'];
+    return {
+      reception: mapOpeningTimes(getSession(sessions, 'reception')),
+      surgery: mapOpeningTimes(getSession(sessions, 'surgery')),
+    };
+  }
+  return undefined;
 }
 
 function mapOverview(rawOverview) {
@@ -33,6 +54,7 @@ function mapOverview(rawOverview) {
       longitude: Number(content['s:geographicCoordinates']['s:longitude']),
     },
     contact: reducer.selectFields(content['s:contact'], 's', ['telephone', 'fax', 'email']),
+    openingTimes: getOpeningTimes(content),
   };
 }
 

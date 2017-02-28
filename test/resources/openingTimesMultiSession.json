@@ -1,0 +1,90 @@
+{
+  "$": {
+    "sessionType": "reception"
+  },
+  "s:daysOfWeek": {
+    "s:dayOfWeek": [
+      {
+        "s:dayName": "Sunday",
+        "s:timesSessions": {
+          "s:timesSession": "Closed"
+        }
+      },
+      {
+        "s:dayName": "Monday",
+        "s:timesSessions": {
+          "s:timesSession": [
+            {
+              "s:fromTime": "08:30",
+              "s:toTime": "12:30"
+            },
+            {
+              "s:fromTime": "16:00",
+              "s:toTime": "18:00"
+            }
+          ]
+        }
+      },
+      {
+        "s:dayName": "Tuesday",
+        "s:timesSessions": {
+          "s:timesSession": [
+            {
+              "s:fromTime": "08:31",
+              "s:toTime": "12:31"
+            },
+            {
+              "s:fromTime": "16:01",
+              "s:toTime": "18:01"
+            }
+          ]
+        }
+      },
+      {
+        "s:dayName": "Wednesday",
+        "s:timesSessions": {
+          "s:timesSession": [
+            {
+              "s:fromTime": "08:32",
+              "s:toTime": "12:32"
+            },
+            {
+              "s:fromTime": "16:32",
+              "s:toTime": "18:32"
+            }
+          ]
+        }
+      },
+      {
+        "s:dayName": "Thursday",
+        "s:timesSessions": {
+          "s:timesSession": {
+            "s:fromTime": "08:33",
+            "s:toTime": "12:33"
+          }
+        }
+      },
+      {
+        "s:dayName": "Friday",
+        "s:timesSessions": {
+          "s:timesSession": [
+            {
+              "s:fromTime": "08:34",
+              "s:toTime": "12:34"
+            },
+            {
+              "s:fromTime": "16:34",
+              "s:toTime": "18:34"
+            }
+          ]
+        }
+      },
+      {
+        "s:dayName": "Saturday",
+        "s:timesSessions": {
+          "s:timesSession": "Closed"
+        }
+      }
+    ]
+  }
+}
