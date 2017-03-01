@@ -1,9 +1,7 @@
 const urlParser = require('../urlParser');
-const log = require('../logger');
 
 function fromSummary(fullPractice) {
-  return fullPractice ? urlParser.getSyndicationId(fullPractice.id) :
-         log.error(`No id found in ${fullPractice.id}`);
+  return fullPractice && urlParser.getSyndicationId(fullPractice.id);
 }
 
 function fromResults(results) {

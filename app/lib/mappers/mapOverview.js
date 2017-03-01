@@ -1,6 +1,7 @@
 const reducer = require('./reducer');
 const urlParser = require('../urlParser');
 const mapOpeningTimes = require('./mapOpeningTimes');
+const getGpCounts = require('./mapGpCounts');
 
 function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';
@@ -55,6 +56,7 @@ function mapOverview(rawOverview) {
     },
     contact: reducer.selectFields(content['s:contact'], 's', ['telephone', 'fax', 'email']),
     openingTimes: getOpeningTimes(content),
+    gpCounts: getGpCounts(content['s:gpcounts']),
   };
 }
 
