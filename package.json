@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "start-small": "node app.js small",
+    "start-small-clear": "node app.js small clear",
     "lint": "eslint --ext .js,.json .",
     "test": "NODE_ENV=test mocha --recursive test/unit",
     "test-integration": "NODE_ENV=test mocha --recursive test/integration",

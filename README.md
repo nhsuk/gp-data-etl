@@ -18,6 +18,9 @@ in a file written to the root of the repository called `gp-data.json`
 
 To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`
 
+The initial phase of running the ETL is now re-entrant - if the process is stopped while the ID list is being built, it will skip the pages it has already scanned.
+For testing purposes the small ETL can be run with the command `npm run start-small-clear` to remove any in progress files. 
+
 The output JSON will be an array of objects in the format shown in the [Sample GP Data](sample-gp-data.json)
 
 A closed day in the opening times is represented by an empty array, i.e. there are no opening times for that day.
