@@ -5,6 +5,26 @@ const log = require('../logger');
 const service = require('../syndicationService');
 const xmlParser = require('../xmlParser');
 const mapSyndicationId = require('../mappers/mapSyndicationId');
+const fsHelper = require('../fsHelper');
+
+let processedPages = {};
+
+function pageDone(pageNo) {
+  processedPages[pageNo] = true;
+}
+
+function saveState() {
+  fsHelper.saveJson(processedPages, 'processedPages');
+}
+
+function clearState() {
+  processedPages = {};
+  fsHelper.saveJson(processedPages, 'processedPages');
+}
+
+function loadState() {
+  processedPages = fsHelper.loadJson('processedPages.json') || {};
+}
 
 function handleError(err, pageNo) {
   log.error(`Error processing page ${pageNo}: ${err}`);
@@ -12,15 +32,25 @@ function handleError(err, pageNo) {
 
 function loadPage(pageNo) {
   return service.getPracticeSummaryPage(pageNo)
-  .then(xmlParser)
-  .then(mapSyndicationId.fromResults)
-  .then(gpStore.addIds)
-  .catch(err => handleError(err, pageNo));
+    .then(xmlParser)
+    .then(mapSyndicationId.fromResults)
+    .then(gpStore.addIds)
+    .then(() => pageDone(pageNo))
+    .catch(err => handleError(err, pageNo));
+}
+
+function pageParsed(pageNo) {
+  return processedPages[pageNo] === true;
 }
 
 function processQueueItem(task, callback) {
-  log.info(`loading page ${task.pageNo}`);
-  loadPage(task.pageNo).then(callback);
+  if (pageParsed(task.pageNo)) {
+    log.info(`skipping ${task.pageNo}, already parsed`);
+    callback();
+  } else {
+    log.info(`loading page ${task.pageNo}`);
+    loadPage(task.pageNo).then(callback);
+  }
 }
 
 function addPageToQueue(q, pageNo) {
@@ -37,4 +67,10 @@ function start(totalPages, workers, drain) {
   }
 }
 
-module.exports = { start };
+loadState();
+
+module.exports = {
+  start,
+  saveState,
+  clearState,
+};

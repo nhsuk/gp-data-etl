@@ -12,12 +12,22 @@ requireEnv(['SYNDICATION_API_KEY']);
 
 const WORKERS = 1;
 
+function clearState() {
+  populateIdListQueue.clearState();
+  gpStore.clearState();
+}
+
 function getTotalPages() {
   return service.getPracticeSummaryPage(1).then(xmlParser).then(mapTotalPages);
 }
 
+function etlComplete() {
+  gpStore.saveGPs();
+  clearState();
+}
+
 function startPopulatePracticeQueue() {
-  populatePracticeQueue.start(WORKERS, gpStore.saveGPs);
+  populatePracticeQueue.start(WORKERS, etlComplete);
 }
 
 function idQueueComplete() {
@@ -34,8 +44,18 @@ function handleError(err) {
 }
 
 if (process.argv[2] === 'small') {
+  if (process.argv[3] === 'clear') {
+    clearState();
+  }
   // run with only a few pages
   startIdQueue(3);
 } else {
   getTotalPages().then(startIdQueue).catch(handleError);
 }
+
+process.on('SIGINT', () => {
+  log.info('ETL cancelled');
+  gpStore.saveState();
+  populateIdListQueue.saveState();
+  process.exit();
+});
