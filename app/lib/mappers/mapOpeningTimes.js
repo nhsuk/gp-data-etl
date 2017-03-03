@@ -1,4 +1,4 @@
-const xmlJsonHelper = require('../xmlJsonHelper');
+const utils = require('../utils');
 
 const SESSION_TYPES = 's:timesSessionTypes';
 const SESSION_TYPE = 's:timesSessionType';
@@ -29,7 +29,7 @@ function getSessions(session) {
   if (!timesSessions || timesSessions === 'Closed') {
     return [];
   }
-  return xmlJsonHelper.asArray(timesSessions).map(getSession);
+  return utils.asArray(timesSessions).map(getSession);
 }
 
 function dayValid(dayOfWeek) {
@@ -58,6 +58,7 @@ function openingTimeValid(rawTimes) {
 function mapOpeningTimes(rawTimes) {
   return openingTimeValid(rawTimes) ? mapDaysOfWeek(rawTimes) : undefined;
 }
+
 function sessionTypesValid(openingTimes) {
   return openingTimes && openingTimes[SESSION_TYPES] &&
          openingTimes[SESSION_TYPES][SESSION_TYPE];

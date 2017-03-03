@@ -29,7 +29,7 @@ describe('overview mapper', () => {
     expect(overview.openingTimes.reception).to.exist;
     expect(overview.openingTimes.surgery).to.exist;
     expect(overview.address).to.exist;
-    expect(overview.location).to.exist;
+    expect(overview.gpCounts).to.exist;
     expect(overview.doctors).to.exist;
     /* eslint-enable no-unused-expressions */
     expect(overview.doctors.length).to.equal(6);

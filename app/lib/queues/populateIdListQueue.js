@@ -14,16 +14,16 @@ function pageDone(pageNo) {
 }
 
 function saveState() {
-  fsHelper.saveJson(processedPages, 'processedPages');
+  fsHelper.saveJsonSync(processedPages, 'processedPages');
 }
 
 function clearState() {
   processedPages = {};
-  fsHelper.saveJson(processedPages, 'processedPages');
+  fsHelper.saveJsonSync(processedPages, 'processedPages');
 }
 
 function loadState() {
-  processedPages = fsHelper.loadJson('processedPages.json') || {};
+  processedPages = fsHelper.loadJsonSync('processedPages') || {};
 }
 
 function handleError(err, pageNo) {

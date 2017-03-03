@@ -8,6 +8,12 @@ function asArray(value) {
   return [];
 }
 
+
+function emptyObjectToUndefined(gpCounts) {
+  return Object.keys(gpCounts).length > 0 ? gpCounts : undefined;
+}
+
 module.exports = {
   asArray,
+  emptyObjectToUndefined,
 };

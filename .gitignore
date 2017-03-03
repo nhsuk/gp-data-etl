@@ -1,7 +1,5 @@
-# Generate file
-gp-data.json
-processedPages.json
-syndicationIds.json
+# Generated file
+output
 
 # Logs
 logs

@@ -1,4 +1,4 @@
-const xmlJsonHelper = require('../xmlJsonHelper');
+const utils = require('../utils');
 
 const GP_COUNT = 's:gpcount';
 
@@ -14,15 +14,11 @@ function mapGpCount(gpCount, rawGpCount) {
   return gpCount;
 }
 
-function emptyObjectToUndefined(gpCounts) {
-  return Object.keys(gpCounts).length > 0 ? gpCounts : undefined;
-}
-
 function mapGpCounts(rawCounts) {
   if (countSectionValid(rawCounts)) {
-    const gpCounts = xmlJsonHelper.asArray(rawCounts[GP_COUNT]).reduce(mapGpCount, {});
+    const gpCounts = utils.asArray(rawCounts[GP_COUNT]).reduce(mapGpCount, {});
     // ensure consitent return of undefined for no data
-    return emptyObjectToUndefined(gpCounts);
+    return utils.emptyObjectToUndefined(gpCounts);
   }
   return undefined;
 }

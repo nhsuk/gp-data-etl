@@ -28,7 +28,7 @@ function addIds(gpsList) {
 }
 
 function saveState() {
-  fsHelper.saveJson(syndicationIds, 'syndicationIds');
+  fsHelper.saveJsonSync(syndicationIds, 'syndicationIds');
 }
 
 function clearState() {
@@ -37,12 +37,12 @@ function clearState() {
 }
 
 function loadState() {
-  syndicationIds = fsHelper.loadJson('syndicationIds.json') || [];
+  syndicationIds = fsHelper.loadJsonSync('syndicationIds') || [];
 }
 
 function saveGPs() {
   log.info(`The following syndication IDs failed: ${failedIds}`);
-  fsHelper.saveJson(gps, 'gp-data');
+  fsHelper.saveJsonSync(gps, 'gp-data');
 }
 
 loadState();

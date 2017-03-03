@@ -1,11 +1,11 @@
-const xmlJsonHelper = require('../xmlJsonHelper');
+const utils = require('../utils');
 
 const ADDRESS_LINE = 's:addressLine';
 const POSTCODE = 's:postcode';
 
 function createAddress(rawAddress) {
   return {
-    addressLines: xmlJsonHelper.asArray(rawAddress[ADDRESS_LINE]),
+    addressLines: utils.asArray(rawAddress[ADDRESS_LINE]),
     postcode: rawAddress[POSTCODE],
   };
 }

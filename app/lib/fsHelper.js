@@ -1,18 +1,28 @@
 const fs = require('fs');
 const log = require('./logger');
 
-function saveJson(obj, filename) {
+const OUTPUT_DIR = './output';
+
+function createDirIfMissing(path) {
+  if (!fs.existsSync(path)) {
+    fs.mkdirSync(path);
+  }
+}
+
+function saveJsonSync(obj, filename) {
+  createDirIfMissing(OUTPUT_DIR);
   const json = JSON.stringify(obj);
-  fs.writeFileSync(`${filename}.json`, json, 'utf8');
+  fs.writeFileSync(`${OUTPUT_DIR}/${filename}.json`, json, 'utf8');
   log.info(`${filename} saved`);
 }
 
-function loadJson(path) {
+function loadJsonSync(filename) {
+  const path = `${OUTPUT_DIR}/${filename}.json`;
   const jsonString = fs.existsSync(path) ? fs.readFileSync(path, 'utf8') : undefined;
   return jsonString ? JSON.parse(jsonString) : undefined;
 }
 
 module.exports = {
-  saveJson,
-  loadJson,
+  saveJsonSync,
+  loadJsonSync,
 };

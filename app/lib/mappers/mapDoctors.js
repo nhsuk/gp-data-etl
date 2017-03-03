@@ -1,9 +1,9 @@
-const xmlJsonHelper = require('../xmlJsonHelper');
+const utils = require('../utils');
 
 const DOCTOR = 's:doctor';
 
 function mapDoctors(rawDoctors) {
-  return rawDoctors ? xmlJsonHelper.asArray(rawDoctors[DOCTOR]) : [];
+  return rawDoctors ? utils.asArray(rawDoctors[DOCTOR]) : [];
 }
 
 module.exports = mapDoctors;
