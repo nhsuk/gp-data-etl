@@ -1,6 +1,6 @@
-const choicesIdPattern = new RegExp(/.*id=(\d+)/, 'i');
-const syndicationIdPattern = new RegExp(/.*\/gppractices\/(\d+).*/, 'i');
-const pageCountPattern = new RegExp(/.*page=(\d+)/, 'i');
+const choicesIdPattern = /.*id=(\d+)/i;
+const syndicationIdPattern = /.*\/gppractices\/(\d+).*/i;
+const pageCountPattern = /.*page=(\d+)/i;
 
 function getMatchedNumber(url, pattern) {
   const match = pattern.exec(url);
