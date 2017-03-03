@@ -1,5 +1,5 @@
-const fs = require('fs');
 const log = require('./logger');
+const fsHelper = require('./fsHelper');
 
 let syndicationIds = [];
 const failedIds = [];
@@ -27,11 +27,25 @@ function addIds(gpsList) {
   return syndicationIds;
 }
 
+function saveState() {
+  fsHelper.saveJsonSync(syndicationIds, 'syndicationIds');
+}
+
+function clearState() {
+  syndicationIds = [];
+  saveState();
+}
+
+function loadState() {
+  syndicationIds = fsHelper.loadJsonSync('syndicationIds') || [];
+}
+
 function saveGPs() {
   log.info(`The following syndication IDs failed: ${failedIds}`);
-  const json = JSON.stringify(gps);
-  fs.writeFile('gp-data.json', json, 'utf8', () => log.info('File saved'));
+  fsHelper.saveJsonSync(gps, 'gp-data');
 }
+
+loadState();
 
 module.exports = {
   getIds,
@@ -40,4 +54,6 @@ module.exports = {
   addGP,
   saveGPs,
   addFailedId,
+  saveState,
+  clearState,
 };

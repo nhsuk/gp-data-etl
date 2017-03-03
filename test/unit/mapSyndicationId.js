@@ -47,4 +47,10 @@ describe('syndicationId mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(id).to.be.undefined;
   });
+
+  it('should gracefully handle undefined summary', () => {
+    const id = mapSyndicationId.fromSummary(undefined);
+    // eslint-disable-next-line no-unused-expressions
+    expect(id).to.be.undefined;
+  });
 });

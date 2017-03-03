@@ -1,5 +1,5 @@
 const chai = require('chai');
-const mapOpeningTimes = require('../../app/lib/mappers/mapOpeningTimes');
+const mapOpeningTimes = require('../../app/lib/mappers/mapOpeningTimes').one;
 const rawTimes = require('../resources/openingTimes.json');
 const rawTimesMultiSession = require('../resources/openingTimesMultiSession.json');
 

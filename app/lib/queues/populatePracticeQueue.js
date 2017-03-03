@@ -8,6 +8,7 @@ const limiter = require('../limiter');
 
 const HITS_PER_HOUR = 5000;
 let hitsPerWorker;
+let count = 0;
 
 function handleError(err, id) {
   gpStore.addFailedId(id);
@@ -23,7 +24,8 @@ function populatePractice(id) {
 }
 
 function processQueueItem(task, callback) {
-  log.info(`Populating practice ID ${task.id}`);
+  count += 1;
+  log.info(`Populating practice ID ${task.id} ${count}/${gpStore.getIds().length}`);
   limiter(hitsPerWorker, () => populatePractice(task.id), callback);
 }
 

@@ -14,9 +14,12 @@ The application needs the api key available within the environment as the
 variable `SYNDICATION_API_KEY`.
 
 Running `npm start` will initiate the scrape. A successful scrape will result
-in a file written to the root of the repository called `gp-data.json`
+in the file `gp-data.json` being written to the `output` folder.
 
 To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`
+
+The initial phase of running the ETL is now re-entrant - if the process is stopped while the ID list is being built, it will skip the pages it has already scanned.
+For testing purposes the small ETL can be run with the command `npm run start-small-clear` to remove any in progress files.
 
 The output JSON will be an array of objects in the format shown in the [Sample GP Data](sample-gp-data.json)
 
