@@ -4,8 +4,10 @@ const LONGITUDE = 's:longitude';
 function createLocation(coordinates) {
   return {
     type: 'Point',
-    latitude: Number(coordinates[LATITUDE]),
-    longitude: Number(coordinates[LONGITUDE]),
+    coordinates: [
+      Number(coordinates[LONGITUDE]),
+      Number(coordinates[LATITUDE]),
+    ],
   };
 }
 

@@ -1,0 +1,426 @@
+{
+    "feed": {
+        "$": {
+            "xmlns": "http://www.w3.org/2005/Atom"
+        },
+        "title": {
+            "_": "NHS Choices - Croft Medical Centre - Overview",
+            "$": {
+                "type": "text"
+            }
+        },
+        "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
+        "rights": {
+            "_": "© Crown Copyright 2009",
+            "$": {
+                "type": "text"
+            }
+        },
+        "updated": "2015-12-15T14:45:46Z",
+        "category": {
+            "$": {
+                "term": "Overview"
+            }
+        },
+        "logo": "http://www.nhs.uk/nhscwebservices/documents/logo1.jpg",
+        "author": {
+            "name": "NHS Choices",
+            "uri": "http://www.nhs.uk",
+            "email": "webservices@nhschoices.nhs.uk"
+        },
+        "link": [
+            {
+                "$": {
+                    "rel": "self",
+                    "type": "application/xml",
+                    "title": "NHS Choices - Croft Medical Centre - Overview",
+                    "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=bbccdd"
+                }
+            },
+            {
+                "$": {
+                    "rel": "alternate",
+                    "title": "NHS Choices - Croft Medical Centre - Overview",
+                    "href": "http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931"
+                }
+            }
+        ],
+        "tracking": {
+            "_": "<img style=\"border: 0; width: 1px; height: 1px;\" alt=\"\" src=\"http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f17307%2foverview&amp;wt.js=no&amp;wt.cg_n=syndication\"/>\n  ",
+            "$": {
+                "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+            }
+        },
+        "complete": {
+            "$": {
+                "xmlns": "http://purl.org/syndication/history/1.0"
+            }
+        },
+        "entry": {
+            "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
+            "title": {
+                "_": "Croft Medical Centre - Overview",
+                "$": {
+                    "type": "text"
+                }
+            },
+            "published": "2015-12-15T14:45:46Z",
+            "updated": "2015-12-15T14:45:46Z",
+            "link": [
+                {
+                    "$": {
+                        "rel": "self",
+                        "title": "Croft Medical Centre - Overview",
+                        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=bbccdd"
+                    }
+                },
+                {
+                    "$": {
+                        "rel": "alternate",
+                        "title": "Croft Medical Centre - Overview",
+                        "href": "http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931"
+                    }
+                }
+            ],
+            "content": {
+                "$": {
+                    "type": "application/xml"
+                },
+                "s:overview": {
+                    "$": {
+                        "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
+                    },
+                    "s:name": {
+                        "_": "Croft Medical Centre",
+                        "$": {
+                            "indexLetter": "C"
+                        }
+                    },
+                    "s:odsCode": "M89012",
+                    "s:parentOrganisation": {
+                        "s:name": "NHS Solihull CCG",
+                        "s:uri": "http://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/463005?apikey=bbccdd"
+                    },
+                    "s:address": {
+                        "s:addressLine": [
+                            "Croft Medical centre",
+                            "1 Pomeroy Way",
+                            "Chelmsley Wood",
+                            "Birmingham",
+                            "West Midlands"
+                        ],
+                        "s:postcode": "B37 7WB"
+                    },
+                    "s:website": "http://www.craigcroftmedicalcentre.co.uk/",
+                    "s:geographicCoordinates": {
+                        "s:longitude": "-1.72773551940918",
+                        "s:latitude": "52.4778633117676"
+                    },
+                    "s:newPatients": {
+                        "$": {
+                            "accepting": "True"
+                        },
+                        "s:statusText": "We are currently accepting new patients",
+                        "s:registrationText": "Please register during reception hours",
+                        "s:registrationFormUrl": "http://www.nhs.uk/Servicedirectories/Documents/GMS1.pdf",
+                        "s:registrationFormText": "Download registration form",
+                        "s:catchmentAreaUrl": "http://www.nhs.uk/Services/GP/MapsAndDirections/DefaultView.aspx?id=36931",
+                        "s:catchmentAreaText": "View catchment area",
+                        "s:faqUrl": "http://www.nhs.uk/Services/GP/PatientInformation/DefaultView.aspx?id=36931",
+                        "s:faqText": "More patient information",
+                        "s:patientAdvice": "\t<p>Need advice on how to choose a GP?<br/><a href=\"http://www.nhs.uk/choiceintheNHS/Yourchoices/GPchoice/Documents/rcgp_iyp_full_booklet_web_version.pdf\">\tView a guide by the Royal College of GPs</a></p>\t"
+                    },
+                    "s:openingTimes": {
+                        "s:timesSessionTypes": {
+                            "s:timesSessionType": [
+                                {
+                                    "$": {
+                                        "sessionType": "reception"
+                                    },
+                                    "s:daysOfWeek": {
+                                        "s:dayOfWeek": [
+                                            {
+                                                "s:dayName": "Sunday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": "Closed"
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Monday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": {
+                                                        "s:fromTime": "08:00",
+                                                        "s:toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Tuesday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": {
+                                                        "s:fromTime": "08:00",
+                                                        "s:toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Wednesday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": {
+                                                        "s:fromTime": "08:00",
+                                                        "s:toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Thursday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": {
+                                                        "s:fromTime": "08:00",
+                                                        "s:toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Friday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": {
+                                                        "s:fromTime": "08:00",
+                                                        "s:toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Saturday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": "Closed"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "$": {
+                                        "sessionType": "surgery"
+                                    },
+                                    "s:daysOfWeek": {
+                                        "s:dayOfWeek": [
+                                            {
+                                                "s:dayName": "Sunday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": "Closed"
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Monday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": [
+                                                        {
+                                                            "s:fromTime": "08:30",
+                                                            "s:toTime": "12:00"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "15:00",
+                                                            "s:toTime": "18:15"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Tuesday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": [
+                                                        {
+                                                            "s:fromTime": "08:30",
+                                                            "s:toTime": "12:30"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "15:00",
+                                                            "s:toTime": "18:15"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "18:30",
+                                                            "s:toTime": "19:45"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Wednesday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": [
+                                                        {
+                                                            "s:fromTime": "08:30",
+                                                            "s:toTime": "12:00"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "15:00",
+                                                            "s:toTime": "18:15"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Thursday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": [
+                                                        {
+                                                            "s:fromTime": "08:30",
+                                                            "s:toTime": "12:30"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "15:00",
+                                                            "s:toTime": "18:15"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "18:30",
+                                                            "s:toTime": "19:30"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Friday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": [
+                                                        {
+                                                            "s:fromTime": "08:30",
+                                                            "s:toTime": "12:30"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "15:00",
+                                                            "s:toTime": "18:15"
+                                                        },
+                                                        {
+                                                            "s:fromTime": "18:30",
+                                                            "s:toTime": "19:00"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "s:dayName": "Saturday",
+                                                "s:timesSessions": {
+                                                    "s:timesSession": "Closed"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "$": {
+                                        "sessionType": "additional"
+                                    },
+                                    "s:additionalDay": [
+                                        {
+                                            "s:date": "2014-04-18",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-04-21",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-05-05",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-05-26",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-08-25",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-12-25",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "s:date": "2014-12-26",
+                                            "s:timesSessions": {
+                                                "s:timesSession": "Closed"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "s:outOfHours": "<p>Ring the normal&nbsp;surgery number for our Out Of Hours advice contact&nbsp;number.</p>",
+                        "s:lastVerifiedOn": "2014-04-29 09:56:50Z"
+                    },
+                    "s:overviewLastUpdated": "2015-12-15 14:42:41Z",
+                    "s:doctors": {
+                        "s:doctor": [
+                            "Dr Michael Robert Bosworth",
+                            "Dr Oliver Denton",
+                            "Dr Alicia Baker",
+                            "Dr Alison Dorothy Hales",
+                            "Dr Shazli Musarat Noor Khan",
+                            "Dr Srividya Balasubramanian"
+                        ]
+                    },
+                    "s:gpcounts": {
+                        "s:gpcount": [
+                            {
+                                "_": "2",
+                                "$": {
+                                    "type": "male"
+                                }
+                            },
+                            {
+                                "_": "4",
+                                "$": {
+                                    "type": "female"
+                                }
+                            }
+                        ]
+                    },
+                    "s:isEpsEnabled": "true",
+                    "s:articles": {
+                        "s:article": {
+                            "s:articleTitle": "Surgery relocation",
+                            "s:articleDescription": "<p>The surgery&nbsp;has now relocated to it's permanent new home&nbsp; in purpose built premises at 1 Pomeroy Way, just a short walk from the temporary accomodation and opposite our original location on Craig Croft.The telephone number is still&nbsp;0121 270 7180.</p><p>&nbsp;</p>",
+                            "s:articleModifiedDate": "15/12/2015 14:42:41"
+                        }
+                    },
+                    "s:overviewKeyFacts": {
+                        "s:keyFacts": {
+                            "s:keyFact": [
+                                {
+                                    "s:question": "Registered list size",
+                                    "s:value": "10968",
+                                    "s:text": "patients"
+                                },
+                                {
+                                    "s:question": "Friends and Family test score - GP",
+                                    "s:text": "Patients recommend this practice. [Value2] responses."
+                                }
+                            ]
+                        },
+                        "s:moreInformation": {
+                            "s:url": "http://www.nhs.uk/Scorecard/Pages/GpFacts.aspx",
+                            "s:text": "More information about this data"
+                        },
+                        "s:performance": {
+                            "s:url": "http://www.nhs.uk/Services/GP/Performance/DefaultView.aspx?id=36931",
+                            "s:text": "More on how we perform"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

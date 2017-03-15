@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "async": "^2.1.4",
+    "google-libphonenumber": "^2.0.11",
     "require-environment-variables": "^1.1.2",
     "xml2js": "^0.4.17"
   }

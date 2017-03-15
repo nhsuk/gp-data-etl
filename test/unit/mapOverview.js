@@ -4,6 +4,7 @@ const rawOverview = require('../resources/overview.json');
 const rawOverviewNoOpeningTimes = require('../resources/overview-no-opening-times.json');
 const rawOverviewNoChoicesId = require('../resources/overview-no-choicesId.json');
 const rawOverviewNoName = require('../resources/overview-no-name.json');
+const rawOverviewNoContacts = require('../resources/overview-no-contacts.json');
 
 const expect = chai.expect;
 
@@ -39,6 +40,12 @@ describe('overview mapper', () => {
     const overview = mapOverview(rawOverviewNoOpeningTimes);
     // eslint-disable-next-line no-unused-expressions
     expect(overview.openingTimes).to.be.undefined;
+  });
+
+  it('should gracefully handle missing contact details', () => {
+    const overview = mapOverview(rawOverviewNoContacts);
+    // eslint-disable-next-line no-unused-expressions
+    expect(overview.contact).to.be.empty;
   });
 
   it('should throw exception for missing choices ID', () => {

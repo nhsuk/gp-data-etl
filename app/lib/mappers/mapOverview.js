@@ -1,5 +1,5 @@
-const reducer = require('./reducer');
 const urlParser = require('../urlParser');
+const phoneNumberParser = require('../phoneNumberParser');
 const mapOpeningTimes = require('./mapOpeningTimes');
 const mapAddress = require('./mapAddress');
 const mapLocation = require('./mapLocation');
@@ -15,6 +15,9 @@ const CONTACT = 's:contact';
 const OPENING_TIMES = 's:openingTimes';
 const GP_COUNTS = 's:gpcounts';
 const DOCTORS = 's:doctors';
+const TELEPHONE = 's:telephone';
+const FAX = 's:fax';
+const EMAIL = 's:email';
 
 function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';
@@ -23,6 +26,17 @@ function matchAltHref(link) {
 function getChoicesId(links) {
   const href = links.find(matchAltHref);
   return href ? urlParser.getChoicesId(href.$.href) : undefined;
+}
+
+function getContact(contact) {
+  if (contact) {
+    return {
+      telephone: phoneNumberParser(contact[TELEPHONE]),
+      fax: phoneNumberParser(contact[FAX]),
+      email: contact[EMAIL],
+    };
+  }
+  return {};
 }
 
 function mapOverview(rawOverview) {
@@ -47,7 +61,7 @@ function mapOverview(rawOverview) {
     odsCode: content[ODS_CODE],
     address: mapAddress(content[ADDRESS]),
     location: mapLocation(content[COORDINATES]),
-    contact: reducer.selectFields(content[CONTACT], 's', ['telephone', 'fax', 'email']),
+    contact: getContact(content[CONTACT]),
     openingTimes: mapOpeningTimes.all(content[OPENING_TIMES]),
     gpCounts: mapGpCounts(content[GP_COUNTS]),
     doctors: mapDoctors(content[DOCTORS]),

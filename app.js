@@ -48,7 +48,7 @@ if (process.argv[2] === 'small') {
     clearState();
   }
   // run with only a few pages
-  startIdQueue(3);
+  startIdQueue(1);
 } else {
   getTotalPages().then(startIdQueue).catch(handleError);
 }

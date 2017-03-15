@@ -1,24 +1,33 @@
 const async = require('async');
 const log = require('../logger');
 const mapOverview = require('../mappers/mapOverview');
+const mapFacilities = require('../mappers/mapFacilities');
 const service = require('../syndicationService');
-const xmlParser = require('../xmlParser');
 const gpStore = require('../gpStore');
 const limiter = require('../limiter');
 
 const HITS_PER_HOUR = 5000;
 let hitsPerWorker;
 let count = 0;
+const STEPS = 2;
 
 function handleError(err, id) {
   gpStore.addFailedId(id);
   log.error(`Error processing syndication ID ${id}: ${err}`);
 }
 
+function addFacilities(gp, id) {
+  return service.getFacilitiesPage(id).then(mapFacilities).then((facilities) => {
+    // eslint-disable-next-line no-param-reassign
+    gp.facilities = facilities;
+    return gp;
+  });
+}
+
 function populatePractice(id) {
   return service.getOverviewPage(id)
-    .then(xmlParser)
     .then(mapOverview)
+    .then(gp => addFacilities(gp, id))
     .then(gpStore.addGP)
     .catch(err => handleError(err, id));
 }
@@ -40,7 +49,7 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
-  hitsPerWorker = HITS_PER_HOUR / workers;
+  hitsPerWorker = HITS_PER_HOUR / (workers * STEPS);
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
   q.drain = drain;

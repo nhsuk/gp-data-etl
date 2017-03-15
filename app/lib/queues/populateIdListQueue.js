@@ -3,7 +3,6 @@ const async = require('async');
 const gpStore = require('../gpStore');
 const log = require('../logger');
 const service = require('../syndicationService');
-const xmlParser = require('../xmlParser');
 const mapSyndicationId = require('../mappers/mapSyndicationId');
 const fsHelper = require('../fsHelper');
 
@@ -32,7 +31,6 @@ function handleError(err, pageNo) {
 
 function loadPage(pageNo) {
   return service.getPracticeSummaryPage(pageNo)
-    .then(xmlParser)
     .then(mapSyndicationId.fromResults)
     .then(gpStore.addIds)
     .then(() => pageDone(pageNo))
