@@ -18,6 +18,7 @@ const DOCTORS = 's:doctors';
 const TELEPHONE = 's:telephone';
 const FAX = 's:fax';
 const EMAIL = 's:email';
+const WEBSITE = 's:website';
 
 function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';
@@ -28,15 +29,15 @@ function getChoicesId(links) {
   return href ? urlParser.getChoicesId(href.$.href) : undefined;
 }
 
-function getContact(contact) {
+function getContact(content) {
+  const result = { website: content[WEBSITE] };
+  const contact = content[CONTACT];
   if (contact) {
-    return {
-      telephone: phoneNumberParser(contact[TELEPHONE]),
-      fax: phoneNumberParser(contact[FAX]),
-      email: contact[EMAIL],
-    };
+    result.telephone = phoneNumberParser(contact[TELEPHONE]);
+    result.fax = phoneNumberParser(contact[FAX]);
+    result.email = contact[EMAIL];
   }
-  return {};
+  return result;
 }
 
 function mapOverview(rawOverview) {
@@ -61,7 +62,7 @@ function mapOverview(rawOverview) {
     odsCode: content[ODS_CODE],
     address: mapAddress(content[ADDRESS]),
     location: mapLocation(content[COORDINATES]),
-    contact: getContact(content[CONTACT]),
+    contact: getContact(content),
     openingTimes: mapOpeningTimes.all(content[OPENING_TIMES]),
     gpCounts: mapGpCounts(content[GP_COUNTS]),
     doctors: mapDoctors(content[DOCTORS]),

@@ -13,14 +13,16 @@ Details of registration are available on [NHS Choices](http://www.nhs.uk/aboutNH
 The application needs the api key available within the environment as the
 variable `SYNDICATION_API_KEY`.
 
-Running `npm start` will initiate the scrape. A successful scrape will result
-in the file `gp-data.json` being written to the `output` folder.
+Running `npm start` will initiate the scrape. A successful scrape will result in the file `gp-data.json` being written to the `output` folder.
 
-To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`
+The ETL is now re-entrant - if the process is interrupted via `ctrl + c` while the ID list is being built, it will skip the pages or records it has already scanned. State is also persisted every 100 records in case of system failure.
 
-The initial phase of running the ETL is now re-entrant - if the process is stopped while the ID list is being built, it will skip the pages it has already scanned.
-For testing purposes the small ETL can be run with the command `npm run start-small-clear` to remove any in progress files.
+When the ETL has completed state information will remain in the output directory. Restarting will revisit any failed records that may have errored due to availabilty issues.
+To clear the state before starting run `npm run start-clear`.
+
+To run the ETL end to end, but with only 3 pages of 90 surgeries, rather than the full 320+ pages run `npm run start-small`. Currenty these contain one record that returns
+a `500` error, so the retry behaviour can be observed.
+The small ETL can be run with the command `npm run start-small-clear` to remove any in progress files.
 
 The output JSON will be an array of objects in the format shown in the [Sample GP Data](sample-gp-data.json)
-
-A closed day in the opening times is represented by an empty array, i.e. there are no opening times for that day.
+A full description of the schema is available in the profiles-db [README.md](https://github.com/nhsuk/profiles-db/blob/master/README.md)

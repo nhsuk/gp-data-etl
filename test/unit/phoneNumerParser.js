@@ -8,10 +8,17 @@ describe('parse phone number', () => {
     const number = phoneNumberParser('08 00 12 34 56 7');
     expect(number).to.equal('0800 123 4567');
   });
+
   it('should return string unchanged if invalid', () => {
     const notReallyANumber = '0115 930 1055/Appointments 0115 9301105';
     const number = phoneNumberParser(notReallyANumber);
     expect(number).to.equal(notReallyANumber);
+  });
+
+  it('should gracefully handle undefined', () => {
+    const number = phoneNumberParser(undefined);
+    // eslint-disable-next-line no-unused-expressions
+    expect(number).to.be.undefined;
   });
 });
 

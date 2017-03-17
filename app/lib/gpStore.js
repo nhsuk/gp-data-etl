@@ -3,18 +3,24 @@ const fsHelper = require('./fsHelper');
 
 let syndicationIds = [];
 const failedIds = [];
-const gps = [];
+
+let gpCache = {};
 
 function getGPs() {
-  return gps;
+  return Object.values(gpCache);
 }
+
+function getGP(syndicationId) {
+  return gpCache[syndicationId];
+}
+
 function getIds() {
   return syndicationIds;
 }
 
 function addGP(gp) {
-  gps.push(gp);
-  return gps;
+  gpCache[gp.syndicationId] = gp;
+  return gp;
 }
 
 function addFailedId(id) {
@@ -29,20 +35,23 @@ function addIds(gpsList) {
 
 function saveState() {
   fsHelper.saveJsonSync(syndicationIds, 'syndicationIds');
+  fsHelper.saveJsonSync(gpCache, 'gpCache');
 }
 
 function clearState() {
   syndicationIds = [];
+  gpCache = {};
   saveState();
 }
 
 function loadState() {
   syndicationIds = fsHelper.loadJsonSync('syndicationIds') || [];
+  gpCache = fsHelper.loadJsonSync('gpCache') || {};
 }
 
 function saveGPs() {
   log.info(`The following syndication IDs failed: ${failedIds}`);
-  fsHelper.saveJsonSync(gps, 'gp-data');
+  fsHelper.saveJsonSync(getGPs(), 'gp-data');
 }
 
 loadState();
@@ -51,6 +60,7 @@ module.exports = {
   getIds,
   addIds,
   getGPs,
+  getGP,
   addGP,
   saveGPs,
   addFailedId,
