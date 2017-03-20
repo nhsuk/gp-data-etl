@@ -83,4 +83,12 @@ describe('Proper capitalize ', () => {
 
     expect(result).to.be.equal(expectedResult);
   });
+
+  it('for a string that has a two apostrophe\'s in it', () => {
+    const str = 'O\'don\'t practice';
+    const expectedResult = 'O\'Don\'t Practice';
+    const result = properCapitalize(str);
+
+    expect(result).to.be.equal(expectedResult);
+  });
 });
