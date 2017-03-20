@@ -7,8 +7,8 @@ const gpStore = require('../gpStore');
 const limiter = require('../limiter');
 
 const HITS_PER_HOUR = 5000;
-// two steps - Overview, Facilities
-const STEPS = 2;
+const steps = ['overview', 'facilities'];
+const numberOfSteps = steps.length;
 let hitsPerWorker;
 let count = 0;
 
@@ -75,7 +75,7 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
-  hitsPerWorker = HITS_PER_HOUR / (workers * STEPS);
+  hitsPerWorker = HITS_PER_HOUR / (workers * numberOfSteps);
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
   q.drain = drain;

@@ -21,4 +21,3 @@ describe('parse phone number', () => {
     expect(number).to.be.undefined;
   });
 });
-
