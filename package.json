@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start-clean": "node app.js clear",
+    "start-clear": "node app.js clear",
     "start-small": "node app.js small",
     "start-small-clear": "node app.js small clear",
     "lint": "eslint --ext .js,.json .",

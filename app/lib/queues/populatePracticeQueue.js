@@ -2,12 +2,13 @@ const async = require('async');
 const log = require('../logger');
 const mapOverview = require('../mappers/mapOverview');
 const mapFacilities = require('../mappers/mapFacilities');
+const mapServices = require('../mappers/mapServices');
 const service = require('../syndicationService');
 const gpStore = require('../gpStore');
 const limiter = require('../limiter');
 
 const HITS_PER_HOUR = 5000;
-const steps = ['overview', 'facilities'];
+const steps = ['overview', 'facilities', 'services'];
 const numberOfSteps = steps.length;
 let hitsPerWorker;
 let count = 0;
@@ -17,10 +18,10 @@ function handleError(err, id) {
   log.error(`Error processing syndication ID ${id}: ${err}`);
 }
 
-function swallow404(err, gp, id) {
+function swallow404(page, err, gp, id) {
   if (err.message.includes(' 404')) {
-    log.error(`No facilities for syndication ID ${id}: ${err}`);
-    gpStore.addFailedId(`${id}:facilities`);
+    log.error(`No ${page} for syndication ID ${id}: ${err}`);
+    gpStore.addFailedId(`${id}:${page}`);
     return gp;
   }
   throw err;
@@ -31,13 +32,22 @@ function addFacilities(gp, id) {
     // eslint-disable-next-line no-param-reassign
     gp.facilities = facilities;
     return gp;
-  }).catch(err => swallow404(err, gp, id));
+  }).catch(err => swallow404('facilities', err, gp, id));
+}
+
+function addServices(gp, id) {
+  return service.getServicesPage(id).then(mapServices).then((services) => {
+    // eslint-disable-next-line no-param-reassign
+    gp.services = services;
+    return gp;
+  }).catch(err => swallow404('services', err, gp, id));
 }
 
 function populatePractice(id) {
   return service.getOverviewPage(id)
     .then(mapOverview)
     .then(gp => addFacilities(gp, id))
+    .then(gp => addServices(gp, id))
     .then(gpStore.addGP)
     .catch(err => handleError(err, id));
 }

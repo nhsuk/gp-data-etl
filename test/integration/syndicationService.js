@@ -16,6 +16,10 @@ describe('syndicationService', () => {
     service.getFacilitiesPage(17307).then(() => done());
   });
 
+  it('should call API Services page', (done) => {
+    service.getServicesPage(13808).then(() => done());
+  });
+
   it('should return 404 for no facilities', (done) => {
     service.getFacilitiesPage('14972').catch((err) => {
       expect(err.message).to.contain(' 404');
