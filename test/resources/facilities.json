@@ -1,0 +1,162 @@
+{
+  "feed": {
+    "$": {
+      "xmlns": "http://www.w3.org/2005/Atom"
+    },
+    "title": {
+      "_": "NHS Choices - Abbey Medical Centre Barking  - Facilities",
+      "$": {
+        "type": "text"
+      }
+    },
+    "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
+    "rights": {
+      "_": "© Crown Copyright 2009",
+      "$": {
+        "type": "text"
+      }
+    },
+    "updated": "2012-06-28T03:39:25+01:00",
+    "category": {
+      "$": {
+        "term": "Facilities"
+      }
+    },
+    "logo": "http://www.nhs.uk/nhscwebservices/documents/logo1.jpg",
+    "author": {
+      "name": "NHS Choices",
+      "uri": "http://www.nhs.uk",
+      "email": "webservices@nhschoices.nhs.uk"
+    },
+    "link": [
+      {
+        "$": {
+          "rel": "self",
+          "type": "application/xml",
+          "title": "NHS Choices - Abbey Medical Centre Barking  - Facilities",
+          "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
+        }
+      },
+      {
+        "$": {
+          "rel": "alternate",
+          "title": "NHS Choices - Abbey Medical Centre Barking  - Facilities",
+          "href": "http://www.nhs.uk/Services/GP/Facilities/DefaultView.aspx?id=37301"
+        }
+      }
+    ],
+    "tracking": {
+      "_": "<img style=\"border: 0; width: 1px; height: 1px;\" alt=\"\" src=\"http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f12575%2ffacilities&amp;wt.js=no&amp;wt.cg_n=syndication\"/>",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "complete": {
+      "$": {
+        "xmlns": "http://purl.org/syndication/history/1.0"
+      }
+    },
+    "entry": {
+      "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
+      "title": {
+        "_": "Abbey Medical Centre Barking  - Facilities",
+        "$": {
+          "type": "text"
+        }
+      },
+      "published": "2012-06-28T03:39:25+01:00",
+      "updated": "2012-06-28T03:39:25+01:00",
+      "link": [
+        {
+          "$": {
+            "rel": "alternate",
+            "type": "application/xhtml",
+            "title": "Facilities - Abbey Medical Centre Barking  - NHS Choices",
+            "href": "http://www.nhs.uk/Services/GP/Facilities/DefaultView.aspx?id=37301"
+          }
+        },
+        {
+          "$": {
+            "rel": "self",
+            "title": "Abbey Medical Centre Barking  - Facilities",
+            "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
+          }
+        }
+      ],
+      "content": {
+        "$": {
+          "type": "application/xml"
+        },
+        "s:facilities": {
+          "$": {
+            "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
+          },
+          "s:organisationId": "37301",
+          "s:organisationName": "Abbey Medical Centre Barking ",
+          "s:facilityGroups": {
+            "s:facilityGroup": [
+              {
+                "s:name": "Parking",
+                "s:facilityList": {
+                  "s:facility": [
+                    {
+                      "s:name": "Car Parking",
+                      "s:facilityExists": "Yes"
+                    },
+                    {
+                      "s:name": "Cycle parking",
+                      "s:facilityExists": "NotSpecified"
+                    },
+                    {
+                      "s:name": "Disabled parking",
+                      "s:facilityExists": "NotSpecified"
+                    }
+                  ]
+                }
+              },
+              {
+                "s:name": "Accessibility",
+                "s:facilityList": {
+                  "s:facility": [
+                    {
+                      "s:name": "Wheelchair access",
+                      "s:facilityExists": "Yes"
+                    },
+                    {
+                      "s:name": "Step free access",
+                      "s:facilityExists": "Yes"
+                    },
+                    {
+                      "s:name": "Disabled WC",
+                      "s:facilityExists": "Yes"
+                    },
+                    {
+                      "s:name": "Braille translation service",
+                      "s:facilityExists": "NotSpecified"
+                    },
+                    {
+                      "s:name": "Disabled parking",
+                      "s:facilityExists": "NotSpecified"
+                    },
+                    {
+                      "s:name": "Induction loop",
+                      "s:facilityExists": "NotSpecified"
+                    },
+                    {
+                      "s:name": "RNID typetalk",
+                      "s:facilityExists": "NotSpecified"
+                    },
+                    {
+                      "s:name": "Signing service available",
+                      "s:facilityExists": "NotSpecified"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

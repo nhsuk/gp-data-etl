@@ -3,7 +3,6 @@ const async = require('async');
 const gpStore = require('../gpStore');
 const log = require('../logger');
 const service = require('../syndicationService');
-const xmlParser = require('../xmlParser');
 const mapSyndicationId = require('../mappers/mapSyndicationId');
 const fsHelper = require('../fsHelper');
 
@@ -23,6 +22,10 @@ function clearState() {
 }
 
 function loadState() {
+  // there is a possibility that the same page will be processed twice
+  // if the ETL is cancelled between adding the IDs to the gpStore, and
+  // setting the processedPages. Duplicate IDs in the list will be ignored in the next queue
+  // so this will not cause problems
   processedPages = fsHelper.loadJsonSync('processedPages') || {};
 }
 
@@ -32,7 +35,6 @@ function handleError(err, pageNo) {
 
 function loadPage(pageNo) {
   return service.getPracticeSummaryPage(pageNo)
-    .then(xmlParser)
     .then(mapSyndicationId.fromResults)
     .then(gpStore.addIds)
     .then(() => pageDone(pageNo))

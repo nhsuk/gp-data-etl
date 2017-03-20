@@ -4,6 +4,7 @@ const rawOverview = require('../resources/overview.json');
 const rawOverviewNoOpeningTimes = require('../resources/overview-no-opening-times.json');
 const rawOverviewNoChoicesId = require('../resources/overview-no-choicesId.json');
 const rawOverviewNoName = require('../resources/overview-no-name.json');
+const rawOverviewNoContacts = require('../resources/overview-no-contacts.json');
 
 const expect = chai.expect;
 
@@ -21,6 +22,7 @@ describe('overview mapper', () => {
     expect(overview.contact.telephone).to.equal('0121 270 7180');
     expect(overview.contact.fax).to.equal('0121 770 0130');
     expect(overview.contact.email).to.equal('email@missing.com');
+    expect(overview.contact.website).to.equal('http://www.craigcroftmedicalcentre.co.uk/');
 
     /* eslint-disable no-unused-expressions */
     // below are tested in own unit tests
@@ -39,6 +41,12 @@ describe('overview mapper', () => {
     const overview = mapOverview(rawOverviewNoOpeningTimes);
     // eslint-disable-next-line no-unused-expressions
     expect(overview.openingTimes).to.be.undefined;
+  });
+
+  it('should gracefully handle missing contact details', () => {
+    const overview = mapOverview(rawOverviewNoContacts);
+    // eslint-disable-next-line no-unused-expressions
+    expect(overview.contact.website).to.exist;
   });
 
   it('should throw exception for missing choices ID', () => {

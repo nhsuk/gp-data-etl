@@ -34,7 +34,7 @@
                     "rel": "self",
                     "type": "application/xml",
                     "title": "NHS Choices - Croft Medical Centre - Overview",
-                    "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=bbccdd"
+                    "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
                 }
             },
             {
@@ -71,7 +71,7 @@
                     "$": {
                         "rel": "self",
                         "title": "Croft Medical Centre - Overview",
-                        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=bbccdd"
+                        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
                     }
                 },
                 {
@@ -99,7 +99,7 @@
                     "s:odsCode": "M89012",
                     "s:parentOrganisation": {
                         "s:name": "NHS Solihull CCG",
-                        "s:uri": "http://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/463005?apikey=bbccdd"
+                        "s:uri": "http://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/463005?apikey=apikey"
                     },
                     "s:address": {
                         "s:addressLine": [

@@ -4,7 +4,6 @@ const gpStore = require('./app/lib/gpStore');
 const populateIdListQueue = require('./app/lib/queues/populateIdListQueue');
 const populatePracticeQueue = require('./app/lib/queues/populatePracticeQueue');
 const service = require('./app/lib/syndicationService');
-const xmlParser = require('./app/lib/xmlParser');
 const mapTotalPages = require('./app/lib/mappers/mapTotalPages');
 const log = require('./app/lib/logger');
 
@@ -18,12 +17,12 @@ function clearState() {
 }
 
 function getTotalPages() {
-  return service.getPracticeSummaryPage(1).then(xmlParser).then(mapTotalPages);
+  return service.getPracticeSummaryPage(1).then(mapTotalPages);
 }
 
 function etlComplete() {
   gpStore.saveGPs();
-  clearState();
+  gpStore.saveState();
 }
 
 function startPopulatePracticeQueue() {
@@ -50,12 +49,15 @@ if (process.argv[2] === 'small') {
   // run with only a few pages
   startIdQueue(3);
 } else {
+  if (process.argv[2] === 'clear') {
+    clearState();
+  }
   getTotalPages().then(startIdQueue).catch(handleError);
 }
 
 process.on('SIGINT', () => {
   log.info('ETL cancelled');
-  gpStore.saveState();
   populateIdListQueue.saveState();
+  gpStore.saveState();
   process.exit();
 });

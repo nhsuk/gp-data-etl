@@ -91,7 +91,7 @@
                         "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
                     },
                     "s:name": {
-                        "_": "",
+                        "_": "Croft Medical Centre",
                         "$": {
                             "indexLetter": "C"
                         }
@@ -110,14 +110,6 @@
                             "West Midlands"
                         ],
                         "s:postcode": "B37 7WB"
-                    },
-                    "s:contact": {
-                        "$": {
-                            "type": "General"
-                        },
-                        "s:telephone": "0121 270 7180",
-                        "s:fax": "0121 770 0130",
-                        "s:email": "email@missing.com"
                     },
                     "s:website": "http://www.craigcroftmedicalcentre.co.uk/",
                     "s:geographicCoordinates": {

@@ -15,8 +15,8 @@ describe('Location mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(location).to.exist;
     expect(location.type).to.equal('Point');
-    expect(location.latitude).to.equal(52.4778633117676);
-    expect(location.longitude).to.equal(-1.72773551940918);
+    expect(location.coordinates[0]).to.equal(-1.72773551940918);
+    expect(location.coordinates[1]).to.equal(52.4778633117676);
   });
 
   it('should gracefully handle undefined location', () => {
