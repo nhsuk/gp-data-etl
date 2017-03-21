@@ -1,193 +1,215 @@
 {
-    "_id" : 36584,
-    "choicesId" : 36584,
-    "syndicationId" : 14696,
-    "name" : "Abbotsbury Road Practice",
-    "odsCode" : "J81055",
-    "address" : {
-        "addressLines" : [ 
-            "24 Abbotsbury Road", 
-            "Weymouth", 
-            "Dorset", 
+    "_id": 36584,
+    "choicesId": 36584,
+    "syndicationId": 14696,
+    "name": "Abbotsbury Road Practice",
+    "odsCode": "J81055",
+    "address": {
+        "addressLines": [
+            "24 Abbotsbury Road",
+            "Weymouth",
+            "Dorset",
             "Weymouth"
         ],
-        "postcode" : "DT4 0AE"
+        "postcode": "DT4 0AE"
     },
-    "location" : {
-        "type" : "Point",
-        "coordinates" : [ 
-            -2.46197819709778, 
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -2.46197819709778,
             50.6120300292969
         ]
     },
-    "contact" : {
-        "website" : "http://www.abbotsburyroadsurgery.co.uk",
-        "telephone" : "01305 780806",
-        "fax" : "01305 762833",
-        "email" : "carole.woodward@gp-J81055.nhs.uk"
+    "contact": {
+        "website": "http://www.abbotsburyroadsurgery.co.uk",
+        "telephone": "01305 780806",
+        "fax": "01305 762833",
+        "email": "carole.woodward@gp-J81055.nhs.uk"
     },
-    "openingTimes" : {
-        "reception" : {
-            "sunday" : [],
-            "monday" : [ 
+    "openingTimes": {
+        "reception": {
+            "sunday": [],
+            "monday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "20:00"
+                    "opens": "18:30",
+                    "closes": "20:00"
                 }
             ],
-            "tuesday" : [ 
+            "tuesday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "20:00"
+                    "opens": "18:30",
+                    "closes": "20:00"
                 }
             ],
-            "wednesday" : [ 
+            "wednesday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "08:00"
-                }, 
+                    "opens": "07:30",
+                    "closes": "08:00"
+                },
                 {
-                    "opens" : "08:00",
-                    "closes" : "18:30"
+                    "opens": "08:00",
+                    "closes": "18:30"
                 }
             ],
-            "thursday" : [ 
+            "thursday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "19:30"
+                    "opens": "18:30",
+                    "closes": "19:30"
                 }
             ],
-            "friday" : [ 
+            "friday": [
                 {
-                    "opens" : "08:00",
-                    "closes" : "18:30"
+                    "opens": "08:00",
+                    "closes": "18:30"
                 }
             ],
-            "saturday" : []
+            "saturday": []
         },
-        "surgery" : {
-            "sunday" : [],
-            "monday" : [ 
+        "surgery": {
+            "sunday": [],
+            "monday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "20:00"
+                    "opens": "18:30",
+                    "closes": "20:00"
                 }
             ],
-            "tuesday" : [ 
+            "tuesday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "20:00"
+                    "opens": "18:30",
+                    "closes": "20:00"
                 }
             ],
-            "wednesday" : [ 
+            "wednesday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "08:00"
-                }, 
+                    "opens": "07:30",
+                    "closes": "08:00"
+                },
                 {
-                    "opens" : "08:00",
-                    "closes" : "18:30"
+                    "opens": "08:00",
+                    "closes": "18:30"
                 }
             ],
-            "thursday" : [ 
+            "thursday": [
                 {
-                    "opens" : "07:30",
-                    "closes" : "18:30"
-                }, 
+                    "opens": "07:30",
+                    "closes": "18:30"
+                },
                 {
-                    "opens" : "18:30",
-                    "closes" : "19:30"
+                    "opens": "18:30",
+                    "closes": "19:30"
                 }
             ],
-            "friday" : [ 
+            "friday": [
                 {
-                    "opens" : "08:00",
-                    "closes" : "18:30"
+                    "opens": "08:00",
+                    "closes": "18:30"
                 }
             ],
-            "saturday" : []
+            "saturday": []
         }
     },
-    "gpCounts" : {
-        "male" : 3,
-        "female" : 2
+    "gpCounts": {
+        "male": 3,
+        "female": 2
     },
-    "doctors" : [ 
-        "Dr Peter John Hewett", 
-        "Dr Hugh Stephen Priestley", 
-        "Dr Christine Brown", 
-        "Dr Andrew Ward", 
+    "doctors": [
+        "Dr Peter John Hewett",
+        "Dr Hugh Stephen Priestley",
+        "Dr Christine Brown",
+        "Dr Andrew Ward",
         "Dr Suzanne Lane"
     ],
-    "facilities" : {
-        "parking" : [ 
+    "facilities": {
+        "parking": [
             {
-                "name" : "Car Parking",
-                "exists" : "Yes"
-            }, 
+                "name": "Car Parking",
+                "exists": "Yes"
+            },
             {
-                "name" : "Cycle parking",
-                "exists" : "Yes"
-            }, 
+                "name": "Cycle parking",
+                "exists": "Yes"
+            },
             {
-                "name" : "Disabled parking",
-                "exists" : "Yes"
+                "name": "Disabled parking",
+                "exists": "Yes"
             }
         ],
-        "accessibility" : [ 
+        "accessibility": [
             {
-                "name" : "Braille translation service",
-                "exists" : "No"
-            }, 
+                "name": "Braille translation service",
+                "exists": "No"
+            },
             {
-                "name" : "Disabled parking",
-                "exists" : "Yes"
-            }, 
+                "name": "Disabled parking",
+                "exists": "Yes"
+            },
             {
-                "name" : "Disabled WC",
-                "exists" : "Yes"
-            }, 
+                "name": "Disabled WC",
+                "exists": "Yes"
+            },
             {
-                "name" : "Induction loop",
-                "exists" : "Yes"
-            }, 
+                "name": "Induction loop",
+                "exists": "Yes"
+            },
             {
-                "name" : "RNID typetalk",
-                "exists" : "No"
-            }, 
+                "name": "RNID typetalk",
+                "exists": "No"
+            },
             {
-                "name" : "Signing service available",
-                "exists" : "No"
-            }, 
+                "name": "Signing service available",
+                "exists": "No"
+            },
             {
-                "name" : "Step free access",
-                "exists" : "Yes"
-            }, 
+                "name": "Step free access",
+                "exists": "Yes"
+            },
             {
-                "name" : "Wheelchair access",
-                "exists" : "Yes"
+                "name": "Wheelchair access",
+                "exists": "Yes"
             }
         ]
     },
-    "supplier" : "TPP"
+    "services": {
+        "epsEnabled": true,
+        "moreInformation": "Other services offered at this practice: ECG facilities, minor surgical procedures, including freezing warts with liquid nitrogen. The practice has its own physiotherapist, dietician, chiropodist and counsellor",
+        "entries": [
+            {
+                "title": "Asthma Clinic",
+                "code": "SRV0280",
+                "availabilityTimes": "",
+                "introduction": "",
+                "gpReferralRequired": false,
+                "deliverer": "Abbotsbury Road Practice"
+            },
+            {
+                "title": "Learning disability health check",
+                "code": "SRV0492",
+                "availabilityTimes": "",
+                "introduction": "",
+                "gpReferralRequired": false,
+                "deliverer": "Abbotsbury Road Practice"
+            }
+        ]
+    },
+    "supplier": "TPP"
 }
