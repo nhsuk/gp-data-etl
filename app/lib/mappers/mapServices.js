@@ -20,7 +20,7 @@ function getUnderscore(member) {
 }
 
 function epsEnabled(eps) {
-  return eps && eps._ && eps._.toLowerCase() === 'true';
+  return eps && utils.toBoolean(eps._);
 }
 
 function getCode(type) {
@@ -38,7 +38,7 @@ function mapEntryToService(entry) {
     code: getCode(summary[TYPE]),
     availabilityTimes: getText(summary[AVAILABILITY_TIMES]),
     introduction: getText(summary[INTRODUCTION]),
-    gpReferralRequired: getText(summary[GP_REFERRAL_REQUIRED]) === 'True',
+    gpReferralRequired: utils.toBoolean(getText(summary[GP_REFERRAL_REQUIRED])),
     deliverer: getDeliverer(summary[DELIVERER]),
   };
 }

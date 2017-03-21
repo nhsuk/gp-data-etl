@@ -8,6 +8,9 @@ function asArray(value) {
   return [];
 }
 
+function toBoolean(value) {
+  return value && value.toLowerCase() === 'true';
+}
 
 function emptyObjectToUndefined(gpCounts) {
   return Object.keys(gpCounts).length > 0 ? gpCounts : undefined;
@@ -16,4 +19,5 @@ function emptyObjectToUndefined(gpCounts) {
 module.exports = {
   asArray,
   emptyObjectToUndefined,
+  toBoolean,
 };
