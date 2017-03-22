@@ -5,6 +5,7 @@ const mapAddress = require('./mapAddress');
 const mapLocation = require('./mapLocation');
 const mapGpCounts = require('./mapGpCounts');
 const mapDoctors = require('./mapDoctors');
+const properCapitalize = require('../properCapitalize');
 
 const OVERVIEW = 's:overview';
 const NAME = 's:name';
@@ -59,6 +60,7 @@ function mapOverview(rawOverview) {
     choicesId,
     syndicationId,
     name,
+    displayName: properCapitalize(name),
     odsCode: content[ODS_CODE],
     address: mapAddress(content[ADDRESS]),
     location: mapLocation(content[COORDINATES]),

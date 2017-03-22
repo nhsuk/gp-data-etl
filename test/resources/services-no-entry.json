@@ -1,0 +1,98 @@
+{
+  "feed": {
+    "$": {
+      "xmlns": "http://www.w3.org/2005/Atom"
+    },
+    "title": {
+      "_": "NHS Choices - Services -  Croft Medical Centre",
+      "$": {
+        "type": "text"
+      }
+    },
+    "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services",
+    "rights": {
+      "_": "© Crown Copyright 2009",
+      "$": {
+        "type": "text"
+      }
+    },
+    "updated": "2015-12-15T14:45:46Z",
+    "category": {
+      "$": {
+        "term": "Services"
+      }
+    },
+    "logo": "http://www.nhs.uk/nhscwebservices/documents/logo1.jpg",
+    "author": {
+      "name": "NHS Choices",
+      "uri": "http://www.nhs.uk",
+      "email": "webservices@nhschoices.nhs.uk"
+    },
+    "link": [
+      {
+        "$": {
+          "rel": "self",
+          "type": "application/xml",
+          "title": "NHS Choices - Services -  Croft Medical Centre",
+          "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services?apikey=apikey"
+        }
+      },
+      {
+        "$": {
+          "rel": "alternate",
+          "type": "application/xhtml+xml",
+          "title": "NHS Choices - Services -  Croft Medical Centre",
+          "href": "http://www.nhs.uk/Services/GP/PctServices/DefaultView.aspx?id=36931"
+        }
+      }
+    ],
+    "tracking": {
+      "_": "<img style=\"border: 0; width: 1px; height: 1px;\" alt=\"\" src=\"http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f17307%2fservices&amp;wt.js=no&amp;wt.cg_n=syndication\"/>",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "complete": {
+      "$": {
+        "xmlns": "http://purl.org/syndication/history/1.0"
+      }
+    },
+    "servicesUsefulLinks": {
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      },
+      "internalLinks": "",
+      "externalLinks": ""
+    },
+    "epsIsEnabled": {
+      "_": "true",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "epsDescription": {
+      "_": "\r\n\t\t\t\tThis GP offers the Electronic Prescription Service, which allows you to choose or \"nominate\" a pharmacy to get your medicines or appliances from. Your GP then sends your prescription electronically to the place you nominated. this means:\r\n\t\t\t\t<ul>\r\n\t\t\t\t<li> If you collect your repeat prescriptions from your GP you will not have to visit your GP practice to pick up your paper prescription, saving time.</li>\r\n\t\t\t\t<li>You will have more choice about where to get your medicines from because they can be collected from a pharmacy near to where you live, work or shop.</li>\r\n\t\t\t\t<li>You may not have to wait as long as your repeat prescriptions could be prepared before you arrive.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "epsLinkText": {
+      "_": "Find out more",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "epsLinkUrl": {
+      "_": "http://www.nhs.uk/NHSEngland/AboutNHSservices/pharmacists/Pages/eps.aspx",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    },
+    "epsImageUrl": {
+      "_": "http://www.nhs.uk/img/eps-nhs-logo.gif",
+      "$": {
+        "xmlns": "http://syndication.nhschoices.nhs.uk/services"
+      }
+    }
+  }
+}

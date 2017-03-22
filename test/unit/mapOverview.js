@@ -12,7 +12,8 @@ describe('overview mapper', () => {
   it('should select subset of full overview fields', () => {
     const overview = mapOverview(rawOverview);
 
-    expect(overview.name).to.equal('Croft Medical Centre');
+    expect(overview.name).to.equal('CROFT MEDICAL CENTRE');
+    expect(overview.displayName).to.equal('Croft Medical Centre');
     expect(overview.choicesId).to.equal(36931);
     // eslint-disable-next-line no-underscore-dangle
     expect(overview.choicesId).to.equal(overview._id);
