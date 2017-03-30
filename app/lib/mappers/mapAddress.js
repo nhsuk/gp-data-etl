@@ -1,7 +1,7 @@
 const utils = require('../utils');
 
-const ADDRESS_LINE = 's:addressLine';
-const POSTCODE = 's:postcode';
+const ADDRESS_LINE = 'addressLine';
+const POSTCODE = 'postcode';
 
 function createAddress(rawAddress) {
   return {

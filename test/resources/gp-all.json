@@ -111,26 +111,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Croft Medical Centre",
-            "s:odscode": "M89012",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Croft Medical Centre",
+            "odscode": "M89012",
+            "address": {
+              "addressLine": [
                 "Croft Medical centre",
                 "1 Pomeroy Way",
                 "Chelmsley Wood",
                 "Birmingham",
                 "West Midlands"
               ],
-              "s:postcode": "B37 7WB"
+              "postcode": "B37 7WB"
             },
-            "s:phone": "0121 270 7180",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.4778633117676",
-              "s:longitude": "-1.72773551940918"
+            "phone": "0121 270 7180",
+            "geographicCoordinates": {
+              "latitude": "52.4778633117676",
+              "longitude": "-1.72773551940918"
             }
           }
         }
@@ -167,26 +167,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Lea Vale Medical Group",
-            "s:odscode": "E81032",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Lea Vale Medical Group",
+            "odscode": "E81032",
+            "address": {
+              "addressLine": [
                 "Liverpool Road Health Centre",
                 "9 Mersey Place",
                 "Liverpool Road",
                 "Luton",
                 "Bedfordshire"
               ],
-              "s:postcode": "LU1 1HH"
+              "postcode": "LU1 1HH"
             },
-            "s:phone": "01582 722525",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.8816261291504",
-              "s:longitude": "-0.42301407456398"
+            "phone": "01582 722525",
+            "geographicCoordinates": {
+              "latitude": "51.8816261291504",
+              "longitude": "-0.42301407456398"
             }
           }
         }
@@ -223,25 +223,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "1 Highdown Avenue",
-            "s:odscode": "H82086",
-            "s:address": {
-              "s:addressLine": [
+            "name": "1 Highdown Avenue",
+            "odscode": "H82086",
+            "address": {
+              "addressLine": [
                 "Highdown Surgery",
                 "1 Highdown Avenue",
                 "Worthing",
                 "West Sussex"
               ],
-              "s:postcode": "BN13 1PU"
+              "postcode": "BN13 1PU"
             },
-            "s:phone": "01903 265656",
-            "s:geographicCoordinates": {
-              "s:latitude": "50.8288764953613",
-              "s:longitude": "-0.393731474876404"
+            "phone": "01903 265656",
+            "geographicCoordinates": {
+              "latitude": "50.8288764953613",
+              "longitude": "-0.393731474876404"
             }
           }
         }
@@ -278,25 +278,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "233 Wells Road",
-            "s:odscode": "L81125",
-            "s:address": {
-              "s:addressLine": [
+            "name": "233 Wells Road",
+            "odscode": "L81125",
+            "address": {
+              "addressLine": [
                 "Wells Road Surgery",
                 "233 Wells Road",
                 "Knowle",
                 "Bristol"
               ],
-              "s:postcode": "BS4 2DF"
+              "postcode": "BS4 2DF"
             },
-            "s:phone": "0117 9770018",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.4385986328125",
-              "s:longitude": "-2.57265019416809"
+            "phone": "0117 9770018",
+            "geographicCoordinates": {
+              "latitude": "51.4385986328125",
+              "longitude": "-2.57265019416809"
             }
           }
         }
@@ -333,24 +333,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "42 Abbotswood, Yate",
-            "s:odscode": "L81046",
-            "s:address": {
-              "s:addressLine": [
+            "name": "42 Abbotswood, Yate",
+            "odscode": "L81046",
+            "address": {
+              "addressLine": [
                 "The Surgery",
                 "42 Abbotswood",
                 "Yate"
               ],
-              "s:postcode": "BS37 4NG"
+              "postcode": "BS37 4NG"
             },
-            "s:phone": "01454 313577",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.5295524597168",
-              "s:longitude": "-2.42435455322266"
+            "phone": "01454 313577",
+            "geographicCoordinates": {
+              "latitude": "51.5295524597168",
+              "longitude": "-2.42435455322266"
             }
           }
         }
@@ -387,25 +387,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "58 Green End Comberton",
-            "s:odscode": "D81035",
-            "s:address": {
-              "s:addressLine": [
+            "name": "58 Green End Comberton",
+            "odscode": "D81035",
+            "address": {
+              "addressLine": [
                 "58 Green End Comberton",
                 "Comberton",
                 "Cambridge",
                 "Cambridgeshire"
               ],
-              "s:postcode": "CB23 7DY"
+              "postcode": "CB23 7DY"
             },
-            "s:phone": "01223 262500",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.189811706543",
-              "s:longitude": "0.0186288226395845"
+            "phone": "01223 262500",
+            "geographicCoordinates": {
+              "latitude": "52.189811706543",
+              "longitude": "0.0186288226395845"
             }
           }
         }
@@ -442,25 +442,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "85 Battle Road",
-            "s:odscode": "G81685",
-            "s:address": {
-              "s:addressLine": [
+            "name": "85 Battle Road",
+            "odscode": "G81685",
+            "address": {
+              "addressLine": [
                 "85 Battle Road",
                 "85 Battle Road",
                 "85 Battle Road",
                 "Hailsham"
               ],
-              "s:postcode": "BN27 1UA"
+              "postcode": "BN27 1UA"
             },
-            "s:phone": "01323 848485",
-            "s:geographicCoordinates": {
-              "s:latitude": "50.8718223571777",
-              "s:longitude": "0.262096434831619"
+            "phone": "01323 848485",
+            "geographicCoordinates": {
+              "latitude": "50.8718223571777",
+              "longitude": "0.262096434831619"
             }
           }
         }
@@ -497,25 +497,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "A Ditri",
-            "s:odscode": "H85021",
-            "s:address": {
-              "s:addressLine": [
+            "name": "A Ditri",
+            "odscode": "H85021",
+            "address": {
+              "addressLine": [
                 "Chesser Surgery",
                 "121 Wrythe Lane",
                 "Carshalton",
                 "Surrey"
               ],
-              "s:postcode": "SM5 2RT"
+              "postcode": "SM5 2RT"
             },
-            "s:phone": "020 8644 2727",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.374927520752",
-              "s:longitude": "-0.17728853225708"
+            "phone": "020 8644 2727",
+            "geographicCoordinates": {
+              "latitude": "51.374927520752",
+              "longitude": "-0.17728853225708"
             }
           }
         }
@@ -552,26 +552,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Blakenall Family Practice",
-            "s:odscode": "Y02627",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Blakenall Family Practice",
+            "odscode": "Y02627",
+            "address": {
+              "addressLine": [
                 "Blakenall Village Centre",
                 "Thames Road",
                 "Blakenall",
                 "Walsall",
                 "West Midlands"
               ],
-              "s:postcode": "WS3 1LZ"
+              "postcode": "WS3 1LZ"
             },
-            "s:phone": "01922 443729",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.6146774291992",
-              "s:longitude": "-1.9866943359375"
+            "phone": "01922 443729",
+            "geographicCoordinates": {
+              "latitude": "52.6146774291992",
+              "longitude": "-1.9866943359375"
             }
           }
         }
@@ -608,26 +608,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Great Chesterford Surgery (Branch)",
-            "s:odscode": "F81009",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Great Chesterford Surgery (Branch)",
+            "odscode": "F81009",
+            "address": {
+              "addressLine": [
                 "School Street Surgery",
                 "School Street",
                 "Great Chesterford",
                 "Saffron Walden",
                 "Essex"
               ],
-              "s:postcode": "CB10 1NN"
+              "postcode": "CB10 1NN"
             },
-            "s:phone": "01799 530950",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.063606262207",
-              "s:longitude": "0.196785435080528"
+            "phone": "01799 530950",
+            "geographicCoordinates": {
+              "latitude": "52.063606262207",
+              "longitude": "0.196785435080528"
             }
           }
         }
@@ -664,26 +664,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Dr Hart & Partners",
-            "s:odscode": "D82068",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Dr Hart & Partners",
+            "odscode": "D82068",
+            "address": {
+              "addressLine": [
                 "The Street",
                 "Marham",
                 "King's Lynn",
                 "Norfolk"
               ],
-              "s:postcode": "PE33 9HP"
+              "postcode": "PE33 9HP"
             },
-            "s:phone": "01760 337394",
-            "s:email": "darren.martin@nhs.net",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.6595726013184",
-              "s:longitude": "0.52492481470108"
+            "phone": "01760 337394",
+            "email": "darren.martin@nhs.net",
+            "geographicCoordinates": {
+              "latitude": "52.6595726013184",
+              "longitude": "0.52492481470108"
             }
           }
         }
@@ -720,24 +720,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "141 Argyle Street",
-            "s:odscode": "P86016",
-            "s:address": {
-              "s:addressLine": [
+            "name": "141 Argyle Street",
+            "odscode": "P86016",
+            "address": {
+              "addressLine": [
                 "141 Argyle Street",
                 "Heywood",
                 "Lancashire"
               ],
-              "s:postcode": "OL10 3SD"
+              "postcode": "OL10 3SD"
             },
-            "s:phone": "01706 366135",
-            "s:geographicCoordinates": {
-              "s:latitude": "53.5873756408691",
-              "s:longitude": "-2.23932003974915"
+            "phone": "01706 366135",
+            "geographicCoordinates": {
+              "latitude": "53.5873756408691",
+              "longitude": "-2.23932003974915"
             }
           }
         }
@@ -774,25 +774,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "3D Medical Centre",
-            "s:odscode": "Y00186",
-            "s:address": {
-              "s:addressLine": [
+            "name": "3D Medical Centre",
+            "odscode": "Y00186",
+            "address": {
+              "addressLine": [
                 "200 Deane Road",
                 "Bolton",
                 "Lancs"
               ],
-              "s:postcode": "BL3 5DP"
+              "postcode": "BL3 5DP"
             },
-            "s:phone": "01204 463246",
-            "s:email": "ssp-3d.medical@nhs.net",
-            "s:geographicCoordinates": {
-              "s:latitude": "53.5730476379395",
-              "s:longitude": "-2.44384479522705"
+            "phone": "01204 463246",
+            "email": "ssp-3d.medical@nhs.net",
+            "geographicCoordinates": {
+              "latitude": "53.5730476379395",
+              "longitude": "-2.44384479522705"
             }
           }
         }
@@ -829,25 +829,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "56 Melbourne St",
-            "s:odscode": "C82031",
-            "s:address": {
-              "s:addressLine": [
+            "name": "56 Melbourne St",
+            "odscode": "C82031",
+            "address": {
+              "addressLine": [
                 "Melbourne street Surgery",
                 "56 Melbourne street",
                 "Leicester",
                 "Leicestershire"
               ],
-              "s:postcode": "LE2 0AS"
+              "postcode": "LE2 0AS"
             },
-            "s:phone": "0116 253 6299",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.636344909668",
-              "s:longitude": "-1.11437559127808"
+            "phone": "0116 253 6299",
+            "geographicCoordinates": {
+              "latitude": "52.636344909668",
+              "longitude": "-1.11437559127808"
             }
           }
         }
@@ -884,24 +884,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "82 Lillie Road Surgery",
-            "s:odscode": "E85008",
-            "s:address": {
-              "s:addressLine": [
+            "name": "82 Lillie Road Surgery",
+            "odscode": "E85008",
+            "address": {
+              "addressLine": [
                 "82 Lillie Road",
                 "Fulham",
                 "London"
               ],
-              "s:postcode": "SW6 1TN"
+              "postcode": "SW6 1TN"
             },
-            "s:phone": "020 7471 2650",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.4863967895508",
-              "s:longitude": "-0.199334859848022"
+            "phone": "020 7471 2650",
+            "geographicCoordinates": {
+              "latitude": "51.4863967895508",
+              "longitude": "-0.199334859848022"
             }
           }
         }
@@ -938,25 +938,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "96 Chesterton Road",
-            "s:odscode": "D81054",
-            "s:address": {
-              "s:addressLine": [
+            "name": "96 Chesterton Road",
+            "odscode": "D81054",
+            "address": {
+              "addressLine": [
                 "The Red House Surgery",
                 "96 Chesterton Road",
                 "Cambridge",
                 "Cambs"
               ],
-              "s:postcode": "CB4 1ER"
+              "postcode": "CB4 1ER"
             },
-            "s:phone": "01223 652202",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.2149047851563",
-              "s:longitude": "0.129175961017609"
+            "phone": "01223 652202",
+            "geographicCoordinates": {
+              "latitude": "52.2149047851563",
+              "longitude": "0.129175961017609"
             }
           }
         }
@@ -993,27 +993,27 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "DERRY DOWNS SURGERY",
-            "s:odscode": "G84005",
-            "s:address": {
-              "s:addressLine": [
+            "name": "DERRY DOWNS SURGERY",
+            "odscode": "G84005",
+            "address": {
+              "addressLine": [
                 "The derry Downs Surgery",
                 "29 Derry Downs",
                 "St Mary Cray",
                 "Orpington",
                 "Kent"
               ],
-              "s:postcode": "BR5 4DU"
+              "postcode": "BR5 4DU"
             },
-            "s:phone": "01689 820036",
-            "s:email": "broccg.derrydowns@nhs.net",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.3851737976074",
-              "s:longitude": "0.116665586829185"
+            "phone": "01689 820036",
+            "email": "broccg.derrydowns@nhs.net",
+            "geographicCoordinates": {
+              "latitude": "51.3851737976074",
+              "longitude": "0.116665586829185"
             }
           }
         }
@@ -1050,27 +1050,27 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Ravensbury Park Medical Centre",
-            "s:odscode": "H85110",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Ravensbury Park Medical Centre",
+            "odscode": "H85110",
+            "address": {
+              "addressLine": [
                 "Ravensbury Park Medical Centre",
                 "Ravensbury Lane",
                 "Off Morden Road",
                 "Mitcham",
                 "Surrey"
               ],
-              "s:postcode": "CR4 4DQ"
+              "postcode": "CR4 4DQ"
             },
-            "s:phone": "020 84073927",
-            "s:email": "patientenquiriesravensburyh85110@nhs.net",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.3985786437988",
-              "s:longitude": "-0.178447410464287"
+            "phone": "020 84073927",
+            "email": "patientenquiriesravensburyh85110@nhs.net",
+            "geographicCoordinates": {
+              "latitude": "51.3985786437988",
+              "longitude": "-0.178447410464287"
             }
           }
         }
@@ -1107,24 +1107,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "1 Huntingdon Road",
-            "s:odscode": "D81002",
-            "s:address": {
-              "s:addressLine": [
+            "name": "1 Huntingdon Road",
+            "odscode": "D81002",
+            "address": {
+              "addressLine": [
                 "1 Huntingdon Road",
                 "Cambridge",
                 "Cambs"
               ],
-              "s:postcode": "CB3 0DB"
+              "postcode": "CB3 0DB"
             },
-            "s:phone": "01223 364127",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.2140350341797",
-              "s:longitude": "0.110104247927666"
+            "phone": "01223 364127",
+            "geographicCoordinates": {
+              "latitude": "52.2140350341797",
+              "longitude": "0.110104247927666"
             }
           }
         }
@@ -1161,24 +1161,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "306 Medical Centre",
-            "s:odscode": "G85091",
-            "s:address": {
-              "s:addressLine": [
+            "name": "306 Medical Centre",
+            "odscode": "G85091",
+            "address": {
+              "addressLine": [
                 "306 Lordship Lane",
                 "East Dulwich",
                 "London"
               ],
-              "s:postcode": "SE22 8LY"
+              "postcode": "SE22 8LY"
             },
-            "s:phone": "020 8693 4704",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.450740814209",
-              "s:longitude": "-0.07638830691576"
+            "phone": "020 8693 4704",
+            "geographicCoordinates": {
+              "latitude": "51.450740814209",
+              "longitude": "-0.07638830691576"
             }
           }
         }
@@ -1215,25 +1215,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "45 High Street, Sawtry",
-            "s:odscode": "D81027",
-            "s:address": {
-              "s:addressLine": [
+            "name": "45 High Street, Sawtry",
+            "odscode": "D81027",
+            "address": {
+              "addressLine": [
                 "45 High Street",
                 "Sawtry",
                 "Huntingdon",
                 "Cambs"
               ],
-              "s:postcode": "PE28 5SU"
+              "postcode": "PE28 5SU"
             },
-            "s:phone": "01487 830340",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.4403228759766",
-              "s:longitude": "-0.284764975309372"
+            "phone": "01487 830340",
+            "geographicCoordinates": {
+              "latitude": "52.4403228759766",
+              "longitude": "-0.284764975309372"
             }
           }
         }
@@ -1270,24 +1270,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "7 Brooks Medical Practice (Dr Alistair Partnership)",
-            "s:odscode": "P92652",
-            "s:address": {
-              "s:addressLine": [
+            "name": "7 Brooks Medical Practice (Dr Alistair Partnership)",
+            "odscode": "P92652",
+            "address": {
+              "addressLine": [
                 "7 Brooks Medical Practice",
                 "21 Church Street",
                 "Manchester"
               ],
-              "s:postcode": "M46 9DE"
+              "postcode": "M46 9DE"
             },
-            "s:phone": "01942 483250",
-            "s:geographicCoordinates": {
-              "s:latitude": "53.5242347717285",
-              "s:longitude": "-2.48949432373047"
+            "phone": "01942 483250",
+            "geographicCoordinates": {
+              "latitude": "53.5242347717285",
+              "longitude": "-2.48949432373047"
             }
           }
         }
@@ -1324,25 +1324,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "85 Battle Road at Deanland Clinic",
-            "s:odscode": "G81685",
-            "s:address": {
-              "s:addressLine": [
+            "name": "85 Battle Road at Deanland Clinic",
+            "odscode": "G81685",
+            "address": {
+              "addressLine": [
                 "85 Battle Road",
                 "85 Battle Road",
                 "Hailsham",
                 "East Sussex"
               ],
-              "s:postcode": "BN27 3RN"
+              "postcode": "BN27 3RN"
             },
-            "s:phone": "01323 848485",
-            "s:geographicCoordinates": {
-              "s:latitude": "50.8828010559082",
-              "s:longitude": "0.169392168521881"
+            "phone": "01323 848485",
+            "geographicCoordinates": {
+              "latitude": "50.8828010559082",
+              "longitude": "0.169392168521881"
             }
           }
         }
@@ -1379,25 +1379,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Dr N Saddiq",
-            "s:odscode": "B86001",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Dr N Saddiq",
+            "odscode": "B86001",
+            "address": {
+              "addressLine": [
                 "Morley Health Centre",
                 "Corporation Street",
                 "Morley",
                 "Leeds"
               ],
-              "s:postcode": "LS27 9NB"
+              "postcode": "LS27 9NB"
             },
-            "s:phone": "0113 2954060",
-            "s:geographicCoordinates": {
-              "s:latitude": "53.7447776794434",
-              "s:longitude": "-1.6055223941803"
+            "phone": "0113 2954060",
+            "geographicCoordinates": {
+              "latitude": "53.7447776794434",
+              "longitude": "-1.6055223941803"
             }
           }
         }
@@ -1434,25 +1434,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "Dr Hart & Partners",
-            "s:odscode": "D82068",
-            "s:address": {
-              "s:addressLine": [
+            "name": "Dr Hart & Partners",
+            "odscode": "D82068",
+            "address": {
+              "addressLine": [
                 "Howdale Road",
                 "Downham Market",
                 "Norfolk"
               ],
-              "s:postcode": "PE38 9AF"
+              "postcode": "PE38 9AF"
             },
-            "s:phone": "01366 383405",
-            "s:email": "darren.martin@nhs.net",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.6010246276855",
-              "s:longitude": "0.382187962532043"
+            "phone": "01366 383405",
+            "email": "darren.martin@nhs.net",
+            "geographicCoordinates": {
+              "latitude": "52.6010246276855",
+              "longitude": "0.382187962532043"
             }
           }
         }
@@ -1489,25 +1489,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "14 Manor Road",
-            "s:odscode": "G84008",
-            "s:address": {
-              "s:addressLine": [
+            "name": "14 Manor Road",
+            "odscode": "G84008",
+            "address": {
+              "addressLine": [
                 "The Surgery",
                 "14 Manor Road",
                 "Beckenham",
                 "Kent"
               ],
-              "s:postcode": "BR3 5LE"
+              "postcode": "BR3 5LE"
             },
-            "s:phone": "020 86500957",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.4071464538574",
-              "s:longitude": "-0.022529287263751"
+            "phone": "020 86500957",
+            "geographicCoordinates": {
+              "latitude": "51.4071464538574",
+              "longitude": "-0.022529287263751"
             }
           }
         }
@@ -1544,25 +1544,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "34 Plumstead Common Road",
-            "s:odscode": "G83026",
-            "s:address": {
-              "s:addressLine": [
+            "name": "34 Plumstead Common Road",
+            "odscode": "G83026",
+            "address": {
+              "addressLine": [
                 "34 Plumstead Common Road",
                 "Woolwich",
                 "Plumstead",
                 "London"
               ],
-              "s:postcode": "SE18 3TL"
+              "postcode": "SE18 3TL"
             },
-            "s:phone": "020-88540229",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.4819793701172",
-              "s:longitude": "0.0706208422780037"
+            "phone": "020-88540229",
+            "geographicCoordinates": {
+              "latitude": "51.4819793701172",
+              "longitude": "0.0706208422780037"
             }
           }
         }
@@ -1599,24 +1599,24 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "54 Benhill Avenue",
-            "s:odscode": "H85031",
-            "s:address": {
-              "s:addressLine": [
+            "name": "54 Benhill Avenue",
+            "odscode": "H85031",
+            "address": {
+              "addressLine": [
                 "54 Benhill Avenue",
                 "Sutton",
                 "Surrey"
               ],
-              "s:postcode": "SM1 4EB"
+              "postcode": "SM1 4EB"
             },
-            "s:phone": "020 86428011",
-            "s:geographicCoordinates": {
-              "s:latitude": "51.3666038513184",
-              "s:longitude": "-0.190275356173515"
+            "phone": "020 86428011",
+            "geographicCoordinates": {
+              "latitude": "51.3666038513184",
+              "longitude": "-0.190275356173515"
             }
           }
         }
@@ -1653,25 +1653,25 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "71A Woodhouse Hill",
-            "s:odscode": "B85048",
-            "s:address": {
-              "s:addressLine": [
+            "name": "71A Woodhouse Hill",
+            "odscode": "B85048",
+            "address": {
+              "addressLine": [
                 "Woodhouse Hill",
                 "Fartown",
                 "Huddersfield",
                 "Kirklees"
               ],
-              "s:postcode": "HD2 1DH"
+              "postcode": "HD2 1DH"
             },
-            "s:phone": "01484 533833",
-            "s:geographicCoordinates": {
-              "s:latitude": "53.6668128967285",
-              "s:longitude": "-1.77135825157166"
+            "phone": "01484 533833",
+            "geographicCoordinates": {
+              "latitude": "53.6668128967285",
+              "longitude": "-1.77135825157166"
             }
           }
         }
@@ -1708,26 +1708,26 @@
           "$": {
             "type": "application/xml"
           },
-          "s:organisationSummary": {
+          "organisationSummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:name": "94 Burghley Road",
-            "s:odscode": "Y02631",
-            "s:address": {
-              "s:addressLine": [
+            "name": "94 Burghley Road",
+            "odscode": "Y02631",
+            "address": {
+              "addressLine": [
                 "94 Burghley Road",
                 "Peterborough",
                 "Peterborough",
                 "Cambridgeshire",
                 "England - Uk"
               ],
-              "s:postcode": "PE1 2QE"
+              "postcode": "PE1 2QE"
             },
-            "s:phone": "01733 346085",
-            "s:geographicCoordinates": {
-              "s:latitude": "52.5810241699219",
-              "s:longitude": "-0.242599815130234"
+            "phone": "01733 346085",
+            "geographicCoordinates": {
+              "latitude": "52.5810241699219",
+              "longitude": "-0.242599815130234"
             }
           }
         }

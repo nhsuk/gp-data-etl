@@ -1,6 +1,6 @@
 const utils = require('../utils');
 
-const GP_COUNT = 's:gpcount';
+const GP_COUNT = 'gpcount';
 
 function countSectionValid(rawCounts) {
   return rawCounts && rawCounts[GP_COUNT];

@@ -1,15 +1,15 @@
 const utils = require('../utils');
 
-const FACILITIES = 's:facilities';
-const FACILITY_GROUPS = 's:facilityGroups';
-const FACILITY_GROUP = 's:facilityGroup';
-const FACILITY_LIST = 's:facilityList';
-const FACILITY = 's:facility';
-const NAME = 's:name';
-const EXISTS = 's:facilityExists';
+const FACILITIES = 'facilities';
+const FACILITY_GROUPS = 'facilityGroups';
+const FACILITY_GROUP = 'facilityGroup';
+const FACILITY_LIST = 'facilityList';
+const FACILITY = 'facility';
+const NAME = 'name';
+const EXISTS = 'facilityExists';
 
 function getFacilityGroup(groups, name) {
-  return groups.find(g => g['s:name'] === name);
+  return groups.find(g => g.name === name);
 }
 
 function mapFacility(facility) {

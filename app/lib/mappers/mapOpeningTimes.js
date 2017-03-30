@@ -1,14 +1,14 @@
 const utils = require('../utils');
 
-const SESSION_TYPES = 's:timesSessionTypes';
-const SESSION_TYPE = 's:timesSessionType';
-const DAYS_OF_WEEK = 's:daysOfWeek';
-const DAY_OF_WEEK = 's:dayOfWeek';
-const DAY_NAME = 's:dayName';
-const TIMES_SESSION = 's:timesSession';
-const TIMES_SESSIONS = 's:timesSessions';
-const FROM_TIME = 's:fromTime';
-const TO_TIME = 's:toTime';
+const SESSION_TYPES = 'timesSessionTypes';
+const SESSION_TYPE = 'timesSessionType';
+const DAYS_OF_WEEK = 'daysOfWeek';
+const DAY_OF_WEEK = 'dayOfWeek';
+const DAY_NAME = 'dayName';
+const TIMES_SESSION = 'timesSession';
+const TIMES_SESSIONS = 'timesSessions';
+const FROM_TIME = 'fromTime';
+const TO_TIME = 'toTime';
 
 function getSessionType(sessions, type) {
   // eslint-disable-next-line arrow-body-style

@@ -122,27 +122,27 @@
           "$": {
             "type": "application/xml"
           },
-          "s:servicesummary": {
+          "servicesummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:type": {
+            "type": {
               "_": "Service 1",
               "$": {
                 "code": "SRV01"
               }
             },
-            "s:serviceBranchAvailabilityTimes": {
-              "s:text": "times"
+            "serviceBranchAvailabilityTimes": {
+              "text": "times"
             },
-            "s:serviceIntroduction": {
-              "s:text": "Intro 1"
+            "serviceIntroduction": {
+              "text": "Intro 1"
             },
-            "s:serviceGpReferralRequired": {
-              "s:text": "False"
+            "serviceGpReferralRequired": {
+              "text": "False"
             },
-            "s:serviceDeliverer": {
-              "s:name": "Croft Medical Centre"
+            "serviceDeliverer": {
+              "name": "Croft Medical Centre"
             }
           }
         }
@@ -168,27 +168,27 @@
           "$": {
             "type": "application/xml"
           },
-          "s:servicesummary": {
+          "servicesummary": {
             "$": {
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
-            "s:type": {
+            "type": {
               "_": "Service 2",
               "$": {
                 "code": "SRV02"
               }
             },
-            "s:serviceBranchAvailabilityTimes": {
-              "s:text": "times 2"
+            "serviceBranchAvailabilityTimes": {
+              "text": "times 2"
             },
-            "s:serviceIntroduction": {
-              "s:text": "Intro 2"
+            "serviceIntroduction": {
+              "text": "Intro 2"
             },
-            "s:serviceGpReferralRequired": {
-              "s:text": "True"
+            "serviceGpReferralRequired": {
+              "text": "True"
             },
-            "s:serviceDeliverer": {
-              "s:name": " Croft Medical Centre"
+            "serviceDeliverer": {
+              "name": " Croft Medical Centre"
             }
           }
         }

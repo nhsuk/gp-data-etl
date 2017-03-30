@@ -6,14 +6,14 @@ const expect = chai.expect;
 describe('Address mapper', () => {
   it('should map address and postcode', () => {
     const rawAddress = {
-      's:addressLine': [
+      addressLine: [
         'Croft Medical centre',
         '1 Pomeroy Way',
         'Chelmsley Wood',
         'Birmingham',
         'West Midlands',
       ],
-      's:postcode': 'B37 7WB',
+      postcode: 'B37 7WB',
     };
 
     const address = mapAddress(rawAddress);

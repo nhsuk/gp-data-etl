@@ -1,5 +1,5 @@
-const LATITUDE = 's:latitude';
-const LONGITUDE = 's:longitude';
+const LATITUDE = 'latitude';
+const LONGITUDE = 'longitude';
 
 function createLocation(coordinates) {
   return {

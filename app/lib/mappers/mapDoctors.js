@@ -1,6 +1,6 @@
 const utils = require('../utils');
 
-const DOCTOR = 's:doctor';
+const DOCTOR = 'doctor';
 
 function mapDoctors(rawDoctors) {
   return rawDoctors ? utils.asArray(rawDoctors[DOCTOR]) : [];

@@ -6,10 +6,7 @@ const expect = chai.expect;
 describe('Doctors mapper', () => {
   it('should map array of doctors', () => {
     const rawDoctors = {
-      's:doctor': [
-        'Dr Manhattan',
-        'Dr Strange',
-      ],
+      doctor: ['Dr Manhattan', 'Dr Strange'],
     };
     const doctors = mapDoctors(rawDoctors);
     // eslint-disable-next-line no-unused-expressions
@@ -20,7 +17,7 @@ describe('Doctors mapper', () => {
   });
 
   it('should map field of doctors', () => {
-    const rawDoctors = { 's:doctor': 'Dr Strange' };
+    const rawDoctors = { doctor: 'Dr Strange' };
     const doctors = mapDoctors(rawDoctors);
     // eslint-disable-next-line no-unused-expressions
     expect(doctors).to.exist;
@@ -44,7 +41,7 @@ describe('Doctors mapper', () => {
   });
 
   it('should gracefully handle empty doctors field', () => {
-    const rawDoctors = { 's:doctor': undefined };
+    const rawDoctors = { doctor: undefined };
     const doctors = mapDoctors(rawDoctors);
     // eslint-disable-next-line no-unused-expressions
     expect(doctors).to.exist;

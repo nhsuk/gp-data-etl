@@ -87,49 +87,49 @@
         "$": {
           "type": "application/xml"
         },
-        "s:facilities": {
+        "facilities": {
           "$": {
             "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
           },
-          "s:organisationId": "37301",
-          "s:organisationName": "Abbey Medical Centre Barking ",
-          "s:facilityGroups": {
-            "s:facilityGroup": [
+          "organisationId": "37301",
+          "organisationName": "Abbey Medical Centre Barking ",
+          "facilityGroups": {
+            "facilityGroup": [
               {
-                "s:name": "Accessibility",
-                "s:facilityList": {
-                  "s:facility": [
+                "name": "Accessibility",
+                "facilityList": {
+                  "facility": [
                     {
-                      "s:name": "Wheelchair access",
-                      "s:facilityExists": "Yes"
+                      "name": "Wheelchair access",
+                      "facilityExists": "Yes"
                     },
                     {
-                      "s:name": "Step free access",
-                      "s:facilityExists": "Yes"
+                      "name": "Step free access",
+                      "facilityExists": "Yes"
                     },
                     {
-                      "s:name": "Disabled WC",
-                      "s:facilityExists": "Yes"
+                      "name": "Disabled WC",
+                      "facilityExists": "Yes"
                     },
                     {
-                      "s:name": "Braille translation service",
-                      "s:facilityExists": "NotSpecified"
+                      "name": "Braille translation service",
+                      "facilityExists": "NotSpecified"
                     },
                     {
-                      "s:name": "Disabled parking",
-                      "s:facilityExists": "NotSpecified"
+                      "name": "Disabled parking",
+                      "facilityExists": "NotSpecified"
                     },
                     {
-                      "s:name": "Induction loop",
-                      "s:facilityExists": "NotSpecified"
+                      "name": "Induction loop",
+                      "facilityExists": "NotSpecified"
                     },
                     {
-                      "s:name": "RNID typetalk",
-                      "s:facilityExists": "NotSpecified"
+                      "name": "RNID typetalk",
+                      "facilityExists": "NotSpecified"
                     },
                     {
-                      "s:name": "Signing service available",
-                      "s:facilityExists": "NotSpecified"
+                      "name": "Signing service available",
+                      "facilityExists": "NotSpecified"
                     }
                   ]
                 }

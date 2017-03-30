@@ -7,19 +7,19 @@ const mapGpCounts = require('./mapGpCounts');
 const mapDoctors = require('./mapDoctors');
 const properCapitalize = require('../properCapitalize');
 
-const OVERVIEW = 's:overview';
-const NAME = 's:name';
-const ODS_CODE = 's:odsCode';
-const ADDRESS = 's:address';
-const COORDINATES = 's:geographicCoordinates';
-const CONTACT = 's:contact';
-const OPENING_TIMES = 's:openingTimes';
-const GP_COUNTS = 's:gpcounts';
-const DOCTORS = 's:doctors';
-const TELEPHONE = 's:telephone';
-const FAX = 's:fax';
-const EMAIL = 's:email';
-const WEBSITE = 's:website';
+const OVERVIEW = 'overview';
+const NAME = 'name';
+const ODS_CODE = 'odsCode';
+const ADDRESS = 'address';
+const COORDINATES = 'geographicCoordinates';
+const CONTACT = 'contact';
+const OPENING_TIMES = 'openingTimes';
+const GP_COUNTS = 'gpcounts';
+const DOCTORS = 'doctors';
+const TELEPHONE = 'telephone';
+const FAX = 'fax';
+const EMAIL = 'email';
+const WEBSITE = 'website';
 
 function matchAltHref(link) {
   return link.$ && link.$.rel === 'alternate';

@@ -2,14 +2,14 @@ const utils = require('../utils');
 
 const EPS_ENABLED = 'epsIsEnabled';
 const MORE_INFORMATION = 'servicesMoreInformationText';
-const TEXT = 's:text';
-const TYPE = 's:type';
-const SUMMARY = 's:servicesummary';
-const AVAILABILITY_TIMES = 's:serviceBranchAvailabilityTimes';
-const INTRODUCTION = 's:serviceIntroduction';
-const GP_REFERRAL_REQUIRED = 's:serviceGpReferralRequired';
-const DELIVERER = 's:serviceDeliverer';
-const NAME = 's:name';
+const TEXT = 'text';
+const TYPE = 'type';
+const SUMMARY = 'servicesummary';
+const AVAILABILITY_TIMES = 'serviceBranchAvailabilityTimes';
+const INTRODUCTION = 'serviceIntroduction';
+const GP_REFERRAL_REQUIRED = 'serviceGpReferralRequired';
+const DELIVERER = 'serviceDeliverer';
+const NAME = 'name';
 
 function getText(member) {
   return member && member[TEXT];
