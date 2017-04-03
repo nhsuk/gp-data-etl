@@ -1,18 +1,15 @@
-const LATITUDE = 'latitude';
-const LONGITUDE = 'longitude';
-
 function createLocation(coordinates) {
   return {
     type: 'Point',
     coordinates: [
-      Number(coordinates[LONGITUDE]),
-      Number(coordinates[LATITUDE]),
+      Number(coordinates.longitude),
+      Number(coordinates.latitude),
     ],
   };
 }
 
 function locationValid(coordinates) {
-  return coordinates && coordinates[LATITUDE] && coordinates[LONGITUDE];
+  return coordinates && coordinates.latitude && coordinates.longitude;
 }
 
 function mapLocation(coordinates) {

@@ -1,42 +1,34 @@
 const utils = require('../utils');
 
-const FACILITIES = 'facilities';
-const FACILITY_GROUPS = 'facilityGroups';
-const FACILITY_GROUP = 'facilityGroup';
-const FACILITY_LIST = 'facilityList';
-const FACILITY = 'facility';
-const NAME = 'name';
-const EXISTS = 'facilityExists';
-
 function getFacilityGroup(groups, name) {
   return groups.find(g => g.name === name);
 }
 
 function mapFacility(facility) {
   return {
-    name: facility[NAME],
-    exists: facility[EXISTS],
+    name: facility.name,
+    exists: facility.facilityExists,
   };
 }
 
 function getFacilities(groups, name) {
   const group = getFacilityGroup(groups, name);
-  if (group && group[FACILITY_LIST] && group[FACILITY_LIST][FACILITY]) {
-    return utils.asArray(group[FACILITY_LIST][FACILITY]).map(mapFacility);
+  if (group && group.facilityList && group.facilityList.facility) {
+    return utils.asArray(group.facilityList.facility).map(mapFacility);
   }
   return undefined;
 }
 
 function getFacilityGroups(facilities) {
-  return utils.asArray(facilities[FACILITY_GROUPS][FACILITY_GROUP]);
+  return utils.asArray(facilities.facilityGroups.facilityGroup);
 }
 
 function facilitiesValid(facilities) {
-  return facilities && facilities[FACILITY_GROUPS] && facilities[FACILITY_GROUPS][FACILITY_GROUP];
+  return facilities && facilities.facilityGroups && facilities.facilityGroups.facilityGroup;
 }
 
 function mapFacilities(rawFacilities) {
-  const facilities = rawFacilities.feed.entry.content[FACILITIES];
+  const facilities = rawFacilities.feed.entry.content.facilities;
   if (facilitiesValid(facilities)) {
     const facilityGroups = getFacilityGroups(facilities);
     return {

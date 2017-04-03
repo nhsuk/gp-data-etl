@@ -127,7 +127,33 @@
                 }
             ],
             "saturday": []
+        },
+        "alterations": [
+        {
+          "date": "2014-05-05",
+          "sessions": []
+        },
+        {
+          "date": "2014-05-26",
+          "sessions": []
+        },
+        {
+          "date": "2014-08-25",
+          "sessions": []
+        },
+        {
+          "date": "2014-12-25",
+          "sessions": []
+        },
+        {
+          "date": "2014-12-26",
+          "sessions": []
+        },
+        {
+          "date": "2015-01-01",
+          "sessions": []
         }
+      ]
     },
     "gpCounts": {
         "male": 3,
@@ -140,6 +166,7 @@
         "Dr Andrew Ward",
         "Dr Suzanne Lane"
     ],
+    "acceptingNewPatients": true,
     "facilities": {
         "parking": [
             {

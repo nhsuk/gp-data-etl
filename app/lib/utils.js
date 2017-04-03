@@ -16,8 +16,18 @@ function emptyObjectToUndefined(gpCounts) {
   return Object.keys(gpCounts).length > 0 ? gpCounts : undefined;
 }
 
+function getAttribute(member, field) {
+  return member && member.$ && member.$[field];
+}
+
+function getBooleanAttribute(member, field) {
+  return toBoolean(getAttribute(member, field));
+}
+
 module.exports = {
   asArray,
   emptyObjectToUndefined,
   toBoolean,
+  getAttribute,
+  getBooleanAttribute,
 };

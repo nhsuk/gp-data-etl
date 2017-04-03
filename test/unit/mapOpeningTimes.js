@@ -11,6 +11,7 @@ describe('opening times mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(openingTimes).to.be.empty;
   });
+
   it('should gracefully handle missing daysOfWeek times section', () => {
     const openingTimes = mapOpeningTimes({});
     // eslint-disable-next-line no-unused-expressions

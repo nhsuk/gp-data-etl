@@ -1,0 +1,182 @@
+{
+    "timesSessionTypes": {
+        "timesSessionType": [
+            {
+                "$": {
+                    "sessionType": "reception"
+                },
+                "daysOfWeek": {
+                    "dayOfWeek": [
+                        {
+                            "dayName": "Sunday",
+                            "timesSessions": {
+                                "timesSession": "Closed"
+                            }
+                        },
+                        {
+                            "dayName": "Monday",
+                            "timesSessions": {
+                                "timesSession": {
+                                    "fromTime": "08:00",
+                                    "toTime": "18:30"
+                                }
+                            }
+                        },
+                        {
+                            "dayName": "Tuesday",
+                            "timesSessions": {
+                                "timesSession": {
+                                    "fromTime": "08:00",
+                                    "toTime": "18:30"
+                                }
+                            }
+                        },
+                        {
+                            "dayName": "Wednesday",
+                            "timesSessions": {
+                                "timesSession": {
+                                    "fromTime": "08:00",
+                                    "toTime": "18:30"
+                                }
+                            }
+                        },
+                        {
+                            "dayName": "Thursday",
+                            "timesSessions": {
+                                "timesSession": {
+                                    "fromTime": "08:00",
+                                    "toTime": "18:30"
+                                }
+                            }
+                        },
+                        {
+                            "dayName": "Friday",
+                            "timesSessions": {
+                                "timesSession": {
+                                    "fromTime": "08:00",
+                                    "toTime": "18:30"
+                                }
+                            }
+                        },
+                        {
+                            "dayName": "Saturday",
+                            "timesSessions": {
+                                "timesSession": "Closed"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "$": {
+                    "sessionType": "surgery"
+                },
+                "daysOfWeek": {
+                    "dayOfWeek": [
+                        {
+                            "dayName": "Sunday",
+                            "timesSessions": {
+                                "timesSession": "Closed"
+                            }
+                        },
+                        {
+                            "dayName": "Monday",
+                            "timesSessions": {
+                                "timesSession": [
+                                    {
+                                        "fromTime": "08:30",
+                                        "toTime": "12:00"
+                                    },
+                                    {
+                                        "fromTime": "15:00",
+                                        "toTime": "18:15"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "dayName": "Tuesday",
+                            "timesSessions": {
+                                "timesSession": [
+                                    {
+                                        "fromTime": "08:30",
+                                        "toTime": "12:30"
+                                    },
+                                    {
+                                        "fromTime": "15:00",
+                                        "toTime": "18:15"
+                                    },
+                                    {
+                                        "fromTime": "18:30",
+                                        "toTime": "19:45"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "dayName": "Wednesday",
+                            "timesSessions": {
+                                "timesSession": [
+                                    {
+                                        "fromTime": "08:30",
+                                        "toTime": "12:00"
+                                    },
+                                    {
+                                        "fromTime": "15:00",
+                                        "toTime": "18:15"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "dayName": "Thursday",
+                            "timesSessions": {
+                                "timesSession": [
+                                    {
+                                        "fromTime": "08:30",
+                                        "toTime": "12:30"
+                                    },
+                                    {
+                                        "fromTime": "15:00",
+                                        "toTime": "18:15"
+                                    },
+                                    {
+                                        "fromTime": "18:30",
+                                        "toTime": "19:30"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "dayName": "Friday",
+                            "timesSessions": {
+                                "timesSession": [
+                                    {
+                                        "fromTime": "08:30",
+                                        "toTime": "12:30"
+                                    },
+                                    {
+                                        "fromTime": "15:00",
+                                        "toTime": "18:15"
+                                    },
+                                    {
+                                        "fromTime": "18:30",
+                                        "toTime": "19:00"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "dayName": "Saturday",
+                            "timesSessions": {
+                                "timesSession": "Closed"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "outOfHours": "<p>Ring the normal&nbsp;surgery number for our Out Of Hours advice contact&nbsp;number.</p>",
+    "lastVerifiedOn": "2014-04-29 09:56:50Z"
+}

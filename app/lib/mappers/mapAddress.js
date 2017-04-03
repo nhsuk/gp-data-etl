@@ -1,17 +1,14 @@
 const utils = require('../utils');
 
-const ADDRESS_LINE = 'addressLine';
-const POSTCODE = 'postcode';
-
 function createAddress(rawAddress) {
   return {
-    addressLines: utils.asArray(rawAddress[ADDRESS_LINE]),
-    postcode: rawAddress[POSTCODE],
+    addressLines: utils.asArray(rawAddress.addressLine),
+    postcode: rawAddress.postcode,
   };
 }
 
 function addressValid(rawAddress) {
-  return rawAddress && rawAddress[ADDRESS_LINE] && rawAddress[POSTCODE];
+  return rawAddress && rawAddress.addressLine && rawAddress.postcode;
 }
 
 function mapAddress(rawAddress) {

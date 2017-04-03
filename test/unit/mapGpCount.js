@@ -27,13 +27,13 @@ describe('GP Counts mapper', () => {
   });
 
   it('should gracefully handle missing $', () => {
-    const counts = mapGpCounts({ 's:gpcount': [{}] });
+    const counts = mapGpCounts({ gpcount: [{}] });
     // eslint-disable-next-line no-unused-expressions
     expect(counts).to.be.undefined;
   });
 
   it('should gracefully handle missing type', () => {
-    const counts = mapGpCounts({ 's:gpcount': [{ $: {} }] });
+    const counts = mapGpCounts({ gpcount: [{ $: {} }] });
     // eslint-disable-next-line no-unused-expressions
     expect(counts).to.be.undefined;
   });

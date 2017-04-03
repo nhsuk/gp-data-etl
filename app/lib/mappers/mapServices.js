@@ -1,18 +1,7 @@
 const utils = require('../utils');
 
-const EPS_ENABLED = 'epsIsEnabled';
-const MORE_INFORMATION = 'servicesMoreInformationText';
-const TEXT = 'text';
-const TYPE = 'type';
-const SUMMARY = 'servicesummary';
-const AVAILABILITY_TIMES = 'serviceBranchAvailabilityTimes';
-const INTRODUCTION = 'serviceIntroduction';
-const GP_REFERRAL_REQUIRED = 'serviceGpReferralRequired';
-const DELIVERER = 'serviceDeliverer';
-const NAME = 'name';
-
 function getText(member) {
-  return member && member[TEXT];
+  return member && member.text;
 }
 
 function getUnderscore(member) {
@@ -24,34 +13,34 @@ function epsEnabled(eps) {
 }
 
 function getCode(type) {
-  return type && type.$ && type.$.code;
+  return utils.getAttribute(type, 'code');
 }
 
 function getDeliverer(deliverer) {
-  return deliverer && deliverer[NAME];
+  return deliverer && deliverer.name;
 }
 
 function mapEntryToService(entry) {
-  const summary = entry.content[SUMMARY];
+  const summary = entry.content.servicesummary;
   return {
-    title: getUnderscore(summary[TYPE]),
-    code: getCode(summary[TYPE]),
-    availabilityTimes: getText(summary[AVAILABILITY_TIMES]),
-    introduction: getText(summary[INTRODUCTION]),
-    gpReferralRequired: utils.toBoolean(getText(summary[GP_REFERRAL_REQUIRED])),
-    deliverer: getDeliverer(summary[DELIVERER]),
+    title: getUnderscore(summary.type),
+    code: getCode(summary.type),
+    availabilityTimes: getText(summary.serviceBranchAvailabilityTimes),
+    introduction: getText(summary.serviceIntroduction),
+    gpReferralRequired: utils.toBoolean(getText(summary.serviceGpReferralRequired)),
+    deliverer: getDeliverer(summary.serviceDeliverer),
   };
 }
 
 function getValidEntries(rawServices) {
   return utils.asArray(rawServices.feed.entry)
-              .filter(entry => entry.content && entry.content[SUMMARY]);
+              .filter(entry => entry.content && entry.content.servicesummary);
 }
 
 function mapServices(rawServices) {
   return {
-    epsEnabled: epsEnabled(rawServices.feed[EPS_ENABLED]),
-    moreInformation: getUnderscore(rawServices.feed[MORE_INFORMATION]),
+    epsEnabled: epsEnabled(rawServices.feed.epsIsEnabled),
+    moreInformation: getUnderscore(rawServices.feed.servicesMoreInformationText),
     entries: getValidEntries(rawServices).map(mapEntryToService),
   };
 }
