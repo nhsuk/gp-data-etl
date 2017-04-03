@@ -28,7 +28,7 @@ function dayValid(dayOfWeek) {
 
 function mapDates(rawTimes) {
   // eslint-disable-next-line arrow-body-style
-  return rawTimes.additionalDay.map((day) => {
+  return utils.asArray(rawTimes.additionalDay).map((day) => {
     return {
       date: day.date,
       sessions: getSessions(day.timesSessions),
