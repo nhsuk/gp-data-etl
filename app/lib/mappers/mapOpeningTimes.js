@@ -26,14 +26,17 @@ function dayValid(dayOfWeek) {
   return dayOfWeek && dayOfWeek.dayName && dayOfWeek.timesSessions;
 }
 
+function mapDate(alterations, day) {
+  if (day.date && day.timesSessions) {
+    // eslint-disable-next-line no-param-reassign
+    alterations[day.date] = getSessions(day.timesSessions);
+  }
+  return alterations;
+}
+
 function mapDates(rawTimes) {
   // eslint-disable-next-line arrow-body-style
-  return utils.asArray(rawTimes.additionalDay).map((day) => {
-    return {
-      date: day.date,
-      sessions: getSessions(day.timesSessions),
-    };
-  });
+  return utils.asArray(rawTimes.additionalDay).reduce(mapDate, {});
 }
 
 function mapDaysOfWeek(rawTimes) {

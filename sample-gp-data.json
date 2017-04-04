@@ -3,7 +3,7 @@
     "choicesId": 36584,
     "syndicationId": 14696,
     "name": "Abbotsbury Road Practice",
-    "displayName" : "Abbotsbury Road Practice",
+    "displayName": "Abbotsbury Road Practice",
     "odsCode": "J81055",
     "address": {
         "addressLines": [
@@ -128,32 +128,17 @@
             ],
             "saturday": []
         },
-        "alterations": [
-        {
-          "date": "2014-05-05",
-          "sessions": []
-        },
-        {
-          "date": "2014-05-26",
-          "sessions": []
-        },
-        {
-          "date": "2014-08-25",
-          "sessions": []
-        },
-        {
-          "date": "2014-12-25",
-          "sessions": []
-        },
-        {
-          "date": "2014-12-26",
-          "sessions": []
-        },
-        {
-          "date": "2015-01-01",
-          "sessions": []
+        "alterations": {
+            "2013-12-24": [
+                {
+                    "opens": "08:00",
+                    "closes": "12:30"
+                }
+            ],
+            "2013-12-25": [],
+            "2013-12-26": [],
+            "2014-01-01": []
         }
-      ]
     },
     "gpCounts": {
         "male": 3,
