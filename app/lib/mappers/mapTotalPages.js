@@ -1,13 +1,14 @@
 const urlParser = require('../urlParser');
+const utils = require('../utils');
 
 function matchLastPage(link) {
-  return link.$ && link.$.rel === 'last';
+  return utils.getAttribute(link, 'rel') === 'last';
 }
 
 function getTotalPages(links) {
-  const lastPageUrl = links.find(matchLastPage);
-  if (lastPageUrl) {
-    return urlParser.getPageCount(lastPageUrl.$.href);
+  const lastPageLink = links.find(matchLastPage);
+  if (lastPageLink) {
+    return urlParser.getPageCount(utils.getAttribute(lastPageLink, 'href'));
   }
   throw new Error('Could not get page count');
 }

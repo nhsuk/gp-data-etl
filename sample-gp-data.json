@@ -3,7 +3,7 @@
     "choicesId": 36584,
     "syndicationId": 14696,
     "name": "Abbotsbury Road Practice",
-    "displayName" : "Abbotsbury Road Practice",
+    "displayName": "Abbotsbury Road Practice",
     "odsCode": "J81055",
     "address": {
         "addressLines": [
@@ -127,6 +127,17 @@
                 }
             ],
             "saturday": []
+        },
+        "alterations": {
+            "2013-12-24": [
+                {
+                    "opens": "08:00",
+                    "closes": "12:30"
+                }
+            ],
+            "2013-12-25": [],
+            "2013-12-26": [],
+            "2014-01-01": []
         }
     },
     "gpCounts": {
@@ -140,6 +151,7 @@
         "Dr Andrew Ward",
         "Dr Suzanne Lane"
     ],
+    "acceptingNewPatients": true,
     "facilities": {
         "parking": [
             {

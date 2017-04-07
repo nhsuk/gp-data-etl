@@ -87,12 +87,12 @@
         "$": {
           "type": "application/xml"
         },
-        "s:facilities": {
+        "facilities": {
           "$": {
             "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
           },
-          "s:organisationId": "37301",
-          "s:organisationName": "Abbey Medical Centre Barking "
+          "organisationId": "37301",
+          "organisationName": "Abbey Medical Centre Barking "
         }
       }
     }

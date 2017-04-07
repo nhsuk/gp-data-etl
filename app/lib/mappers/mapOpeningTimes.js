@@ -1,31 +1,21 @@
 const utils = require('../utils');
 
-const SESSION_TYPES = 's:timesSessionTypes';
-const SESSION_TYPE = 's:timesSessionType';
-const DAYS_OF_WEEK = 's:daysOfWeek';
-const DAY_OF_WEEK = 's:dayOfWeek';
-const DAY_NAME = 's:dayName';
-const TIMES_SESSION = 's:timesSession';
-const TIMES_SESSIONS = 's:timesSessions';
-const FROM_TIME = 's:fromTime';
-const TO_TIME = 's:toTime';
-
 function getSessionType(sessions, type) {
   // eslint-disable-next-line arrow-body-style
   return sessions.find((session) => {
-    return session && session.$ && session.$.sessionType === type;
+    return utils.getAttribute(session, 'sessionType') === type;
   });
 }
 
 function getSession(session) {
   return {
-    opens: session[FROM_TIME],
-    closes: session[TO_TIME],
+    opens: session.fromTime,
+    closes: session.toTime,
   };
 }
 
 function getSessions(session) {
-  const timesSessions = session[TIMES_SESSION];
+  const timesSessions = session.timesSession;
   if (!timesSessions || timesSessions === 'Closed') {
     return [];
   }
@@ -33,42 +23,64 @@ function getSessions(session) {
 }
 
 function dayValid(dayOfWeek) {
-  return dayOfWeek && dayOfWeek[DAY_NAME] && dayOfWeek[TIMES_SESSIONS];
+  return dayOfWeek && dayOfWeek.dayName && dayOfWeek.timesSessions;
+}
+
+function mapDate(alterations, day) {
+  if (day.date && day.timesSessions) {
+    // eslint-disable-next-line no-param-reassign
+    alterations[day.date] = getSessions(day.timesSessions);
+  }
+  return alterations;
+}
+
+function mapDates(rawTimes) {
+  // eslint-disable-next-line arrow-body-style
+  return utils.asArray(rawTimes.additionalDay).reduce(mapDate, {});
 }
 
 function mapDaysOfWeek(rawTimes) {
-  const daysOfWeek = rawTimes[DAYS_OF_WEEK][DAY_OF_WEEK];
+  const daysOfWeek = rawTimes.daysOfWeek.dayOfWeek;
   const openingTimes = {};
 
   daysOfWeek.forEach((dayOfWeek) => {
     if (dayValid(dayOfWeek)) {
-      const dayName = dayOfWeek[DAY_NAME].toLowerCase();
-      openingTimes[dayName] = getSessions(dayOfWeek[TIMES_SESSIONS]);
+      const dayName = dayOfWeek.dayName.toLowerCase();
+      openingTimes[dayName] = getSessions(dayOfWeek.timesSessions);
     }
   });
 
   return openingTimes;
 }
 
+function dateValid(rawTimes) {
+  return rawTimes && rawTimes.additionalDay;
+}
+
 function openingTimeValid(rawTimes) {
-  return rawTimes && rawTimes[DAYS_OF_WEEK] &&
-    rawTimes[DAYS_OF_WEEK][DAY_OF_WEEK];
+  return rawTimes && rawTimes.daysOfWeek &&
+    rawTimes.daysOfWeek.dayOfWeek;
 }
 
 function mapOpeningTimes(rawTimes) {
   return openingTimeValid(rawTimes) ? mapDaysOfWeek(rawTimes) : undefined;
 }
 
+function mapAltOpeningTimes(rawTimes) {
+  return dateValid(rawTimes) ? mapDates(rawTimes) : undefined;
+}
+
 function sessionTypesValid(openingTimes) {
-  return openingTimes && openingTimes[SESSION_TYPES] &&
-         openingTimes[SESSION_TYPES][SESSION_TYPE];
+  return openingTimes && openingTimes.timesSessionTypes &&
+    openingTimes.timesSessionTypes.timesSessionType;
 }
 
 function createAll(openingTimes) {
-  const sessions = openingTimes[SESSION_TYPES][SESSION_TYPE];
+  const sessions = openingTimes.timesSessionTypes.timesSessionType;
   return {
     reception: mapOpeningTimes(getSessionType(sessions, 'reception')),
     surgery: mapOpeningTimes(getSessionType(sessions, 'surgery')),
+    alterations: mapAltOpeningTimes(getSessionType(sessions, 'additional')),
   };
 }
 

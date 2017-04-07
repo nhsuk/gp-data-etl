@@ -1,7 +1,10 @@
 const xml2js = require('xml2js');
+const stripPrefix = require('xml2js').processors.stripPrefix;
+const parseBooleans = require('xml2js').processors.parseBooleans;
 
 const PARSER_OPTIONS = {
   explicitArray: false,
+  tagNameProcessors: [stripPrefix, parseBooleans],
 };
 
 function createParser() {

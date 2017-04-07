@@ -11,6 +11,7 @@ describe('opening times mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(openingTimes).to.be.empty;
   });
+
   it('should gracefully handle missing daysOfWeek times section', () => {
     const openingTimes = mapOpeningTimes({});
     // eslint-disable-next-line no-unused-expressions
@@ -18,15 +19,15 @@ describe('opening times mapper', () => {
   });
 
   it('should gracefully handle missing dayOfWeek section', () => {
-    const openingTimes = mapOpeningTimes({ 's:daysOfWeek': {} });
+    const openingTimes = mapOpeningTimes({ daysOfWeek: {} });
     // eslint-disable-next-line no-unused-expressions
     expect(openingTimes).to.be.empty;
   });
 
   it('should gracefully handle missing dayName', () => {
     const badDay = {
-      's:daysOfWeek': {
-        's:dayOfWeek': [{}],
+      daysOfWeek: {
+        dayOfWeek: [{}],
       },
     };
     const openingTimes = mapOpeningTimes(badDay);
@@ -36,8 +37,8 @@ describe('opening times mapper', () => {
 
   it('should gracefully handle missing timeSessions', () => {
     const badDay = {
-      's:daysOfWeek': {
-        's:dayOfWeek': [{ 's:dayName': 'Monday' }],
+      daysOfWeek: {
+        dayOfWeek: [{ dayName: 'Monday' }],
       },
     };
     const openingTimes = mapOpeningTimes(badDay);
@@ -47,8 +48,8 @@ describe('opening times mapper', () => {
 
   it('should set missing day session to empty array (closed)', () => {
     const badDay = {
-      's:daysOfWeek': {
-        's:dayOfWeek': [{ 's:dayName': 'Monday', 's:timesSessions': {} }],
+      daysOfWeek: {
+        dayOfWeek: [{ dayName: 'Monday', timesSessions: {} }],
       },
     };
     const openingTimes = mapOpeningTimes(badDay);

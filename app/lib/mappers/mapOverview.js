@@ -1,3 +1,4 @@
+const utils = require('../utils');
 const urlParser = require('../urlParser');
 const phoneNumberParser = require('../phoneNumberParser');
 const mapOpeningTimes = require('./mapOpeningTimes');
@@ -7,36 +8,26 @@ const mapGpCounts = require('./mapGpCounts');
 const mapDoctors = require('./mapDoctors');
 const properCapitalize = require('../properCapitalize');
 
-const OVERVIEW = 's:overview';
-const NAME = 's:name';
-const ODS_CODE = 's:odsCode';
-const ADDRESS = 's:address';
-const COORDINATES = 's:geographicCoordinates';
-const CONTACT = 's:contact';
-const OPENING_TIMES = 's:openingTimes';
-const GP_COUNTS = 's:gpcounts';
-const DOCTORS = 's:doctors';
-const TELEPHONE = 's:telephone';
-const FAX = 's:fax';
-const EMAIL = 's:email';
-const WEBSITE = 's:website';
-
 function matchAltHref(link) {
-  return link.$ && link.$.rel === 'alternate';
+  return utils.getAttribute(link, 'rel') === 'alternate';
 }
 
 function getChoicesId(links) {
-  const href = links.find(matchAltHref);
-  return href ? urlParser.getChoicesId(href.$.href) : undefined;
+  const link = links.find(matchAltHref);
+  return link ? urlParser.getChoicesId(utils.getAttribute(link, 'href')) : undefined;
+}
+
+function getAcceptingNewPatients(content) {
+  return utils.getBooleanAttribute(content.newPatients, 'accepting');
 }
 
 function getContact(content) {
-  const result = { website: content[WEBSITE] };
-  const contact = content[CONTACT];
+  const result = { website: content.website };
+  const contact = content.contact;
   if (contact) {
-    result.telephone = phoneNumberParser(contact[TELEPHONE]);
-    result.fax = phoneNumberParser(contact[FAX]);
-    result.email = contact[EMAIL];
+    result.telephone = phoneNumberParser(contact.telephone);
+    result.fax = phoneNumberParser(contact.fax);
+    result.email = contact.email;
   }
   return result;
 }
@@ -48,9 +39,9 @@ function mapOverview(rawOverview) {
   }
 
   const syndicationId = urlParser.getSyndicationId(rawOverview.feed.id);
-  const content = rawOverview.feed.entry.content[OVERVIEW];
+  const content = rawOverview.feed.entry.content.overview;
 
-  const name = content[NAME] && content[NAME]._;
+  const name = content.name && content.name._;
   if (!name) {
     throw new Error(`No Name found for ${rawOverview.feed.id}`);
   }
@@ -61,13 +52,14 @@ function mapOverview(rawOverview) {
     syndicationId,
     name,
     displayName: properCapitalize(name),
-    odsCode: content[ODS_CODE],
-    address: mapAddress(content[ADDRESS]),
-    location: mapLocation(content[COORDINATES]),
+    odsCode: content.odsCode,
+    address: mapAddress(content.address),
+    location: mapLocation(content.geographicCoordinates),
     contact: getContact(content),
-    openingTimes: mapOpeningTimes.all(content[OPENING_TIMES]),
-    gpCounts: mapGpCounts(content[GP_COUNTS]),
-    doctors: mapDoctors(content[DOCTORS]),
+    openingTimes: mapOpeningTimes.all(content.openingTimes),
+    gpCounts: mapGpCounts(content.gpcounts),
+    doctors: mapDoctors(content.doctors),
+    acceptingNewPatients: getAcceptingNewPatients(content),
   };
 }
 

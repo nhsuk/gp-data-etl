@@ -1,9 +1,7 @@
 const utils = require('../utils');
 
-const DOCTOR = 's:doctor';
-
 function mapDoctors(rawDoctors) {
-  return rawDoctors ? utils.asArray(rawDoctors[DOCTOR]) : [];
+  return rawDoctors ? utils.asArray(rawDoctors.doctor) : [];
 }
 
 module.exports = mapDoctors;

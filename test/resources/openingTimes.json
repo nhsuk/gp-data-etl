@@ -2,63 +2,63 @@
   "$": {
     "sessionType": "reception"
   },
-  "s:daysOfWeek": {
-    "s:dayOfWeek": [
+  "daysOfWeek": {
+    "dayOfWeek": [
       {
-        "s:dayName": "Sunday",
-        "s:timesSessions": {
-          "s:timesSession": "Closed"
+        "dayName": "Sunday",
+        "timesSessions": {
+          "timesSession": "Closed"
         }
       },
       {
-        "s:dayName": "Monday",
-        "s:timesSessions": {
-          "s:timesSession": {
-            "s:fromTime": "08:00",
-            "s:toTime": "18:30"
+        "dayName": "Monday",
+        "timesSessions": {
+          "timesSession": {
+            "fromTime": "08:00",
+            "toTime": "18:30"
           }
         }
       },
       {
-        "s:dayName": "Tuesday",
-        "s:timesSessions": {
-          "s:timesSession": {
-            "s:fromTime": "08:01",
-            "s:toTime": "18:31"
+        "dayName": "Tuesday",
+        "timesSessions": {
+          "timesSession": {
+            "fromTime": "08:01",
+            "toTime": "18:31"
           }
         }
       },
       {
-        "s:dayName": "Wednesday",
-        "s:timesSessions": {
-          "s:timesSession": {
-            "s:fromTime": "08:02",
-            "s:toTime": "18:32"
+        "dayName": "Wednesday",
+        "timesSessions": {
+          "timesSession": {
+            "fromTime": "08:02",
+            "toTime": "18:32"
           }
         }
       },
       {
-        "s:dayName": "Thursday",
-        "s:timesSessions": {
-          "s:timesSession": {
-            "s:fromTime": "08:03",
-            "s:toTime": "18:33"
+        "dayName": "Thursday",
+        "timesSessions": {
+          "timesSession": {
+            "fromTime": "08:03",
+            "toTime": "18:33"
           }
         }
       },
       {
-        "s:dayName": "Friday",
-        "s:timesSessions": {
-          "s:timesSession": {
-            "s:fromTime": "08:04",
-            "s:toTime": "18:34"
+        "dayName": "Friday",
+        "timesSessions": {
+          "timesSession": {
+            "fromTime": "08:04",
+            "toTime": "18:34"
           }
         }
       },
       {
-        "s:dayName": "Saturday",
-        "s:timesSessions": {
-          "s:timesSession": "Closed"
+        "dayName": "Saturday",
+        "timesSessions": {
+          "timesSession": "Closed"
         }
       }
     ]

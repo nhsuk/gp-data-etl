@@ -19,6 +19,8 @@ describe('overview mapper', () => {
     expect(overview.choicesId).to.equal(overview._id);
     expect(overview.syndicationId).to.equal(17307);
     expect(overview.odsCode).to.equal('M89012');
+    // eslint-disable-next-line no-unused-expressions
+    expect(overview.acceptingNewPatients).to.be.true;
 
     expect(overview.contact.telephone).to.equal('0121 270 7180');
     expect(overview.contact.fax).to.equal('0121 770 0130');
@@ -29,8 +31,6 @@ describe('overview mapper', () => {
     // below are tested in own unit tests
     expect(overview.location).to.exist;
     expect(overview.openingTimes).to.exist;
-    expect(overview.openingTimes.reception).to.exist;
-    expect(overview.openingTimes.surgery).to.exist;
     expect(overview.address).to.exist;
     expect(overview.gpCounts).to.exist;
     expect(overview.doctors).to.exist;

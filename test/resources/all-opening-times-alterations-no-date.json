@@ -1,0 +1,128 @@
+{
+                        "timesSessionTypes": {
+                            "timesSessionType": [
+                                {
+                                    "$": {
+                                        "sessionType": "reception"
+                                    },
+                                    "daysOfWeek": {
+                                        "dayOfWeek": [
+                                            {
+                                                "dayName": "Sunday",
+                                                "timesSessions": {
+                                                    "timesSession": "Closed"
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Monday",
+                                                "timesSessions": {
+                                                    "timesSession": {
+                                                        "fromTime": "08:00",
+                                                        "toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Tuesday",
+                                                "timesSessions": {
+                                                    "timesSession": {
+                                                        "fromTime": "08:00",
+                                                        "toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Wednesday",
+                                                "timesSessions": {
+                                                    "timesSession": {
+                                                        "fromTime": "08:00",
+                                                        "toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Thursday",
+                                                "timesSessions": {
+                                                    "timesSession": {
+                                                        "fromTime": "08:00",
+                                                        "toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Friday",
+                                                "timesSessions": {
+                                                    "timesSession": {
+                                                        "fromTime": "08:00",
+                                                        "toTime": "18:30"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "dayName": "Saturday",
+                                                "timesSessions": {
+                                                    "timesSession": "Closed"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "$": {
+                                        "sessionType": "additional"
+                                    },
+                                    "additionalDay": [
+                                        {
+                                            "date": "2014-04-18",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-04-21",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-05-05",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-05-26",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-12-24",
+                                            "timesSessions": {
+                                                "timesSession": [
+                                                        {
+                                                            "fromTime": "08:30",
+                                                            "toTime": "12:30"
+                                                        }]
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-12-25",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {
+                                            "date": "2014-12-26",
+                                            "timesSessions": {
+                                                "timesSession": "Closed"
+                                            }
+                                        },
+                                        {}
+                                    ]
+                                }
+                            ]
+                        },
+                        "outOfHours": "<p>Ring the normal&nbsp;surgery number for our Out Of Hours advice contact&nbsp;number.</p>",
+                        "lastVerifiedOn": "2014-04-29 09:56:50Z"
+                    }
