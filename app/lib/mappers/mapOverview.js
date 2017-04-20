@@ -1,12 +1,12 @@
-const utils = require('../utils');
-const urlParser = require('../urlParser');
-const phoneNumberParser = require('../phoneNumberParser');
-const mapOpeningTimes = require('./mapOpeningTimes');
 const mapAddress = require('./mapAddress');
-const mapLocation = require('./mapLocation');
-const mapGpCounts = require('./mapGpCounts');
+const mapContact = require('./mapContact');
 const mapDoctors = require('./mapDoctors');
+const mapGpCounts = require('./mapGpCounts');
+const mapLocation = require('./mapLocation');
+const mapOpeningTimes = require('./mapOpeningTimes');
 const properCapitalize = require('../properCapitalize');
+const urlParser = require('../urlParser');
+const utils = require('../utils');
 
 function matchAltHref(link) {
   return utils.getAttribute(link, 'rel') === 'alternate';
@@ -19,17 +19,6 @@ function getChoicesId(links) {
 
 function getAcceptingNewPatients(content) {
   return utils.getBooleanAttribute(content.newPatients, 'accepting');
-}
-
-function getContact(content) {
-  const result = { website: content.website };
-  const contact = content.contact;
-  if (contact) {
-    result.telephone = phoneNumberParser(contact.telephone);
-    result.fax = phoneNumberParser(contact.fax);
-    result.email = contact.email;
-  }
-  return result;
 }
 
 function mapOverview(rawOverview) {
@@ -55,7 +44,7 @@ function mapOverview(rawOverview) {
     odsCode: content.odsCode,
     address: mapAddress(content.address),
     location: mapLocation(content.geographicCoordinates),
-    contact: getContact(content),
+    contact: mapContact(content.contact, content.website),
     openingTimes: mapOpeningTimes.all(content.openingTimes),
     gpCounts: mapGpCounts(content.gpcounts),
     doctors: mapDoctors(content.doctors),

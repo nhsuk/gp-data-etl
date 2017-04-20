@@ -5,6 +5,7 @@ const rawOverviewNoOpeningTimes = require('../resources/overview-no-opening-time
 const rawOverviewNoChoicesId = require('../resources/overview-no-choicesId.json');
 const rawOverviewNoName = require('../resources/overview-no-name.json');
 const rawOverviewNoContacts = require('../resources/overview-no-contacts.json');
+const rawOverviewNoWebsiteProtocol = require('../resources/overview-no-website-protocol.json');
 
 const expect = chai.expect;
 
@@ -36,6 +37,12 @@ describe('overview mapper', () => {
     expect(overview.doctors).to.exist;
     /* eslint-enable no-unused-expressions */
     expect(overview.doctors.length).to.equal(6);
+  });
+
+  it('should add an http protocol to website when there is no protocol', () => {
+    const overview = mapOverview(rawOverviewNoWebsiteProtocol);
+
+    expect(overview.contact.website).to.be.equal('http://www.craigcroftmedicalcentre.co.uk/');
   });
 
   it('should gracefully handle missing opening times', () => {
