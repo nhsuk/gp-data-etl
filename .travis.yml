@@ -1,12 +1,17 @@
-sudo: required
-
 language: node_js
 node_js:
   - node
 
+sudo: required
+
+services:
+  - docker
+
 script:
-  - npm run git-hook
-  - npm run upload-coverage-coveralls
+  - yarn run git-hook
+  - yarn run upload-coverage-coveralls
 
 after_success:
-  - npm run test-integration
+  - yarn run test-integration
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - ./scripts/ci-deployment/docker_ci.sh

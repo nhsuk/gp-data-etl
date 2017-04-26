@@ -5,7 +5,7 @@ RUN apk add --no-cache git
 ENV USERNAME nodeuser
 
 RUN adduser -D "$USERNAME" && \
-    mkdir /code && \
+    mkdir -p /code/output  && \
     chown "$USERNAME":"$USERNAME" /code
 
 USER $USERNAME
@@ -20,7 +20,7 @@ RUN  yarn install --ignore-optional
 COPY . /code
 
 USER root
-RUN chown "$USERNAME":"$USERNAME" /code/output
+RUN  chown "$USERNAME":"$USERNAME" /code/output
 USER $USERNAME
 
 CMD [ "yarn", "start" ]
