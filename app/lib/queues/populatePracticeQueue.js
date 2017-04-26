@@ -6,8 +6,8 @@ const mapServices = require('../mappers/mapServices');
 const service = require('../syndicationService');
 const gpStore = require('../gpStore');
 const limiter = require('../limiter');
+const config = require('../config');
 
-const HITS_PER_HOUR = 5000;
 const steps = ['overview', 'facilities', 'services'];
 const numberOfSteps = steps.length;
 let hitsPerWorker;
@@ -57,7 +57,7 @@ function pageParsed(id) {
 }
 
 function saveEveryHundred() {
-  if (count % 100 === 0) {
+  if (count % config.saveEvery === 0) {
     gpStore.saveState();
   }
 }
@@ -85,7 +85,7 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
-  hitsPerWorker = HITS_PER_HOUR / (workers * numberOfSteps);
+  hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
   q.drain = drain;

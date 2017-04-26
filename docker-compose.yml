@@ -1,0 +1,38 @@
+version: '2.1'
+
+services:
+
+  base-etl:
+    build:
+      context: .
+    command: yarn start
+    volumes:
+      - .:/code
+      - etl-output:/code/output
+    environment:
+      SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
+
+  full-etl:
+    extends:
+      service: base-etl
+    volumes:
+      - etl-node_modules:/code/node_modules
+
+  partial-etl:
+    extends:
+      service: base-etl
+    command: yarn run start-small
+    volumes:
+      - etl-node_modules:/code/node_modules
+
+  test-etl:
+    extends:
+      service: base-etl
+    command: yarn test
+    volumes:
+      - etl-node_modules:/code/node_modules
+
+
+volumes:
+  etl-node_modules:
+  etl-output:
