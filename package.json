@@ -4,8 +4,8 @@
   "description": "ETL to extract data from Syndication and store as JSON",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "start-small": "node app.js small",
+    "start": "node schedule.js",
+    "start-small": "node schedule.js small",
     "lint": "eslint --ext .js,.json .",
     "test": "NODE_ENV=test mocha --recursive test/unit",
     "test-integration": "NODE_ENV=test mocha --recursive test/integration",
@@ -37,7 +37,6 @@
   "homepage": "https://github.com/nhsuk/gp-data-etl#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0",
     "coveralls": "^2.11.15",
     "eslint": "^3.10.1",
     "eslint-config-airbnb": "^13.0.0",
@@ -49,11 +48,13 @@
     "eslint-watch": "^2.1.14",
     "husky": "^0.12.0",
     "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
     "async": "^2.1.4",
     "google-libphonenumber": "^2.0.11",
+    "node-schedule": "^1.2.1",
     "require-environment-variables": "^1.1.2",
     "xml2js": "^0.4.17"
   }

@@ -20,7 +20,7 @@ RUN  yarn install --ignore-optional
 COPY . /code
 
 USER root
-RUN  chown "$USERNAME":"$USERNAME" /code/output
+RUN find /code/output -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
 USER $USERNAME
 
 CMD [ "yarn", "start" ]

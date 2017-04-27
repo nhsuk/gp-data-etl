@@ -11,6 +11,7 @@ services:
       - etl-output:/code/output
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
+      ETL_SCHEDULE: ${ETL_SCHEDULE}
 
   full-etl:
     extends:
@@ -31,6 +32,14 @@ services:
     command: yarn test
     volumes:
       - etl-node_modules:/code/node_modules
+
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - etl-output:/usr/share/nginx/html/json
 
 
 volumes:

@@ -1,0 +1,24 @@
+version: '2.1'
+
+services:
+
+  gp-data-etl:
+    image: nhsuk/gp-data-etl:pr-21
+    command: yarn start
+    volumes:
+      - etl-output:/code/output
+    environment:
+      SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
+      ETL_SCHEDULE: ${ETL_SCHEDULE}
+
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - etl-output:/usr/share/nginx/html/json
+
+
+volumes:
+  etl-output:
