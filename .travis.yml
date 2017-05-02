@@ -13,5 +13,4 @@ script:
 
 after_success:
   - yarn run test-integration
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - ./scripts/ci-deployment/docker_ci.sh
+  - bash ./scripts/ci-deployment/deploy.sh
