@@ -5,7 +5,7 @@ RUN apk add --no-cache git
 ENV USERNAME nodeuser
 
 RUN adduser -D "$USERNAME" && \
-    mkdir -p /code/output  && \
+    mkdir /code && \
     chown "$USERNAME":"$USERNAME" /code
 
 USER $USERNAME
