@@ -85,6 +85,7 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
+  count = 0;
   hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
