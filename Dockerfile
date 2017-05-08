@@ -11,6 +11,7 @@ WORKDIR /code
 
 ARG SYNDICATION_API_KEY=production
 ENV SYNDICATION_API_KEY=${SYNDICATION_API_KEY}
+ENV ETL_SCHEDULE=${ETL_SCHEDULE}
 
 COPY yarn.lock package.json /code/
 RUN  yarn install --ignore-optional
