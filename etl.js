@@ -54,9 +54,9 @@ function start() {
     if (process.argv[3] === 'clear') {
       clearState();
     }
-    // run with only a few pages, save every 10 records rahter than 100
+    // run with only a few pages, save every 10 records rather than 100
     config.saveEvery = 10;
-    startIdQueue(1);
+    startIdQueue(3);
   } else {
     if (process.argv[2] === 'clear') {
       clearState();
