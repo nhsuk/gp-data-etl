@@ -4,7 +4,6 @@ services:
 
   etl:
     image: nhsuk/gp-data-etl:${DOCKER_IMAGE_TAG}
-    command: node schedule.js
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
       ETL_SCHEDULE: ${ETL_SCHEDULE}
