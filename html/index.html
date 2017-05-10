@@ -1,14 +1,59 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>GP Data ETL</title>
-
-</head>
-
-<body>
-  <a href='json/gp-data.json'>Download latest GP data</a>
-  <a href='json/summary.json'>Last run summary</a>
-</body>
+   <head>
+    <meta charset="utf-8">
+    <title>NHS UK - GP Data ETL</title>
+    <meta name="description" content="Site to host JSON output of GP Data ETL">
+    <meta name="author" content="NHS UK">
+    <!-- DO NOT USE 6 -->
+    <!--[if gt IE 8]><!--><link href="css/nhsuk.css?v=4" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
+    <!--[if IE 6]><link href="css/nhsuk-ie6.css?v=4" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="css/nhsuk-ie7.css?v=4" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="css/nhsuk-ie8.css?v=4" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+   </head>
+   <body>
+      <header role="banner">
+         <div class="global-header">
+            <div class="global-header--inner">
+               <a href="http://www.nhs.uk/pages/home.aspx" class="global-header__link" title="Go to the NHS.UK homepage">
+               <img src="images/logotype-nhs-mono.png" alt="">
+               </a>
+            </div>
+         </div>
+      </header>
+      <main id="content" role="main" class="util-nofocus">
+         <div class="local-header-white-bg">
+            <div class="local-header--question">
+               <h1 class="local-header--title--question">GP Data ETL</h1>
+            </div>
+         </div>
+         <div class="page-section">
+            <div class="reading-width">
+               <p>GP Data ETL output files:</p>
+               <ul>
+                  <li><a href='json/gp-data.json'>gp-data.json</a>: array of GP surgery details, including contact details, services offered and opening times</li>
+                  <li><a href='json/summary.json'>summary.json</a>: diagnostic details of last ETL run, including when the ETL finished, and which surgeries had errors on Syndication sub-pages</li>
+               </ul>
+               <hr class="hr--no-color hr--higher"/>
+            </div>
+         </div>
+      </main>
+      <footer role="contentinfo">
+         <div class="global-footer">
+            <div class="global-footer__inner">
+               <div>
+                  <h2 class="util-visuallyhidden">Support links</h2>
+                  <ul class="link-list">
+                     <li>
+                        <a href="https://beta.nhs.uk/help/clinical-assurance">Clinical assurance</a>
+                     </li>
+                     <li>
+                        <a href="https://beta.nhs.uk/help/cookies">Cookies</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>

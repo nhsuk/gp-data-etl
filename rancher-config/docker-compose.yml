@@ -8,20 +8,7 @@ services:
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
       ETL_SCHEDULE: ${ETL_SCHEDULE}
-    volumes:
-      - etl-output:/code/output
-
-  web:
-    restart: always
-    image: nginx
-    volumes:
-      - etl-output:/usr/share/nginx/html/json
     labels:
-      io.rancher.sidekicks: etl
-      io.rancher.container.pull_image: always
       traefik.enable: stack
       traefik.domain: ${TRAEFIK_DOMAIN}
       traefik.port: 80
-
-volumes:
-  etl-output:
