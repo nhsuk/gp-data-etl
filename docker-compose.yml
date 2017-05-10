@@ -5,10 +5,8 @@ services:
   base-etl:
     build:
       context: .
-    command: yarn start
     volumes:
       - .:/code
-      - etl-output:/code/output
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
       ETL_SCHEDULE: ${ETL_SCHEDULE}
@@ -33,15 +31,6 @@ services:
     volumes:
       - etl-node_modules:/code/node_modules
 
-  nginx:
-    restart: always
-    image: nginx
-    ports:
-      - 80:80
-    volumes:
-      - etl-output:/usr/share/nginx/html/json
-
 
 volumes:
   etl-node_modules:
-  etl-output:
