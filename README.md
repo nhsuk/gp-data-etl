@@ -14,7 +14,7 @@ The application needs the api key available within the environment as the
 variable `SYNDICATION_API_KEY`.
 
 Running `scripts/start` will bring up a docker container and initiate the scrape at a scheduled time.
-The default is 11pm. To test locally set an environment variable `ETL_SCHEDULE` to a new time, i.e. `export ETL_SCHEDULE='25 15 * * * '` to start the processing a 3:25pm.
+The default is 11pm. To test locally set an environment variable `ETL_SCHEDULE` to a new time, i.e. `export ETL_SCHEDULE='25 15 * * *'` to start the processing a 3:25pm.
 Further details available [here](https://www.npmjs.com/package/node-schedule)
 
 A successful scrape will result in the file `gp-data.json` being written to the `output` folder. This file may be downloaded from the web-server available at `http://localhost/json/gp-data.json`. Summary json is available at `http://localhost/json/summary.json`
