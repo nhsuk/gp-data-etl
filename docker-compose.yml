@@ -39,6 +39,14 @@ services:
     command: yarn run travis
     volumes:
       - etl-node_modules:/code/node_modules
+    environment:
+      COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
+      NODE_ENV: development
+      SNYK_TOKEN: ${SNYK_TOKEN}
+      TRAVIS: ${TRAVIS}
+      TRAVIS_BRANCH: ${TRAVIS_BRANCH}
+      TRAVIS_COMMIT: ${TRAVIS_COMMIT}
+      TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
 
   travis-tests-integration:
     extends:
@@ -46,6 +54,14 @@ services:
     command: yarn run test-integration
     volumes:
       - etl-node_modules:/code/node_modules
+    environment:
+      COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
+      NODE_ENV: development
+      SNYK_TOKEN: ${SNYK_TOKEN}
+      TRAVIS: ${TRAVIS}
+      TRAVIS_BRANCH: ${TRAVIS_BRANCH}
+      TRAVIS_COMMIT: ${TRAVIS_COMMIT}
+      TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
 
 
 volumes:
