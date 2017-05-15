@@ -3,7 +3,8 @@ const chai = require('chai');
 
 const expect = chai.expect;
 
-describe('syndicationService', () => {
+describe('syndicationService', function test() {
+  this.timeout(5000);
   it('should call Practice Summary page', (done) => {
     service.getPracticeSummaryPage(1).then(() => done());
   });

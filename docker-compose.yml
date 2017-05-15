@@ -33,6 +33,20 @@ services:
     volumes:
       - etl-node_modules:/code/node_modules
 
+  travis-tests:
+    extends:
+      service: base-etl
+    command: yarn run travis
+    volumes:
+      - etl-node_modules:/code/node_modules
+
+  travis-tests-integration:
+    extends:
+      service: base-etl
+    command: yarn run test-integration
+    volumes:
+      - etl-node_modules:/code/node_modules
+
 
 volumes:
   etl-node_modules:
