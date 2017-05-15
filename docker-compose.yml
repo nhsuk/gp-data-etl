@@ -63,6 +63,5 @@ services:
       TRAVIS_COMMIT: ${TRAVIS_COMMIT}
       TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
 
-
 volumes:
   etl-node_modules:
