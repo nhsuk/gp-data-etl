@@ -12,13 +12,13 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 script:
-  - docker-compose -f docker-compose.yml build travis-tests
-  - docker-compose -f docker-compose.yml run travis-tests
+  - docker-compose -f docker-compose-tests.yml build travis-tests
+  - docker-compose -f docker-compose-tests.yml run travis-tests
 
 after_success:
-  - docker-compose -f docker-compose.yml build travis-tests-integration
-  - docker-compose -f docker-compose.yml run travis-tests-integration
+  - docker-compose -f docker-compose-tests.yml build travis-tests-integration
+  - docker-compose -f docker-compose-tests.yml run travis-tests-integration
   - bash ./scripts/ci-deployment/deploy.sh
 
 after_script:
-  - docker-compose -f docker-compose.yml down -v
+  - docker-compose -f docker-compose-tests.yml down -v
