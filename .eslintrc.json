@@ -12,15 +12,15 @@
     "mocha",
     "json"
     ],
-    "rules": {
-      "eol-last": [
-        "error", "always"
-      ],
-      "import/no-extraneous-dependencies": [
-        "error", { "devDependencies": true }
-      ],
-      "no-plusplus": [
-        "error", { "allowForLoopAfterthoughts" : true }
-      ]
-    }
+  "rules": {
+    "eol-last": [
+      "error", "always"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error", { "devDependencies": true }
+    ],
+    "no-plusplus": [
+      "error", { "allowForLoopAfterthoughts" : true }
+    ]
+  }
 }

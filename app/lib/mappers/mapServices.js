@@ -1,4 +1,5 @@
 const utils = require('../utils');
+const mapTitles = require('../../sources/servicesMap.json');
 
 function getText(member) {
   return member && member.text;
@@ -20,10 +21,14 @@ function getDeliverer(deliverer) {
   return deliverer && deliverer.name;
 }
 
+function mapServiceName(serviceTitle) {
+  return mapTitles[serviceTitle] || serviceTitle;
+}
+
 function mapEntryToService(entry) {
   const summary = entry.content.servicesummary;
   return {
-    title: getUnderscore(summary.type),
+    title: mapServiceName(getUnderscore(summary.type)),
     code: getCode(summary.type),
     availabilityTimes: getText(summary.serviceBranchAvailabilityTimes),
     introduction: getText(summary.serviceIntroduction),

@@ -28,7 +28,7 @@ describe('services mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(services.entries[0].gpReferralRequired).to.be.false;
 
-    expect(services.entries[1].title).to.equal('Service 2');
+    expect(services.entries[1].title).to.equal('Diet specialist');
     expect(services.entries[1].code).to.equal('SRV02');
     expect(services.entries[1].availabilityTimes).to.equal('times 2');
     // eslint-disable-next-line no-unused-expressions

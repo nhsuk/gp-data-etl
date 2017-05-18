@@ -150,7 +150,7 @@
       {
         "id": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7781",
         "title": {
-          "_": "Service 2",
+          "_": "Dietician - provided in house and available on NHS",
           "$": {
             "type": "text"
           }
@@ -173,7 +173,7 @@
               "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
             },
             "type": {
-              "_": "Service 2",
+              "_": "Dietician - provided in house and available on NHS",
               "$": {
                 "code": "SRV02"
               }
