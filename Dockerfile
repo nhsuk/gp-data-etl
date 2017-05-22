@@ -21,7 +21,7 @@ RUN if [ "$NODE_ENV" == "production" ]; then yarn install --production --ignore-
 COPY . /code
 
 USER root
-RUN find /code/output -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
+RUN find /code -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
 
 EXPOSE 80
 
