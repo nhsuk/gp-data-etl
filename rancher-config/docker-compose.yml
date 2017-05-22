@@ -12,3 +12,8 @@ services:
       traefik.domain: ${TRAEFIK_DOMAIN}
       traefik.port: 80
       map-public-http: 80
+    volumes:
+      - gp-etl-output:/code/output
+
+volumes:
+  gp-etl-output:

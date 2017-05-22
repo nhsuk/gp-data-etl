@@ -56,7 +56,7 @@ function pageParsed(id) {
   return gpStore.getGP(id);
 }
 
-function saveEveryHundred() {
+function savePeriodically() {
   if (count % config.saveEvery === 0) {
     gpStore.saveState();
   }
@@ -68,7 +68,7 @@ function processQueueItem(task, callback) {
     log.info(`skipping ${task.id}, already loaded`);
     callback();
   } else {
-    saveEveryHundred();
+    savePeriodically();
     log.info(`Populating practice ID ${task.id} ${count}/${gpStore.getIds().length}`);
     limiter(hitsPerWorker, () => populatePractice(task.id), callback);
   }

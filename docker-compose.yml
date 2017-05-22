@@ -18,6 +18,15 @@ services:
       service: base-etl
     volumes:
       - etl-node_modules:/code/node_modules
+      - gp-etl-output:/code/output
+
+  full-etl-clear:
+    extends:
+      service: base-etl
+    command: yarn run start-clear
+    volumes:
+      - etl-node_modules:/code/node_modules
+      - gp-etl-output:/code/output
 
   partial-etl:
     extends:
@@ -25,43 +34,17 @@ services:
     command: yarn run start-small
     volumes:
       - etl-node_modules:/code/node_modules
+      - gp-etl-partial-output:/code/output
 
-  test-etl:
+  partial-etl-clear:
     extends:
       service: base-etl
-    command: yarn test
+    command: yarn run start-small-clear
     volumes:
       - etl-node_modules:/code/node_modules
-
-  travis-tests:
-    extends:
-      service: base-etl
-    command: yarn run travis
-    volumes:
-      - etl-node_modules:/code/node_modules
-    environment:
-      COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
-      NODE_ENV: development
-      SNYK_TOKEN: ${SNYK_TOKEN}
-      TRAVIS: ${TRAVIS}
-      TRAVIS_BRANCH: ${TRAVIS_BRANCH}
-      TRAVIS_COMMIT: ${TRAVIS_COMMIT}
-      TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
-
-  travis-tests-integration:
-    extends:
-      service: base-etl
-    command: yarn run test-integration
-    volumes:
-      - etl-node_modules:/code/node_modules
-    environment:
-      COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
-      NODE_ENV: development
-      SNYK_TOKEN: ${SNYK_TOKEN}
-      TRAVIS: ${TRAVIS}
-      TRAVIS_BRANCH: ${TRAVIS_BRANCH}
-      TRAVIS_COMMIT: ${TRAVIS_COMMIT}
-      TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
+      - gp-etl-partial-output:/code/output
 
 volumes:
   etl-node_modules:
+  gp-etl-output:
+  gp-etl-partial-output:
