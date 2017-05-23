@@ -22,7 +22,13 @@ function getDeliverer(deliverer) {
 }
 
 function mapServiceName(serviceTitle) {
-  return mapTitles[serviceTitle] || serviceTitle;
+  Object.keys(mapTitles).forEach((key) => {
+    if (new RegExp(key, 'i').test(serviceTitle) === true) {
+      // eslint-disable-next-line no-param-reassign
+      serviceTitle = mapTitles[key];
+    }
+  });
+  return serviceTitle;
 }
 
 function mapEntryToService(entry) {
