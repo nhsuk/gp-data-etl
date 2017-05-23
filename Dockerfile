@@ -16,7 +16,7 @@ ENV SYNDICATION_API_KEY=${SYNDICATION_API_KEY}
 ENV ETL_SCHEDULE=${ETL_SCHEDULE}
 
 COPY yarn.lock package.json /code/
-RUN if [ "$NODE_ENV" == "production" ]; then yarn install --production --ignore-optional --pure-lockfile; else yarn install --ignore-optional --pure-lockfile; fi
+RUN if [ "$NODE_ENV" == "production" ]; then yarn install --production --ignore-optional; else yarn install --ignore-optional; fi
 
 COPY . /code
 
