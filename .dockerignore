@@ -2,4 +2,6 @@
 docker-compose*
 .git/
 Dockerfile
-rancher-compose.yml
+node_modules/
+README.md
+
