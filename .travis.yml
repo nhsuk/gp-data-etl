@@ -1,12 +1,21 @@
-sudo: required
-
 language: node_js
 node_js:
   - node
 
+services:
+  - docker
+
+before_install:
+  - pip install docker-compose
+
 script:
-  - npm run git-hook
-  - npm run upload-coverage-coveralls
+  - docker-compose -f docker-compose-tests.yml build travis-tests
+  - docker-compose -f docker-compose-tests.yml run travis-tests
 
 after_success:
-  - npm run test-integration
+  - docker-compose -f docker-compose-tests.yml build travis-tests-integration
+  - docker-compose -f docker-compose-tests.yml run travis-tests-integration
+  - bash ./scripts/ci-deployment/deploy.sh
+
+after_script:
+  - docker-compose -f docker-compose-tests.yml down -v

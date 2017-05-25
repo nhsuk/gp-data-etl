@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  etl:
+    image: nhsuk/gp-data-etl:${DOCKER_IMAGE_TAG}
+    environment:
+      SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
+      ETL_SCHEDULE: ${ETL_SCHEDULE}
+    labels:
+      traefik.enable: stack
+      traefik.domain: ${TRAEFIK_DOMAIN}
+      traefik.port: 80
+      map-public-http: 80
+    volumes:
+      - gp-etl-output:/code/output
+
+volumes:
+  gp-etl-output:

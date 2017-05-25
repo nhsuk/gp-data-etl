@@ -54,6 +54,15 @@ function saveGPs() {
   fsHelper.saveJsonSync(getGPs(), 'gp-data');
 }
 
+function saveSummary() {
+  const summary = {
+    totalScanned: syndicationIds.length,
+    lastWritten: (new Date()).toLocaleString(),
+    failedIds,
+  };
+  fsHelper.saveJsonSync(summary, 'summary');
+}
+
 loadState();
 
 module.exports = {
@@ -63,6 +72,7 @@ module.exports = {
   getGP,
   addGP,
   saveGPs,
+  saveSummary,
   addFailedId,
   saveState,
   clearState,

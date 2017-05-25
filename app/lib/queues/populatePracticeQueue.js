@@ -6,8 +6,8 @@ const mapServices = require('../mappers/mapServices');
 const service = require('../syndicationService');
 const gpStore = require('../gpStore');
 const limiter = require('../limiter');
+const config = require('../config');
 
-const HITS_PER_HOUR = 5000;
 const steps = ['overview', 'facilities', 'services'];
 const numberOfSteps = steps.length;
 let hitsPerWorker;
@@ -56,8 +56,8 @@ function pageParsed(id) {
   return gpStore.getGP(id);
 }
 
-function saveEveryHundred() {
-  if (count % 100 === 0) {
+function savePeriodically() {
+  if (count % config.saveEvery === 0) {
     gpStore.saveState();
   }
 }
@@ -68,7 +68,7 @@ function processQueueItem(task, callback) {
     log.info(`skipping ${task.id}, already loaded`);
     callback();
   } else {
-    saveEveryHundred();
+    savePeriodically();
     log.info(`Populating practice ID ${task.id} ${count}/${gpStore.getIds().length}`);
     limiter(hitsPerWorker, () => populatePractice(task.id), callback);
   }
@@ -85,7 +85,8 @@ function queueSyndicationIds(q) {
 }
 
 function start(workers, drain) {
-  hitsPerWorker = HITS_PER_HOUR / (workers * numberOfSteps);
+  count = 0;
+  hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
   const q = async.queue(processQueueItem, workers);
   queueSyndicationIds(q);
   q.drain = drain;

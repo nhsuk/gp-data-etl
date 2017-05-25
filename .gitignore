@@ -43,5 +43,5 @@ jspm_packages
 .DS_Store
 
 # generated files
-gp-data.json
+output/*
 .idea/*
