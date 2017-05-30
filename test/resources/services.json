@@ -175,7 +175,7 @@
             "type": {
               "_": "Dietician - provided in house and available on NHS",
               "$": {
-                "code": "SRV02"
+                "code": "SRV0288"
               }
             },
             "serviceBranchAvailabilityTimes": {
@@ -221,7 +221,7 @@
             "type": {
               "_": "Child Immunisations",
               "$": {
-                "code": "SRV03"
+                "code": "SRV0282"
               }
             },
             "serviceBranchAvailabilityTimes": {

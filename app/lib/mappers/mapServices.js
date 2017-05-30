@@ -21,20 +21,14 @@ function getDeliverer(deliverer) {
   return deliverer && deliverer.name;
 }
 
-function mapServiceName(serviceTitle) {
-  Object.keys(mapTitles).forEach((key) => {
-    if (new RegExp(key, 'i').test(serviceTitle) === true) {
-      // eslint-disable-next-line no-param-reassign
-      serviceTitle = mapTitles[key];
-    }
-  });
-  return serviceTitle;
+function mapServiceName(serviceCode, serviceTitle) {
+  return mapTitles[serviceCode] || serviceTitle;
 }
 
 function mapEntryToService(entry) {
   const summary = entry.content.servicesummary;
   return {
-    title: mapServiceName(getUnderscore(summary.type)),
+    title: mapServiceName(getCode(summary.type), getUnderscore(summary.type)),
     code: getCode(summary.type),
     availabilityTimes: getText(summary.serviceBranchAvailabilityTimes),
     introduction: getText(summary.serviceIntroduction),

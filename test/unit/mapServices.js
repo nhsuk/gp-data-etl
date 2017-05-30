@@ -29,13 +29,13 @@ describe('services mapper', () => {
     expect(services.entries[0].gpReferralRequired).to.be.false;
 
     expect(services.entries[1].title).to.equal('Diet specialist');
-    expect(services.entries[1].code).to.equal('SRV02');
+    expect(services.entries[1].code).to.equal('SRV0288');
     expect(services.entries[1].availabilityTimes).to.equal('times 2');
     // eslint-disable-next-line no-unused-expressions
     expect(services.entries[1].gpReferralRequired).to.be.true;
 
     expect(services.entries[2].title).to.equal('Child vaccinations');
-    expect(services.entries[2].code).to.equal('SRV03');
+    expect(services.entries[2].code).to.equal('SRV0282');
     expect(services.entries[2].availabilityTimes).to.equal('times 3');
     // eslint-disable-next-line no-unused-expressions
     expect(services.entries[2].gpReferralRequired).to.be.true;
