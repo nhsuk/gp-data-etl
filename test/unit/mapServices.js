@@ -20,7 +20,7 @@ describe('services mapper', () => {
     // eslint-disable-next-line no-unused-expressions
     expect(services.epsEnabled).to.be.true;
     expect(services.moreInformation).to.equal('Extended Surgery, Mondays from 06.30pm - 8.30pm.');
-    expect(services.entries.length).to.equal(2);
+    expect(services.entries.length).to.equal(3);
 
     expect(services.entries[0].title).to.equal('Service 1');
     expect(services.entries[0].code).to.equal('SRV01');
@@ -29,9 +29,15 @@ describe('services mapper', () => {
     expect(services.entries[0].gpReferralRequired).to.be.false;
 
     expect(services.entries[1].title).to.equal('Diet specialist');
-    expect(services.entries[1].code).to.equal('SRV02');
+    expect(services.entries[1].code).to.equal('SRV0288');
     expect(services.entries[1].availabilityTimes).to.equal('times 2');
     // eslint-disable-next-line no-unused-expressions
     expect(services.entries[1].gpReferralRequired).to.be.true;
+
+    expect(services.entries[2].title).to.equal('Child vaccinations');
+    expect(services.entries[2].code).to.equal('SRV0282');
+    expect(services.entries[2].availabilityTimes).to.equal('times 3');
+    // eslint-disable-next-line no-unused-expressions
+    expect(services.entries[2].gpReferralRequired).to.be.true;
   });
 });

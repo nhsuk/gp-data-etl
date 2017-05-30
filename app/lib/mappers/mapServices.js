@@ -21,14 +21,14 @@ function getDeliverer(deliverer) {
   return deliverer && deliverer.name;
 }
 
-function mapServiceName(serviceTitle) {
-  return mapTitles[serviceTitle] || serviceTitle;
+function mapServiceName(serviceCode, serviceTitle) {
+  return mapTitles[serviceCode] || serviceTitle;
 }
 
 function mapEntryToService(entry) {
   const summary = entry.content.servicesummary;
   return {
-    title: mapServiceName(getUnderscore(summary.type)),
+    title: mapServiceName(getCode(summary.type), getUnderscore(summary.type)),
     code: getCode(summary.type),
     availabilityTimes: getText(summary.serviceBranchAvailabilityTimes),
     introduction: getText(summary.serviceIntroduction),

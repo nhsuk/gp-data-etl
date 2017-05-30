@@ -175,7 +175,7 @@
             "type": {
               "_": "Dietician - provided in house and available on NHS",
               "$": {
-                "code": "SRV02"
+                "code": "SRV0288"
               }
             },
             "serviceBranchAvailabilityTimes": {
@@ -183,6 +183,52 @@
             },
             "serviceIntroduction": {
               "text": "Intro 2"
+            },
+            "serviceGpReferralRequired": {
+              "text": "True"
+            },
+            "serviceDeliverer": {
+              "name": "Croft Medical Centre"
+            }
+          }
+        }
+      },
+      {
+        "id": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782",
+        "title": {
+          "_": "Child Immunisations",
+          "$": {
+            "type": "text"
+          }
+        },
+        "published": "2012-07-03T14:34:10+01:00",
+        "updated": "2012-07-03T14:34:10+01:00",
+        "link": {
+          "$": {
+            "rel": "self",
+            "title": "Croft Medical Centre",
+            "href": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782?apikey=apikey"
+          }
+        },
+        "content": {
+          "$": {
+            "type": "application/xml"
+          },
+          "servicesummary": {
+            "$": {
+              "xmlns:s": "http://syndication.nhschoices.nhs.uk/services"
+            },
+            "type": {
+              "_": "Child Immunisations",
+              "$": {
+                "code": "SRV0282"
+              }
+            },
+            "serviceBranchAvailabilityTimes": {
+              "text": "times 3"
+            },
+            "serviceIntroduction": {
+              "text": "Intro 3"
             },
             "serviceGpReferralRequired": {
               "text": "True"
