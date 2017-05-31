@@ -2,7 +2,7 @@ const log = require('./logger');
 const fsHelper = require('./fsHelper');
 
 let syndicationIds = [];
-const failedIds = [];
+let failedIds = {};
 
 let gpCache = {};
 
@@ -18,13 +18,23 @@ function getIds() {
   return syndicationIds;
 }
 
+function getFailedIds() {
+  return Object.keys(failedIds);
+}
+
+function clearFailedIds() {
+  failedIds = {};
+}
+
 function addGP(gp) {
   gpCache[gp.syndicationId] = gp;
   return gp;
 }
 
-function addFailedId(id) {
-  failedIds.push(id);
+function addFailedId(id, area, message) {
+  const failedId = failedIds[id] || {};
+  failedId[area] = message;
+  failedIds[id] = failedId;
   return id;
 }
 
@@ -41,6 +51,7 @@ function saveState() {
 function clearState() {
   syndicationIds = [];
   gpCache = {};
+  clearFailedIds();
   saveState();
 }
 
@@ -76,4 +87,6 @@ module.exports = {
   addFailedId,
   saveState,
   clearState,
+  clearFailedIds,
+  getFailedIds,
 };

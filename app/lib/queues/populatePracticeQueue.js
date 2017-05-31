@@ -14,14 +14,14 @@ let hitsPerWorker;
 let count = 0;
 
 function handleError(err, id) {
-  gpStore.addFailedId(id);
+  gpStore.addFailedId(id, 'page', err.message);
   log.error(`Error processing syndication ID ${id}: ${err}`);
 }
 
 function swallow404(page, err, gp, id) {
   if (err.message.includes(' 404')) {
     log.error(`No ${page} for syndication ID ${id}: ${err}`);
-    gpStore.addFailedId(`${id}:${page}`);
+    gpStore.addFailedId(id, page, err.message);
     return gp;
   }
   throw err;
@@ -73,6 +73,10 @@ function processQueueItem(task, callback) {
     limiter(hitsPerWorker, () => populatePractice(task.id), callback);
   }
 }
+function processRetryQueueItem(task, callback) {
+  log.info(`Retrying practice ID ${task.id}`);
+  limiter(hitsPerWorker, () => populatePractice(task.id), callback);
+}
 
 function queueSyndicationIds(q) {
   gpStore.getIds().forEach((id) => {
@@ -83,7 +87,25 @@ function queueSyndicationIds(q) {
     }
   });
 }
+function queueErroredIds(q) {
+  const failedIds = gpStore.getFailedIds();
+  gpStore.clearFailedIds();
+  failedIds.forEach((id) => {
+    if (id) {
+      q.push({ id }, () => log.info(`${id} done`));
+    } else {
+      log.error('Undefined ID in syndication list');
+    }
+  });
+}
 
+function startRetryQueue(workers, drain) {
+  count = 0;
+  hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
+  const q = async.queue(processRetryQueueItem, workers);
+  queueErroredIds(q);
+  q.drain = drain;
+}
 function start(workers, drain) {
   count = 0;
   hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
@@ -94,4 +116,5 @@ function start(workers, drain) {
 
 module.exports = {
   start,
+  startRetryQueue,
 };

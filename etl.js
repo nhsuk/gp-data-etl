@@ -31,8 +31,17 @@ function etlComplete() {
   clearState();
 }
 
+function startRevisitFailuresQueue() {
+  if (gpStore.getFailedIds().length > 0) {
+    log.info('Revisiting failed IDs');
+    populatePracticeQueue.startRetryQueue(WORKERS, etlComplete);
+  } else {
+    etlComplete();
+  }
+}
+
 function startPopulatePracticeQueue() {
-  populatePracticeQueue.start(WORKERS, etlComplete);
+  populatePracticeQueue.start(WORKERS, startRevisitFailuresQueue);
 }
 
 function idQueueComplete() {
@@ -56,7 +65,7 @@ function start() {
     }
     // run with only a few pages, save every 10 records rather than 100
     config.saveEvery = 10;
-    startIdQueue(3);
+    startIdQueue(1);
   } else {
     if (process.argv[2] === 'clear') {
       clearState();
