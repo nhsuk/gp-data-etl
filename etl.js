@@ -11,6 +11,7 @@ const config = require('./app/lib/config');
 requireEnv(['SYNDICATION_API_KEY']);
 
 const WORKERS = 1;
+let etlInProgress = false;
 
 function clearState() {
   populateIdListQueue.clearState();
@@ -29,6 +30,7 @@ function etlComplete() {
   gpStore.saveGPs();
   gpStore.saveSummary();
   clearState();
+  etlInProgress = false;
 }
 
 function startRevisitFailuresQueue() {
@@ -65,7 +67,7 @@ function start() {
     }
     // run with only a few pages, save every 10 records rather than 100
     config.saveEvery = 10;
-    startIdQueue(1);
+    startIdQueue(3);
   } else {
     if (process.argv[2] === 'clear') {
       clearState();
@@ -80,6 +82,15 @@ function start() {
   });
 }
 
+function safeStart() {
+  if (etlInProgress) {
+    log.error('Etl already running');
+  } else {
+    etlInProgress = true;
+    start();
+  }
+}
+
 module.exports = {
-  start,
+  start: safeStart,
 };

@@ -1,9 +1,12 @@
 const log = require('./logger');
 const fsHelper = require('./fsHelper');
 
+const ALL_TYPE = 'all';
+const SERVICES_TYPE = 'services';
+const FACILITIES_TYPE = 'facilities';
+
 let syndicationIds = [];
 let failedIds = {};
-
 let gpCache = {};
 
 function getGPs() {
@@ -19,11 +22,25 @@ function getIds() {
 }
 
 function getFailedIds() {
-  return Object.keys(failedIds);
+  return Object.keys(failedIds).map(n => Number(n));
 }
 
-function clearFailedIds() {
-  failedIds = {};
+function getFailedIdsByType(type) {
+  const ids = [];
+  Object.keys(failedIds).forEach((key) => {
+    if (failedIds[key][type]) {
+      ids.push(Number(key));
+    }
+  });
+  return ids;
+}
+
+function clearFailedIds(ids) {
+  if (ids) {
+    ids.forEach(id => delete failedIds[id]);
+  } else {
+    failedIds = {};
+  }
 }
 
 function addGP(gp) {
@@ -60,8 +77,23 @@ function loadState() {
   gpCache = fsHelper.loadJsonSync('gpCache') || {};
 }
 
+function writeSubpageStatus(type) {
+  const failedSubpageIds = getFailedIdsByType(type);
+  if (failedSubpageIds.length > 0) {
+    log.info(`${failedSubpageIds.length} have errors on the ${type} page`);
+  }
+}
+
+function writeStatus() {
+  const failedAllIds = getFailedIdsByType(ALL_TYPE);
+  log.info(`${failedAllIds.length} syndication IDs failed: ${failedAllIds}`);
+  writeSubpageStatus(FACILITIES_TYPE);
+  writeSubpageStatus(SERVICES_TYPE);
+  log.info('see summary.json file in \'html/json\' for full details');
+}
+
 function saveGPs() {
-  log.info(`The following syndication IDs failed: ${failedIds}`);
+  writeStatus();
   fsHelper.saveJsonSync(getGPs(), 'gp-data');
 }
 
@@ -79,7 +111,6 @@ loadState();
 module.exports = {
   getIds,
   addIds,
-  getGPs,
   getGP,
   addGP,
   saveGPs,
@@ -89,4 +120,8 @@ module.exports = {
   clearState,
   clearFailedIds,
   getFailedIds,
+  getFailedIdsByType,
+  ALL_TYPE,
+  SERVICES_TYPE,
+  FACILITIES_TYPE,
 };

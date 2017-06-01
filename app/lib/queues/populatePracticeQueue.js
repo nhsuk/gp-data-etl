@@ -12,9 +12,11 @@ const steps = ['overview', 'facilities', 'services'];
 const numberOfSteps = steps.length;
 let hitsPerWorker;
 let count = 0;
+let retryCount = 0;
+let totalRetries = 0;
 
 function handleError(err, id) {
-  gpStore.addFailedId(id, 'page', err.message);
+  gpStore.addFailedId(id, gpStore.ALL_TYPE, err.message);
   log.error(`Error processing syndication ID ${id}: ${err}`);
 }
 
@@ -32,7 +34,7 @@ function addFacilities(gp, id) {
     // eslint-disable-next-line no-param-reassign
     gp.facilities = facilities;
     return gp;
-  }).catch(err => swallow404('facilities', err, gp, id));
+  }).catch(err => swallow404(gpStore.FACILITIES_TYPE, err, gp, id));
 }
 
 function addServices(gp, id) {
@@ -40,7 +42,7 @@ function addServices(gp, id) {
     // eslint-disable-next-line no-param-reassign
     gp.services = services;
     return gp;
-  }).catch(err => swallow404('services', err, gp, id));
+  }).catch(err => swallow404(gpStore.SERVICES_TYPE, err, gp, id));
 }
 
 function populatePractice(id) {
@@ -74,7 +76,8 @@ function processQueueItem(task, callback) {
   }
 }
 function processRetryQueueItem(task, callback) {
-  log.info(`Retrying practice ID ${task.id}`);
+  retryCount += 1;
+  log.info(`Retrying practice ID ${task.id} ${retryCount}/${totalRetries}`);
   limiter(hitsPerWorker, () => populatePractice(task.id), callback);
 }
 
@@ -88,8 +91,9 @@ function queueSyndicationIds(q) {
   });
 }
 function queueErroredIds(q) {
-  const failedIds = gpStore.getFailedIds();
-  gpStore.clearFailedIds();
+  const failedIds = gpStore.getFailedIdsByType(gpStore.ALL_TYPE);
+  totalRetries = failedIds.length;
+  gpStore.clearFailedIds(failedIds);
   failedIds.forEach((id) => {
     if (id) {
       q.push({ id }, () => log.info(`${id} done`));
@@ -100,7 +104,7 @@ function queueErroredIds(q) {
 }
 
 function startRetryQueue(workers, drain) {
-  count = 0;
+  retryCount = 0;
   hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
   const q = async.queue(processRetryQueueItem, workers);
   queueErroredIds(q);
