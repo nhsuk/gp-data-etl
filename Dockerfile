@@ -25,6 +25,4 @@ RUN find /code -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
 
 EXPOSE 80
 
-RUN ln -s /code/output/ /code/html/json
-
 CMD [ "supervisord", "-n", "-c", "/code/supervisord.conf" ]

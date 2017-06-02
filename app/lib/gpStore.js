@@ -35,6 +35,10 @@ function getFailedIdsByType(type) {
   return ids;
 }
 
+function getTotalFailures() {
+  return getFailedIdsByType(ALL_TYPE);
+}
+
 function clearFailedIds(ids) {
   if (ids) {
     ids.forEach(id => delete failedIds[id]);
@@ -85,7 +89,7 @@ function writeSubpageStatus(type) {
 }
 
 function writeStatus() {
-  const failedAllIds = getFailedIdsByType(ALL_TYPE);
+  const failedAllIds = getTotalFailures();
   log.info(`${failedAllIds.length} syndication IDs failed: ${failedAllIds}`);
   writeSubpageStatus(FACILITIES_TYPE);
   writeSubpageStatus(SERVICES_TYPE);
@@ -121,6 +125,7 @@ module.exports = {
   clearFailedIds,
   getFailedIds,
   getFailedIdsByType,
+  getTotalFailures,
   ALL_TYPE,
   SERVICES_TYPE,
   FACILITIES_TYPE,

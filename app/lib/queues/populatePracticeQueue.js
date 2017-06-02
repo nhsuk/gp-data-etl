@@ -20,8 +20,8 @@ function handleError(err, id) {
   log.error(`Error processing syndication ID ${id}: ${err}`);
 }
 
-function swallow404(page, err, gp, id) {
-  if (err.message.includes(' 404')) {
+function swallowSubpageErrors(page, err, gp, id) {
+  if (err.message.includes(' 404') || err.message.includes(service.SYNDICATION_HTML_PAGE_ERROR)) {
     log.error(`No ${page} for syndication ID ${id}: ${err}`);
     gpStore.addFailedId(id, page, err.message);
     return gp;
@@ -34,7 +34,7 @@ function addFacilities(gp, id) {
     // eslint-disable-next-line no-param-reassign
     gp.facilities = facilities;
     return gp;
-  }).catch(err => swallow404(gpStore.FACILITIES_TYPE, err, gp, id));
+  }).catch(err => swallowSubpageErrors(gpStore.FACILITIES_TYPE, err, gp, id));
 }
 
 function addServices(gp, id) {
@@ -42,7 +42,7 @@ function addServices(gp, id) {
     // eslint-disable-next-line no-param-reassign
     gp.services = services;
     return gp;
-  }).catch(err => swallow404(gpStore.SERVICES_TYPE, err, gp, id));
+  }).catch(err => swallowSubpageErrors(gpStore.SERVICES_TYPE, err, gp, id));
 }
 
 function populatePractice(id) {
@@ -91,7 +91,7 @@ function queueSyndicationIds(q) {
   });
 }
 function queueErroredIds(q) {
-  const failedIds = gpStore.getFailedIdsByType(gpStore.ALL_TYPE);
+  const failedIds = gpStore.getTotalFailures();
   totalRetries = failedIds.length;
   gpStore.clearFailedIds(failedIds);
   failedIds.forEach((id) => {

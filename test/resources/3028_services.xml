@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - Services - The Densham Surgery</title><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/services</id><rights type="text">© Crown Copyright 2009</rights><updated>2015-07-08T14:09:45+01:00</updated><category term="Services" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - Services - The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/services?apikey=bbccdd" /><link rel="alternate" type="application/xhtml+xml" title="NHS Choices - Services - The Densham Surgery" href="http://www.nhs.uk/Services/GP/PctServices/DefaultView.aspx?id=36798" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f3028%2fservices&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><complete xmlns="http://purl.org/syndication/history/1.0"></complete><servicesUsefulLinks xmlns="http://syndication.nhschoices.nhs.uk/services"><internalLinks></internalLinks><externalLinks></externalLinks></servicesUsefulLinks><epsIsEnabled xmlns="http://syndication.nhschoices.nhs.uk/services">true</epsIsEnabled><epsDescription xmlns="http://syndication.nhschoices.nhs.uk/services">
+				This GP offers the Electronic Prescription Service, which allows you to choose or "nominate" a pharmacy to get your medicines or appliances from. Your GP then sends your prescription electronically to the place you nominated. this means:
+				&lt;ul&gt;
+				&lt;li&gt; If you collect your repeat prescriptions from your GP you will not have to visit your GP practice to pick up your paper prescription, saving time.&lt;/li&gt;
+				&lt;li&gt;You will have more choice about where to get your medicines from because they can be collected from a pharmacy near to where you live, work or shop.&lt;/li&gt;
+				&lt;li&gt;You may not have to wait as long as your repeat prescriptions could be prepared before you arrive.&lt;/li&gt;
+				&lt;/ul&gt;
+			</epsDescription><epsLinkText xmlns="http://syndication.nhschoices.nhs.uk/services">Find out more</epsLinkText><epsLinkUrl xmlns="http://syndication.nhschoices.nhs.uk/services">http://www.nhs.uk/NHSEngland/AboutNHSservices/pharmacists/Pages/eps.aspx</epsLinkUrl><epsImageUrl xmlns="http://syndication.nhschoices.nhs.uk/services">http://www.nhs.uk/img/eps-nhs-logo.gif</epsImageUrl><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0280/cl7477</id><title type="text">Asthma Clinic - The Densham Surgery</title><published>2012-06-28T04:06:03+01:00</published><updated>2012-06-28T04:06:03+01:00</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0280/cl7477?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0280">Asthma Clinic</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text></s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0309/cl7478</id><title type="text">Child health and development - The Densham Surgery</title><published>2012-06-28T04:06:03+01:00</published><updated>2012-06-28T04:06:03+01:00</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0309/cl7478?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0309">Child health and development</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text></s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0284/cl46838</id><title type="text">COPD clinic with spirometry - The Densham Surgery</title><published>2015-07-08T14:09:45+01:00</published><updated>2015-07-08T14:09:45+01:00</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0284/cl46838?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0284">COPD clinic with spirometry</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text></s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0294/cl7479</id><title type="text">Long-Acting Reversible Contraception (LARC - eg IUD or implant) - The Densham Surgery</title><published>2015-07-08T14:06:50+01:00</published><updated>2015-07-08T14:06:50+01:00</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0294/cl7479?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0294">Long-Acting Reversible Contraception (LARC - eg IUD or implant)</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text></s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7480</id><title type="text">Minor surgery (e.g. removal of moles and skin lesions) - provided in-house - The Densham Surgery</title><published>2015-07-08T12:37:44+01:00</published><updated>2015-07-08T12:37:44+01:00</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7480?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0298">Minor surgery (e.g. removal of moles and skin lesions) - provided in-house</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text>Practice Offer Cryotherapy and joint injections</s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry><entry><id>http://v1.syndication.nhschoices.nhs.uk/services/types/srv0492/cl79926</id><title type="text">Learning disability health check - The Densham Surgery</title><published>2016-03-22T22:08:21Z</published><updated>2016-03-22T22:08:21Z</updated><link rel="self" title="The Densham Surgery" href="http://v1.syndication.nhschoices.nhs.uk/services/types/srv0492/cl79926?apikey=bbccdd" /><content type="application/xml">
+                                        <s:servicesummary xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+                                        <s:type code="SRV0492">Learning disability health check</s:type><s:serviceBranchAvailabilityTimes>
+                                                                <s:text></s:text>
+                                                            </s:serviceBranchAvailabilityTimes>
+                                                            <s:serviceIntroduction>
+                                                                <s:text></s:text>
+                                                            </s:serviceIntroduction>
+                                                            <s:serviceGpReferralRequired>
+                                                                <s:text>False</s:text>
+                                                            </s:serviceGpReferralRequired>                                        
+                                        <s:serviceDeliverer>
+                                            <s:name>The Densham Surgery</s:name>
+                                        </s:serviceDeliverer>
+                                        </s:servicesummary>
+                                        </content></entry></feed>

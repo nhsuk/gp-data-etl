@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title type="text">NHS Choices - The Densham Surgery - Overview</title><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/overview</id><rights type="text">© Crown Copyright 2009</rights><updated>2015-07-08T14:09:45+01:00</updated><category term="Overview" /><logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo><author><name>NHS Choices</name><uri>http://www.nhs.uk</uri><email>webservices@nhschoices.nhs.uk</email></author><link rel="self" type="application/xml" title="NHS Choices - The Densham Surgery - Overview" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/overview?apikey=bbccdd" /><link rel="alternate" title="NHS Choices - The Densham Surgery - Overview" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36798" /><tracking xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f3028%2foverview&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;</tracking><complete xmlns="http://purl.org/syndication/history/1.0"></complete><entry><id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/overview</id><title type="text">The Densham Surgery - Overview</title><published>2015-07-08T14:09:45+01:00</published><updated>2015-07-08T14:09:45+01:00</updated><link rel="self" title="The Densham Surgery - Overview" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/3028/overview?apikey=bbccdd" /><link rel="alternate" title="The Densham Surgery - Overview" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36798" /><content type="application/xml">
+                                <s:overview xmlns:s="http://syndication.nhschoices.nhs.uk/services">    
+                                  <s:name indexLetter="D">The Densham Surgery</s:name>
+                                  <s:odsCode>A81001</s:odsCode>
+                                  <s:parentOrganisation>
+                                    <s:name>NHS Hartlepool And Stockton-On-Tees CCG</s:name>
+                                    <s:uri>http://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/462873?apikey=bbccdd</s:uri>
+                                  </s:parentOrganisation>
+                                  
+                                  
+                                  
+                                    
+                                  
+                                  
+                                  
+                                  <s:address><s:addressLine>Health Centre</s:addressLine><s:addressLine>Lawson Street</s:addressLine><s:addressLine>Stockton On Tees</s:addressLine><s:addressLine>Cleveland</s:addressLine><s:postcode>TS18 1HU</s:postcode></s:address>
+                                  <s:contact type="General"><s:telephone>01642 606490</s:telephone><s:fax>01642 618112</s:fax></s:contact>
+                                    
+                                  
+                                  
+                                  <s:website>http://www.williamsoliver.me.uk</s:website>   
+                                  
+                                  
+                                  <s:geographicCoordinates>
+                                    <s:longitude>-1.31897032260895</s:longitude>
+                                    <s:latitude>54.5616264343262</s:latitude>
+                                  </s:geographicCoordinates>
+                                  <s:newPatients accepting="True"><s:statusText>We are currently accepting new patients</s:statusText><s:registrationText>Please register during reception hours</s:registrationText><s:registrationFormUrl>http://www.nhs.uk/Servicedirectories/Documents/GMS1.pdf</s:registrationFormUrl><s:registrationFormText>Download registration form</s:registrationFormText><s:catchmentAreaUrl>http://www.nhs.uk/Services/GP/MapsAndDirections/DefaultView.aspx?id=36798</s:catchmentAreaUrl><s:catchmentAreaText>View catchment area</s:catchmentAreaText><s:patientAdvice>
+	&lt;p&gt;Need advice on how to choose a GP?&lt;br/&gt;&lt;a href="http://www.nhs.uk/choiceintheNHS/Yourchoices/GPchoice/Documents/rcgp_iyp_full_booklet_web_version.pdf"&gt;
+	View a guide by the Royal College of GPs&lt;/a&gt;&lt;/p&gt;
+	</s:patientAdvice></s:newPatients>
+                                  
+                                  <s:openingTimes><s:timesSessionTypes><s:timesSessionType sessionType="reception"><s:daysOfWeek><s:dayOfWeek><s:dayName>Sunday</s:dayName><s:timesSessions><s:timesSession>Closed</s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Monday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Tuesday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Wednesday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Thursday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Friday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Saturday</s:dayName><s:timesSessions><s:timesSession>Closed</s:timesSession></s:timesSessions></s:dayOfWeek></s:daysOfWeek></s:timesSessionType><s:timesSessionType sessionType="surgery"><s:daysOfWeek><s:dayOfWeek><s:dayName>Sunday</s:dayName><s:timesSessions><s:timesSession>Closed</s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Monday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Tuesday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Wednesday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Thursday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Friday</s:dayName><s:timesSessions><s:timesSession><s:fromTime>08:30</s:fromTime><s:toTime>18:00</s:toTime></s:timesSession></s:timesSessions></s:dayOfWeek><s:dayOfWeek><s:dayName>Saturday</s:dayName><s:timesSessions><s:timesSession>Closed</s:timesSession></s:timesSessions></s:dayOfWeek></s:daysOfWeek></s:timesSessionType></s:timesSessionTypes><s:lastVerifiedOn>2015-07-07 16:55:05Z</s:lastVerifiedOn></s:openingTimes>
+                                  <s:overviewLastUpdated>2015-07-07 16:55:05Z</s:overviewLastUpdated> 
+                                  
+                                  <s:doctors><s:doctor>Dr Gillian Oliver</s:doctor><s:doctor>Dr Stephen Richard Williams</s:doctor></s:doctors>
+                                  <s:gpcounts><s:gpcount type="male">1</s:gpcount><s:gpcount type="female">1</s:gpcount></s:gpcounts>
+                                  <s:isEpsEnabled>true</s:isEpsEnabled>
+                                  
+                                  <s:overviewKeyFacts><s:keyFacts><s:keyFact><s:question>Registered list size</s:question><s:value>4165</s:value><s:text>patients</s:text></s:keyFact><s:keyFact><s:question>Friends and Family test score - GP</s:question><s:text>Patients recommend this practice. [Value2] responses.</s:text></s:keyFact></s:keyFacts><s:moreInformation><s:url>http://www.nhs.uk/Scorecard/Pages/GpFacts.aspx</s:url><s:text>More information about this data</s:text></s:moreInformation><s:performance><s:url>http://www.nhs.uk/Services/GP/Performance/DefaultView.aspx?id=36798</s:url><s:text>More on how we perform</s:text></s:performance></s:overviewKeyFacts>
+                                  
+                                </s:overview>
+                                </content></entry></feed>

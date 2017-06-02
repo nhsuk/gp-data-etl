@@ -29,6 +29,10 @@ describe('syndicationService', function test() {
   });
 
   it('should return error for unknown ID', (done) => {
-    service.getOverviewPage('notANumber').catch(() => done());
+    service.getOverviewPage('notANumber').then(() => done('should have errored')).catch(() => done());
+  });
+
+  it('should return error for HTML returned rather than XML', (done) => {
+    service.getServicesPage('14963').then(() => done('should have errored')).catch(() => done());
   });
 });
