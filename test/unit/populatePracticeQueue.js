@@ -51,14 +51,13 @@ describe('Populate Practice Queue', function test() {
 
   it('should process a valid practice', (done) => {
     const syndicationId = 3028;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockSuccess(syndicationId, 'services');
     nockSuccess(syndicationId, 'facilities');
     gpStore.addIds([syndicationId]);
-    // act
+
     populatePracticeQueue.start(1, () => {
-      // assert
       const gp = gpStore.getGP(syndicationId);
       /* eslint-disable no-unused-expressions */
       expect(gp).to.exist;
@@ -71,14 +70,13 @@ describe('Populate Practice Queue', function test() {
 
   it('should skip already processed practice', (done) => {
     const syndicationId = 3028;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockSuccess(syndicationId, 'services');
     nockSuccess(syndicationId, 'facilities');
     gpStore.addIds([syndicationId, syndicationId]);
-    // act
+
     populatePracticeQueue.start(1, () => {
-      // assert
       const gp = gpStore.getGP(syndicationId);
       /* eslint-disable no-unused-expressions */
       expect(gp).to.exist;
@@ -91,14 +89,13 @@ describe('Populate Practice Queue', function test() {
 
   it('should process a practice missing facilities', (done) => {
     const syndicationId = 4046;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockSuccess(syndicationId, 'services');
     nockError(syndicationId, 'facilities', 404);
-    // act
+
     gpStore.addIds([syndicationId]);
     populatePracticeQueue.start(1, () => {
-      // assert
       const gp = gpStore.getGP(syndicationId);
       /* eslint-disable no-unused-expressions */
       expect(gp).to.exist;
@@ -111,14 +108,13 @@ describe('Populate Practice Queue', function test() {
 
   it('should process a practice missing services', (done) => {
     const syndicationId = 3852;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockError(syndicationId, 'services', 404);
     nockSuccess(syndicationId, 'facilities');
-    // act
+
     gpStore.addIds([syndicationId]);
     populatePracticeQueue.start(1, () => {
-      // assert
       const gp = gpStore.getGP(syndicationId);
       /* eslint-disable no-unused-expressions */
       expect(gp).to.exist;
@@ -131,7 +127,7 @@ describe('Populate Practice Queue', function test() {
 
   it('should process a practice with an html page returned for services xml request', (done) => {
     const syndicationId = 14963;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockHtmlResponse(syndicationId, 'services');
     nockSuccess(syndicationId, 'facilities');
@@ -149,7 +145,7 @@ describe('Populate Practice Queue', function test() {
 
   it('should add id to error list on failure', (done) => {
     const syndicationId = 14963;
-    // arrrange
+
     nockError(syndicationId, 'overview', 500);
     gpStore.addIds([syndicationId]);
     populatePracticeQueue.start(1, () => {
@@ -161,7 +157,7 @@ describe('Populate Practice Queue', function test() {
 
   it('should add id to error list on sub page failure', (done) => {
     const syndicationId = 4046;
-    // arrrange
+
     nockSuccess(syndicationId, 'overview');
     nockSuccess(syndicationId, 'services');
     nockError(syndicationId, 'facilities', 500);
