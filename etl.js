@@ -34,7 +34,7 @@ function etlComplete() {
 }
 
 function startRevisitFailuresQueue() {
-  if (gpStore.getTotalFailures().length > 0) {
+  if (gpStore.getErorredIds().length > 0) {
     log.info('Revisiting failed IDs');
     populatePracticeQueue.startRetryQueue(WORKERS, etlComplete);
   } else {

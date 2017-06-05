@@ -91,7 +91,7 @@ function queueSyndicationIds(q) {
   });
 }
 function queueErroredIds(q) {
-  const failedIds = gpStore.getTotalFailures();
+  const failedIds = gpStore.getErorredIds();
   totalRetries = failedIds.length;
   gpStore.clearFailedIds(failedIds);
   failedIds.forEach((id) => {

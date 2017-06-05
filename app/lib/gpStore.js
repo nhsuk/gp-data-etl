@@ -35,7 +35,7 @@ function getFailedIdsByType(type) {
   return ids;
 }
 
-function getTotalFailures() {
+function getErorredIds() {
   return getFailedIdsByType(ALL_TYPE);
 }
 
@@ -89,11 +89,11 @@ function writeSubpageStatus(type) {
 }
 
 function writeStatus() {
-  const failedAllIds = getTotalFailures();
+  const failedAllIds = getErorredIds();
   log.info(`${failedAllIds.length} syndication IDs failed: ${failedAllIds}`);
   writeSubpageStatus(FACILITIES_TYPE);
   writeSubpageStatus(SERVICES_TYPE);
-  log.info('see summary.json file in \'html/json\' for full details');
+  log.info('see summary.json file in \'site/json\' for full details');
 }
 
 function saveGPs() {
@@ -104,6 +104,9 @@ function saveGPs() {
 function saveSummary() {
   const summary = {
     totalScanned: syndicationIds.length,
+    totalErroredIds: getErorredIds().length,
+    totalFacilitiesMissing: getFailedIdsByType(FACILITIES_TYPE).length,
+    totalServicesMissing: getFailedIdsByType(SERVICES_TYPE).length,
     lastWritten: (new Date()).toLocaleString(),
     failedIds,
   };
@@ -125,7 +128,7 @@ module.exports = {
   clearFailedIds,
   getFailedIds,
   getFailedIdsByType,
-  getTotalFailures,
+  getErorredIds,
   ALL_TYPE,
   SERVICES_TYPE,
   FACILITIES_TYPE,
