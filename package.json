@@ -18,9 +18,11 @@
     "start-clear": "node schedule.js clear",
     "start-small": "node schedule.js small",
     "start-small-clear": "node schedule.js small clear",
-    "test": "NODE_ENV=test mocha --recursive test/unit",
+    "test": "NODE_ENV=test mocha --recursive test",
     "test-integration": "NODE_ENV=test mocha --recursive test/integration",
-    "test-watch": "yarn run test -- --watch --reporter min",
+    "test-unit": "NODE_ENV=test mocha --recursive test/unit",
+    "test-watch": "yarn run test-unit -- --watch --reporter min",
+    "test-watch-integration": "yarn run test-integration -- --watch --reporter min",
     "travis": "yarn run lint && yarn run generate-coverage && yarn run check-coverage && yarn run upload-coverage-coveralls && yarn run snyk-travis",
     "upload-coverage-coveralls": "cat ./coverage/lcov.info | coveralls"
   },
@@ -54,6 +56,7 @@
     "husky": "^0.12.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
+    "nock": "^9.0.13",
     "nodemon": "^1.11.0",
     "snyk": "^1.30.1"
   },

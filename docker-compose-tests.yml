@@ -8,7 +8,7 @@ services:
       service: base-etl
     command: yarn test
     volumes:
-      - etl-node_modules:/code/node_modules
+      - etl-test-node_modules:/code/node_modules
     environment:
       NODE_ENV: development
       SNYK_TOKEN: ${SNYK_TOKEN}
@@ -19,7 +19,7 @@ services:
       service: base-etl
     command: yarn run travis
     volumes:
-      - etl-node_modules:/code/node_modules
+      - etl-test-node_modules:/code/node_modules
     environment:
       COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
       NODE_ENV: development
@@ -35,7 +35,7 @@ services:
       service: base-etl
     command: yarn run test-integration
     volumes:
-      - etl-node_modules:/code/node_modules
+      - etl-test-node_modules:/code/node_modules
     environment:
       COVERALLS_REPO_TOKEN: ${COVERALLS_REPO_TOKEN}
       NODE_ENV: development
@@ -46,4 +46,4 @@ services:
       TRAVIS_JOB_ID: ${TRAVIS_JOB_ID}
 
 volumes:
-  etl-node_modules:
+  etl-test-node_modules:

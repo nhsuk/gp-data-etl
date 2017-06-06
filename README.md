@@ -13,12 +13,20 @@ Details of registration are available on
 [NHS Choices](http://www.nhs.uk/aboutNHSChoices/professionals/syndication/Pages/Webservices.aspx).
 The application needs the api key available within the environment as the variable `SYNDICATION_API_KEY`.
 
+The ETL retrieves the Syndication IDs for all GPs, then visits the `Overview`, `Facilities` and `Services` page for each to gather the required information.
+
+Once the initial scan is complete, failed IDs will be revisited. 404 errors on `Facilities` and `Services` are not considered errors as
+they represent GPs with no information in those areas. The GPs missing facilities and services are listed in a `summary.json` file.
+
 Running `scripts/start` will bring up a docker container hosting a web server and initiate the scrape at a scheduled time.
 The default is 11pm. To test locally set an environment variable `ETL_SCHEDULE` to a new time,
-i.e. `export ETL_SCHEDULE='25 15 * * *'` to start the processing a 3:25pm.
+i.e. `export ETL_SCHEDULE='25 15 * * *'` to start the processing a 3:25pm. Note: the container time is GMT and does not take account of daylight saving, you may need to subtract an hour from the time if it is currently BST.
+
 Further details available [here](https://www.npmjs.com/package/node-schedule)
 
-A successful scrape will result in the file `gp-data.json` being written to the `output` folder. This file may be downloaded from the web-server available at `http://localhost/json/gp-data.json`. Summary json is available at `http://localhost/json/summary.json`
+A successful scrape will result in the file `gp-data.json` being written to the `site/json` folder. This file may be downloaded from the web-server available at `http://localhost/json/gp-data.json`. Summary json is available at `http://localhost/json/summary.json`
+
+Files are not present until the scheduler has run and may return a 404 error prior to then.
 
 The ETL may also be run locally with `yarn start`
 

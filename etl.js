@@ -11,6 +11,7 @@ const config = require('./app/lib/config');
 requireEnv(['SYNDICATION_API_KEY']);
 
 const WORKERS = 1;
+let etlInProgress = false;
 
 function clearState() {
   populateIdListQueue.clearState();
@@ -29,10 +30,20 @@ function etlComplete() {
   gpStore.saveGPs();
   gpStore.saveSummary();
   clearState();
+  etlInProgress = false;
+}
+
+function startRevisitFailuresQueue() {
+  if (gpStore.getErorredIds().length > 0) {
+    log.info('Revisiting failed IDs');
+    populatePracticeQueue.startRetryQueue(WORKERS, etlComplete);
+  } else {
+    etlComplete();
+  }
 }
 
 function startPopulatePracticeQueue() {
-  populatePracticeQueue.start(WORKERS, etlComplete);
+  populatePracticeQueue.start(WORKERS, startRevisitFailuresQueue);
 }
 
 function idQueueComplete() {
@@ -71,6 +82,15 @@ function start() {
   });
 }
 
+function safeStart() {
+  if (etlInProgress) {
+    log.error('Etl already running');
+  } else {
+    etlInProgress = true;
+    start();
+  }
+}
+
 module.exports = {
-  start,
+  start: safeStart,
 };
