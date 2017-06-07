@@ -42,3 +42,10 @@ The output JSON will be an array of objects in the format shown in the [Sample G
 A full description of the schema is available in the profiles-db [README.md](https://github.com/nhsuk/profiles-db/blob/master/README.md)
 
 The json files created will be available via the container's webserver at `http://localhost/json/gp-data.json`
+
+## Architecture Decision Records
+ 
+This repo uses
+[Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
+to record architectural decisions for this project.
+They are stored in [doc/architecture/decisions](doc/architecture/decisions).
