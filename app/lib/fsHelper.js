@@ -4,7 +4,6 @@ const config = require('./config');
 
 const OUTPUT_DIR = config.outputDir;
 
-
 function createDirIfMissing(path) {
   if (!fs.existsSync(path)) {
     fs.mkdirSync(path);
