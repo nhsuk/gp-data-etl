@@ -11,7 +11,7 @@ describe('all opening times mapper', () => {
   it('should gracefully handle undefined opening times section', () => {
     const openingTimes = mapOpeningTimes(undefined);
     // eslint-disable-next-line no-unused-expressions
-    expect(openingTimes).to.be.empty;
+    expect(openingTimes).to.be.undefined;
   });
 
   it('should map reception, surgery and alterations', () => {

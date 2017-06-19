@@ -37,7 +37,6 @@ function getServicesPage(syndicationId) {
   return getSubPage(syndicationId, 'services');
 }
 
-
 module.exports = {
   DEFAULT_URL,
   SYNDICATION_HTML_PAGE_ERROR,
