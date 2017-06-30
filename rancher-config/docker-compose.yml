@@ -23,6 +23,7 @@ services:
         splunk-sourcetype: docker
         splunk-source: gp-data-etl
         splunk-verify-connection: "false"
+        tag: '{{.ImageName}} {{.Name}} {{.FullID}}'
 
 volumes:
   gp-etl-output:
