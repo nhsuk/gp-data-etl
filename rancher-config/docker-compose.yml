@@ -24,6 +24,7 @@ services:
         splunk-source: gp-data-etl
         splunk-verify-connection: "false"
         tag: '{{.ImageName}} {{.Name}} {{.FullID}}'
+        splunk-format: json
 
 volumes:
   gp-etl-output:
