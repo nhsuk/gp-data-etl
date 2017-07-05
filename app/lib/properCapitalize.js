@@ -61,7 +61,7 @@ function titleize(input) {
     }
     return capitalize(str);
   })
-  .join(' ');
+    .join(' ');
 }
 
 module.exports = titleize;

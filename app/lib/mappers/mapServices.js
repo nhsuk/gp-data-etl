@@ -39,7 +39,7 @@ function mapEntryToService(entry) {
 
 function getValidEntries(rawServices) {
   return utils.asArray(rawServices.feed.entry)
-              .filter(entry => entry.content && entry.content.servicesummary);
+    .filter(entry => entry.content && entry.content.servicesummary);
 }
 
 function mapServices(rawServices) {
