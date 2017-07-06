@@ -1,12 +1,16 @@
 const requireEnv = require('require-environment-variables');
+// requireEnvs must be at the top of the file as the azure-storage module uses the
+// AZURE_STORAGE_CONNECTION_STRING variable on load
+requireEnv(['AZURE_STORAGE_CONNECTION_STRING']);
 
-const gpStore = require('./app/lib/gpStore');
-const populateIdListQueue = require('./app/lib/queues/populateIdListQueue');
-const populatePracticeQueue = require('./app/lib/queues/populatePracticeQueue');
-const service = require('./app/lib/syndicationService');
-const mapTotalPages = require('./app/lib/mappers/mapTotalPages');
-const log = require('./app/lib/logger');
-const config = require('./app/lib/config');
+const gpStore = require('./gpStore');
+const populateIdListQueue = require('./queues/populateIdListQueue');
+const populatePracticeQueue = require('./queues/populatePracticeQueue');
+const service = require('./syndicationService');
+const mapTotalPages = require('./mappers/mapTotalPages');
+const log = require('./utils/logger');
+const config = require('./config');
+const uploadOutputToAzure = require('./uploadOutputToAzure');
 
 requireEnv(['SYNDICATION_API_KEY']);
 
@@ -26,10 +30,12 @@ function getTotalPages() {
   return service.getPracticeSummaryPage(1).then(mapTotalPages);
 }
 
-function etlComplete() {
+async function etlComplete() {
   gpStore.saveGPs();
   gpStore.saveSummary();
   clearState();
+  await uploadOutputToAzure();
+  log.info('ETL complete');
   etlInProgress = false;
 }
 

@@ -1,11 +1,11 @@
 const async = require('async');
-const log = require('../logger');
+const log = require('../utils/logger');
 const mapOverview = require('../mappers/mapOverview');
 const mapFacilities = require('../mappers/mapFacilities');
 const mapServices = require('../mappers/mapServices');
 const service = require('../syndicationService');
 const gpStore = require('../gpStore');
-const limiter = require('../limiter');
+const limiter = require('../utils/limiter');
 const config = require('../config');
 
 const steps = ['overview', 'facilities', 'services'];

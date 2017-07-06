@@ -1,4 +1,4 @@
-const utils = require('../utils');
+const utils = require('../utils/utils');
 const mapTitles = require('../../sources/servicesMap.json');
 
 function getText(member) {

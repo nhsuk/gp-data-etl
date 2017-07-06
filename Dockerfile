@@ -22,7 +22,5 @@ COPY . /code
 
 USER root
 RUN find /code -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
-
-EXPOSE 80
-
-CMD [ "supervisord", "-n", "-c", "/code/supervisord.conf" ]
+USER nodeuser
+CMD [ "node", "schedule.js" ]

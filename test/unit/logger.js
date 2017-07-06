@@ -1,4 +1,4 @@
-const logger = require('../../app/lib/logger');
+const logger = require('../../app/lib/utils/logger');
 
 describe('logger smoke tests', () => {
   it('should log info', () => logger.info('info'));

@@ -1,5 +1,5 @@
 const urlParser = require('../urlParser');
-const utils = require('../utils');
+const utils = require('../utils/utils');
 
 function matchLastPage(link) {
   return utils.getAttribute(link, 'rel') === 'last';

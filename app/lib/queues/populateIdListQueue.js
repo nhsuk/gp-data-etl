@@ -1,10 +1,10 @@
 const async = require('async');
 
 const gpStore = require('../gpStore');
-const log = require('../logger');
+const log = require('../utils/logger');
 const service = require('../syndicationService');
 const mapSyndicationId = require('../mappers/mapSyndicationId');
-const fsHelper = require('../fsHelper');
+const fsHelper = require('../utils/fsHelper');
 
 let processedPages = {};
 

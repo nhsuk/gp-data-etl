@@ -1,4 +1,4 @@
-const utils = require('../utils');
+const utils = require('../utils/utils');
 
 function getFacilityGroup(groups, name) {
   return groups.find(g => g.name === name);

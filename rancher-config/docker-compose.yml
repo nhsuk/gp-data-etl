@@ -7,11 +7,11 @@ services:
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
       ETL_SCHEDULE: ${ETL_SCHEDULE}
+      AZURE_STORAGE_CONNECTION_STRING: '${AZURE_STORAGE_CONNECTION_STRING}'
+      AZURE_TIMEOUT_MINUTES: ${CONTAINER_NAME}
+      CONTAINER_NAME: ${CONTAINER_NAME}
     labels:
-      traefik.enable: stack
-      traefik.domain: ${TRAEFIK_DOMAIN}
-      traefik.port: 80
-      map-public-http: 80
+      io.rancher.container.pull_image: always
     volumes:
       - gp-etl-output:/code/output
 

@@ -1,5 +1,5 @@
-const apiRequest = require('./apiRequest');
-const xmlParser = require('./xmlParser');
+const apiRequest = require('./utils/apiRequest');
+const xmlParser = require('./utils/xmlParser');
 
 const DEFAULT_URL = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices';
 const API_KEY = process.env.SYNDICATION_API_KEY;
