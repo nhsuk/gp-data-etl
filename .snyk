@@ -46,4 +46,8 @@ ignore:
     - snyk > snyk-resolve-deps > clite > debug > ms:
         reason: None given
         expires: '2017-06-15T09:35:44.446Z'
+  'npm:tunnel-agent:20170305':
+    - azure-storage > request > tunnel-agent:
+        reason: no upgrade available
+        expires: '2017-08-05T14:45:54.928Z'
 patch: {}
