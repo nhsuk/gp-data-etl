@@ -6,8 +6,6 @@ RUN adduser -D "$USERNAME" && \
     mkdir -p /code/output && \
     chown "$USERNAME":"$USERNAME" /code
 
-RUN apk --no-cache add nginx supervisor && mkdir -p /run/nginx/
-
 USER $USERNAME
 WORKDIR /code
 

@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-The container host the output file for consuming applications.
+The container currently runs an nginx web server to host the output file for consuming applications.
 If the container is not running, the file is not available.
 
 ## Decision
