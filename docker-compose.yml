@@ -5,8 +5,6 @@ services:
   base-etl:
     build:
       context: .
-    volumes:
-      - .:/code
     environment:
       SYNDICATION_API_KEY: ${SYNDICATION_API_KEY}
       ETL_SCHEDULE: ${ETL_SCHEDULE}
@@ -15,12 +13,16 @@ services:
       CONTAINER_NAME: ${CONTAINER_NAME}
 
   full-etl:
+    volumes:
+      - .:/code
     extends:
       service: base-etl
     volumes:
       - etl-node_modules:/code/node_modules
 
   full-etl-clear:
+    volumes:
+      - .:/code
     extends:
       service: base-etl
     command: yarn run start-clear
@@ -28,6 +30,8 @@ services:
       - etl-node_modules:/code/node_modules
 
   partial-etl:
+    volumes:
+      - .:/code
     extends:
       service: base-etl
     command: yarn run start-small
@@ -36,6 +40,8 @@ services:
       - gp-etl-partial-output:/code/output
 
   partial-etl-clear:
+    volumes:
+      - .:/code
     extends:
       service: base-etl
     command: yarn run start-small-clear
