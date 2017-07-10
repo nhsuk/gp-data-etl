@@ -19,7 +19,6 @@ services:
       service: base-etl
     volumes:
       - etl-node_modules:/code/node_modules
-      - gp-etl-output:/code/output
 
   full-etl-clear:
     extends:
@@ -27,7 +26,6 @@ services:
     command: yarn run start-clear
     volumes:
       - etl-node_modules:/code/node_modules
-      - gp-etl-output:/code/output
 
   partial-etl:
     extends:
@@ -47,5 +45,4 @@ services:
 
 volumes:
   etl-node_modules:
-  gp-etl-output:
   gp-etl-partial-output:

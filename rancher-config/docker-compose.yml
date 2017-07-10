@@ -12,8 +12,3 @@ services:
       CONTAINER_NAME: ${CONTAINER_NAME}
     labels:
       io.rancher.container.pull_image: always
-    volumes:
-      - gp-etl-output:/code/output
-
-volumes:
-  gp-etl-output:
