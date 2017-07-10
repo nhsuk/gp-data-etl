@@ -6,8 +6,6 @@ RUN adduser -D "$USERNAME" && \
     mkdir -p /code/output && \
     chown "$USERNAME":"$USERNAME" /code
 
-RUN apk --no-cache add nginx supervisor && mkdir -p /run/nginx/
-
 USER $USERNAME
 WORKDIR /code
 
@@ -22,7 +20,6 @@ COPY . /code
 
 USER root
 RUN find /code -user 0 -print0 | xargs -0 chown "$USERNAME":"$USERNAME"
+USER $USERNAME
 
-EXPOSE 80
-
-CMD [ "supervisord", "-n", "-c", "/code/supervisord.conf" ]
+CMD [ "node", "schedule.js" ]

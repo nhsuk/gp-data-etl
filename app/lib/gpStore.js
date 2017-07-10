@@ -1,5 +1,5 @@
-const log = require('./logger');
-const fsHelper = require('./fsHelper');
+const log = require('./utils/logger');
+const fsHelper = require('./utils/fsHelper');
 
 const ALL_TYPE = 'all';
 const SERVICES_TYPE = 'services';

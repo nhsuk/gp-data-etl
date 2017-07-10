@@ -1,6 +1,6 @@
 const chai = require('chai');
 const fs = require('fs');
-const xmlParser = require('../../app/lib/xmlParser');
+const xmlParser = require('../../app/lib/utils/xmlParser');
 
 const expect = chai.expect;
 

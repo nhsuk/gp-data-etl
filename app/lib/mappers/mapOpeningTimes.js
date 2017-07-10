@@ -1,4 +1,4 @@
-const utils = require('../utils');
+const utils = require('../utils/utils');
 
 function getSessionType(sessions, type) {
   // eslint-disable-next-line arrow-body-style

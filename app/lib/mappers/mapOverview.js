@@ -6,7 +6,7 @@ const mapLocation = require('./mapLocation');
 const mapOpeningTimes = require('./mapOpeningTimes');
 const properCapitalize = require('../properCapitalize');
 const urlParser = require('../urlParser');
-const utils = require('../utils');
+const utils = require('../utils/utils');
 
 function matchAltHref(link) {
   return utils.getAttribute(link, 'rel') === 'alternate';

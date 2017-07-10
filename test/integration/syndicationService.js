@@ -1,3 +1,5 @@
+const nock = require('nock');
+
 const service = require('../../app/lib/syndicationService');
 const chai = require('chai');
 
@@ -33,6 +35,11 @@ describe('syndicationService', function test() {
   });
 
   it('should return error for HTML returned rather than XML', (done) => {
+    const uri = `/14963/services.xml?apikey=${process.env.SYNDICATION_API_KEY}`;
+    nock(service.DEFAULT_URL)
+      .get(uri)
+      .reply(200, '<html><head></head></html>');
+
     service.getServicesPage('14963').then(() => done('should have errored')).catch(() => done());
   });
 });
