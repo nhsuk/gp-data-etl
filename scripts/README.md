@@ -22,5 +22,9 @@ Starts a partial ETL that only processes 90 GPs in a Docker container.
 [`test`](test)
 Starts a Docker container specifically for continually running tests.
 
+[`test-ci`](test-ci)
+Runs the tests in a Docker container once so that an exit code is reported and
+can be used by the CI server.
+
 [`ci-deployment`](ci-deployment)
 Infrastructure related work.
