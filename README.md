@@ -1,5 +1,6 @@
 # GP Data ETL
 
+[![GitHub Release](https://img.shields.io/github/release/nhsuk/gp-data-etl.svg)](https://github.com/nhsuk/gp-data-etl/releases/latest/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nhsuk/gp-data-etl.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/nhsuk/gp-data-etl.svg?branch=master)](https://travis-ci.org/nhsuk/gp-data-etl)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/gp-data-etl/badge.svg)](https://coveralls.io/github/nhsuk/gp-data-etl)
