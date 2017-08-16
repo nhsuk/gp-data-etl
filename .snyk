@@ -1,53 +1,9 @@
-version: v1.5.2
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  'npm:ms:20170412':
-    - node-pre-gyp > tar-pack > debug > ms:
-        reason: problem is in snyk itself
-        expires: '2017-06-15T09:35:44.437Z'
-    - snyk > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.437Z'
-    - snyk > snyk-module > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.438Z'
-    - snyk > snyk-policy > snyk-module > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.438Z'
-    - snyk > snyk-resolve-deps > snyk-module > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.439Z'
-    - snyk > snyk-resolve > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.440Z'
-    - snyk > snyk-policy > snyk-resolve > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.440Z'
-    - snyk > snyk-resolve-deps > snyk-resolve > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.441Z'
-    - snyk > snyk-try-require > debug > ms:
-        reason: problem in snyk
-        expires: '2017-06-15T09:35:44.441Z'
-    - snyk > snyk-policy > snyk-try-require > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.442Z'
-    - snyk > snyk-resolve-deps > snyk-try-require > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.443Z'
-    - snyk > snyk-policy > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.443Z'
-    - snyk > snyk-config > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.443Z'
-    - snyk > snyk-resolve-deps > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.444Z'
-    - snyk > snyk-resolve-deps > clite > debug > ms:
-        reason: None given
-        expires: '2017-06-15T09:35:44.446Z'
   'npm:tunnel-agent:20170305':
     - azure-storage > request > tunnel-agent:
-        reason: no upgrade available
-        expires: '2017-08-05T14:45:54.928Z'
+        reason: No upgrade path currently available
+        expires: '2017-09-15T12:50:08.298Z'
 patch: {}
