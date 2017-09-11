@@ -27,6 +27,8 @@ i.e. `export ETL_SCHEDULE='25 15 * * *'` to start the processing a 3:25pm. Note:
 
 Further details available [here](https://www.npmjs.com/package/node-schedule)
 
+The scheduler can be completely disabled by setting the `DISABLE_SCHEDULER` variable to `true`.
+
 A successful scrape will result in the file `gp-data.json` being written to the `output` folder.
 Two files are also written to Azure storage: `gp-data.json` and a time stamped version of the same data named `gp-data-YYYYMMDD.json` where `YYYYMMDD` is the current year, day and month. Summary JSON is available at `output/summary.json`.
 
@@ -52,6 +54,23 @@ If the recommended environment variables are used the JSON file created will be 
 No facility is provided to interrogate the contents of the blob storage. However, if the recommended environment variables are used
 all uploaded files are available at the address `https://nhsukgpdataetl.blob.core.windows.net/etl-output`,
 i.e. [https://nhsukgpdataetl.blob.core.windows.net/etl-output/gp-data.json](https://nhsukgpdataetl.blob.core.windows.net/etl-output/gp-data.json).
+
+## Environment variables
+
+Environment variables are expected to be managed by the environment in which
+the application is being run. This is best practice as described by
+[twelve-factor](https://12factor.net/config).
+
+| Variable                           | Description                                                          | Default                 | Required   |
+| :--------------------------------- | :------------------------------------------------------------------- | ----------------------- | :--------- |
+| `NODE_ENV`                         | node environment                                                     | development             |            |
+| `LOG_LEVEL`                        | [log level](https://github.com/trentm/node-bunyan#levels)            | Depends on `NODE_ENV`   |            |
+| `SYNDICATION_API_KEY`              | API key to access syndication                                        |                         | yes        |
+| `AZURE_STORAGE_CONNECTION_STRING`  | Azure storage connection string                                      |                         | yes        |
+| `AZURE_TIMEOUT_MINUTES`            | Maximum wait time when uploading file to Azure                       | 5                       |            |
+| `CONTAINER_NAME`                   | Azure storage container name                                         | etl-output              |            |
+| `UPDATE_SCHEDULE`                  | time of day to run the upgrade                                       | * 23 * * * (11:00 pm)   |            |
+| `DISABLE_SCHEDULER`                | set to 'true' to disable the scheduler                               | false                   |            |
 
 ## Architecture Decision Records
  
