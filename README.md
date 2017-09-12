@@ -27,7 +27,7 @@ i.e. `export ETL_SCHEDULE='25 15 * * *'` to start the processing a 3:25pm. Note:
 
 Further details available [here](https://www.npmjs.com/package/node-schedule)
 
-The scheduler can be completely disabled by setting the `DISABLE_SCHEDULER` variable to `true`. This sets the run date to a single day in 100 years time.
+The scheduler can be completely disabled by setting the `DISABLE_SCHEDULER` variable to `true`. This sets the run date to run once in the future on Jan 1st, 2100.
 
 A successful scrape will result in the file `gp-data.json` being written to the `output` folder.
 Two files are also written to Azure storage: `gp-data.json` and a time stamped version of the same data named `gp-data-YYYYMMDD.json` where `YYYYMMDD` is the current year, day and month. Summary JSON is available at `output/summary.json`.
