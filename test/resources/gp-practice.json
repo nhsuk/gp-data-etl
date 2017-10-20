@@ -1,5 +1,5 @@
 {
-  "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307",
+  "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307",
   "title": {
     "_": "Croft Medical Centre - Summary",
     "$": {
@@ -22,7 +22,7 @@
         "rel": "self",
         "type": "application/xhtml+xml",
         "title": "Overview - Croft Medical Centre - NHS Choices",
-        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME"
+        "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME"
       }
     }
   ],

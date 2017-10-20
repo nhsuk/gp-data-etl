@@ -9,7 +9,7 @@
         "type": "text"
       }
     },
-    "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services",
+    "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services",
     "rights": {
       "_": "© Crown Copyright 2009",
       "$": {
@@ -34,7 +34,7 @@
           "rel": "self",
           "type": "application/xml",
           "title": "NHS Choices - Services -  Croft Medical Centre",
-          "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services?apikey=apikey"
+          "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services?apikey=apikey"
         }
       },
       {

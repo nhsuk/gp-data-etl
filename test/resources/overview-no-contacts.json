@@ -9,7 +9,7 @@
                 "type": "text"
             }
         },
-        "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
+        "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
         "rights": {
             "_": "© Crown Copyright 2009",
             "$": {
@@ -34,7 +34,7 @@
                     "rel": "self",
                     "type": "application/xml",
                     "title": "NHS Choices - Croft Medical Centre - Overview",
-                    "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
+                    "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
                 }
             },
             {
@@ -57,7 +57,7 @@
             }
         },
         "entry": {
-            "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
+            "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview",
             "title": {
                 "_": "Croft Medical Centre - Overview",
                 "$": {
@@ -71,7 +71,7 @@
                     "$": {
                         "rel": "self",
                         "title": "Croft Medical Centre - Overview",
-                        "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
+                        "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview?apikey=apikey"
                     }
                 },
                 {
@@ -99,7 +99,7 @@
                     "odsCode": "M89012",
                     "parentOrganisation": {
                         "name": "NHS Solihull CCG",
-                        "uri": "http://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/463005?apikey=apikey"
+                        "uri": "https://v1.syndication.nhschoices.nhs.uk/organisations/clinicalcommissioninggroups/463005?apikey=apikey"
                     },
                     "address": {
                         "addressLine": [

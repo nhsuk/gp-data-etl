@@ -58,10 +58,10 @@ describe('overview mapper', () => {
   });
 
   it('should throw exception for missing choices ID', () => {
-    expect(() => mapOverview(rawOverviewNoChoicesId)).to.throw('No Choices ID found for http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview');
+    expect(() => mapOverview(rawOverviewNoChoicesId)).to.throw('No Choices ID found for https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview');
   });
 
   it('should throw exception for missing Name', () => {
-    expect(() => mapOverview(rawOverviewNoName)).to.throw('No Name found for http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview');
+    expect(() => mapOverview(rawOverviewNoName)).to.throw('No Name found for https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/overview');
   });
 });
