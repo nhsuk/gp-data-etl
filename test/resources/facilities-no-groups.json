@@ -9,7 +9,7 @@
         "type": "text"
       }
     },
-    "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
+    "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
     "rights": {
       "_": "© Crown Copyright 2009",
       "$": {
@@ -34,7 +34,7 @@
           "rel": "self",
           "type": "application/xml",
           "title": "NHS Choices - Abbey Medical Centre Barking  - Facilities",
-          "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
+          "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
         }
       },
       {
@@ -57,7 +57,7 @@
       }
     },
     "entry": {
-      "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
+      "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities",
       "title": {
         "_": "Abbey Medical Centre Barking  - Facilities",
         "$": {
@@ -79,7 +79,7 @@
           "$": {
             "rel": "self",
             "title": "Abbey Medical Centre Barking  - Facilities",
-            "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
+            "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12575/facilities?apikey=DLCVEPOJ"
           }
         }
       ],

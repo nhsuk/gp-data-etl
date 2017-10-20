@@ -1,14 +1,14 @@
 const chai = require('chai');
 const urlParser = require('../../app/lib/urlParser');
 
-const validChoicesUrl = 'http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931';
-const invalidChoicesUrl = 'http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx';
+const validChoicesUrl = 'https://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931';
+const invalidChoicesUrl = 'https://www.nhs.uk/Services/GP/Overview/DefaultView.aspx';
 
-const validSyndicationUrl = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME';
-const invalidSyndicationUrl = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/';
+const validSyndicationUrl = 'https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME';
+const invalidSyndicationUrl = 'https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/';
 
-const validPageCountUrl = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=320';
-const invalidPageCountUrl = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;';
+const validPageCountUrl = 'https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=320';
+const invalidPageCountUrl = 'https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;';
 const expect = chai.expect;
 
 describe('parse choices ID', () => {

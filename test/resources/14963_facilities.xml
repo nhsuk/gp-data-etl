@@ -2,7 +2,7 @@
 <feed 
   xmlns="http://www.w3.org/2005/Atom">
   <title type="text">NHS Choices - Princes Gardens Surgery - Facilities</title>
-  <id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities</id>
+  <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities</id>
   <rights type="text">© Crown Copyright 2009</rights>
   <updated>2012-07-17T14:22:55+01:00</updated>
   <category term="Facilities" />
@@ -12,7 +12,7 @@
     <uri>http://www.nhs.uk</uri>
     <email>webservices@nhschoices.nhs.uk</email>
   </author>
-  <link rel="self" type="application/xml" title="NHS Choices - Princes Gardens Surgery - Facilities" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities?apikey=apikey" />
+  <link rel="self" type="application/xml" title="NHS Choices - Princes Gardens Surgery - Facilities" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities?apikey=apikey" />
   <link rel="alternate" title="NHS Choices - Princes Gardens Surgery - Facilities" href="http://www.nhs.uk/Services/GP/Facilities/DefaultView.aspx?id=42170" />
   <tracking 
     xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2f14963%2ffacilities&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;
@@ -21,12 +21,12 @@
     xmlns="http://purl.org/syndication/history/1.0">
   </complete>
   <entry>
-    <id>http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities</id>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities</id>
     <title type="text">Princes Gardens Surgery - Facilities</title>
     <published>2012-07-17T14:22:55+01:00</published>
     <updated>2012-07-17T14:22:55+01:00</updated>
     <link rel="alternate" type="application/xhtml" title="Facilities - Princes Gardens Surgery - NHS Choices" href="http://www.nhs.uk/Services/GP/Facilities/DefaultView.aspx?id=42170" />
-    <link rel="self" title="Princes Gardens Surgery - Facilities" href="http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities?apikey=apikey" />
+    <link rel="self" title="Princes Gardens Surgery - Facilities" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14963/facilities?apikey=apikey" />
     <content type="application/xml">
       <s:facilities 
         xmlns:s="http://syndication.nhschoices.nhs.uk/services">

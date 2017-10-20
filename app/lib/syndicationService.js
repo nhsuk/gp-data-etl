@@ -1,7 +1,7 @@
 const apiRequest = require('./utils/apiRequest');
 const xmlParser = require('./utils/xmlParser');
 
-const DEFAULT_URL = 'http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices';
+const DEFAULT_URL = 'https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices';
 const API_KEY = process.env.SYNDICATION_API_KEY;
 const SYNDICATION_HTML_PAGE_ERROR = 'Syndication XML page is returning HTML - server error';
 

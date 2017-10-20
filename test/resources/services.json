@@ -9,7 +9,7 @@
         "type": "text"
       }
     },
-    "id": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services",
+    "id": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services",
     "rights": {
       "_": "© Crown Copyright 2009",
       "$": {
@@ -34,7 +34,7 @@
           "rel": "self",
           "type": "application/xml",
           "title": "NHS Choices - Services -  Croft Medical Centre",
-          "href": "http://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services?apikey=apikey"
+          "href": "https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307/services?apikey=apikey"
         }
       },
       {
@@ -102,7 +102,7 @@
     },
     "entry": [
       {
-        "id": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0279/cl7777",
+        "id": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0279/cl7777",
         "title": {
           "_": "Service 1",
           "$": {
@@ -115,7 +115,7 @@
           "$": {
             "rel": "self",
             "title": " Croft Medical Centre",
-            "href": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0279/cl7777?apikey=apikey"
+            "href": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0279/cl7777?apikey=apikey"
           }
         },
         "content": {
@@ -148,7 +148,7 @@
         }
       },
       {
-        "id": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7781",
+        "id": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7781",
         "title": {
           "_": "Dietician - provided in house and available on NHS",
           "$": {
@@ -161,7 +161,7 @@
           "$": {
             "rel": "self",
             "title": " Croft Medical Centre",
-            "href": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7781?apikey=apikey"
+            "href": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7781?apikey=apikey"
           }
         },
         "content": {
@@ -194,7 +194,7 @@
         }
       },
       {
-        "id": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782",
+        "id": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782",
         "title": {
           "_": "Child Immunisations",
           "$": {
@@ -207,7 +207,7 @@
           "$": {
             "rel": "self",
             "title": "Croft Medical Centre",
-            "href": "http://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782?apikey=apikey"
+            "href": "https://v1.syndication.nhschoices.nhs.uk/services/types/srv0298/cl7782?apikey=apikey"
           }
         },
         "content": {
