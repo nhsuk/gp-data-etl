@@ -1,2 +1,1 @@
-const config = require('../config');
-module.exports = require('nhsuk-bunyan-logger')(config.app.name);
+module.exports = require('nhsuk-bunyan-logger')('gp-data-etl');

@@ -1,4 +1,4 @@
-0.1.3 / 2017-10-24
+0.1.3 / TBA
 ==================
 - Call drain for an empty queue
 - Use bunyan logger

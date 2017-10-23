@@ -10,36 +10,34 @@ function readFile(path) {
 
 const uri = `/all.xml?apikey=${process.env.SYNDICATION_API_KEY}&page=1`;
 
-function stubNoResults() {
-  const filePath = 'test/resources/zero-pages.xml';
+function stubResults(filePath) {
   const stubbedData = readFile(filePath);
   nock(service.DEFAULT_URL)
     .get(uri)
     .reply(200, stubbedData);
 }
 
+function stubNoResults() {
+  stubResults('test/resources/zero-pages.xml');
+}
+
 function stubOnePageOfResults() {
-  const filePath = 'test/resources/one-page.xml';
-  const stubbedData = readFile(filePath);
-  nock(service.DEFAULT_URL)
-    .get(uri)
-    .reply(200, stubbedData);
+  stubResults('test/resources/one-page.xml');
 }
 
 describe('ETL', function test() {
   this.timeout(5000);
-  it('should complete ETL if no results', (done) => {
+  it('should complete ETL if no results', async () => {
     stubNoResults();
-    etl.start(done);
+    await etl.start();
   });
 
-  it('should complete ETL if one page of results', (done) => {
+  it('should complete ETL if one page of results', async () => {
     stubOnePageOfResults();
-    etl.start(done);
+    await etl.start();
   });
 
   afterEach(() => {
     nock.cleanAll();
   });
 });
-
