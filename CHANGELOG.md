@@ -1,6 +1,7 @@
 0.1.3 / 2017-10-24
 ==================
 - Call drain for an empty queue
+- Use bunyan logger
 
 0.1.2 / 2017-10-24
 ==================

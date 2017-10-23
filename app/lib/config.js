@@ -1,4 +1,7 @@
 const config = {
+  app: {
+    name: 'gp-data-etl',
+  },
   hitsPerHour: 5000,
   saveEvery: 100,
   outputDir: './output',
