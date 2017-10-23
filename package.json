@@ -1,6 +1,6 @@
 {
   "name": "gp-data-etl",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ETL to extract data from Syndication and store as JSON",
   "main": "app.js",
   "scripts": {

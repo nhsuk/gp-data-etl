@@ -16,6 +16,7 @@ requireEnv(['SYNDICATION_API_KEY']);
 
 const WORKERS = 1;
 let etlInProgress = false;
+let completeCallback;
 
 function clearState() {
   populateIdListQueue.clearState();
@@ -37,6 +38,9 @@ async function etlComplete() {
   await uploadOutputToAzure();
   log.info('ETL complete');
   etlInProgress = false;
+  if (completeCallback) {
+    completeCallback();
+  }
 }
 
 function startRevisitFailuresQueue() {
@@ -88,7 +92,8 @@ function start() {
   });
 }
 
-function safeStart() {
+function safeStart(callback) {
+  completeCallback = callback;
   if (etlInProgress) {
     log.error('Etl already running');
   } else {

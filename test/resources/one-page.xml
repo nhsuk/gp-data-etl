@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed 
+  xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">NHS Choices - All GP Practices</title>
+  <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all</id>
+  <rights type="text">© Crown Copyright 2009</rights>
+  <updated>2017-02-16T09:11:57Z</updated>
+  <category term="gppractices" />
+  <logo>http://www.nhs.uk/nhscwebservices/documents/logo1.jpg</logo>
+  <author>
+    <name>NHS Choices</name>
+    <uri>http://www.nhs.uk</uri>
+    <email>webservices@nhschoices.nhs.uk</email>
+  </author>
+  <link rel="self" type="application/xml" title="NHS Choices - All GP Practices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME" />
+  <link rel="first" type="application/xml" title="first" length="1000" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=1" />
+  <link rel="next" type="application/xml" title="next" length="1000" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=1" />
+  <link rel="last" type="application/xml" title="last" length="1000" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/all?apikey=CHANGEME&amp;page=1" />
+  <link rel="alternate" title="Find and choose services - GP Practices" href="http://www.nhs.uk/ServiceDirectories/pages/ServiceSearch.aspx?ServiceType=GP" />
+  <tracking 
+    xmlns="http://syndication.nhschoices.nhs.uk/services">&lt;img style="border: 0; width: 1px; height: 1px;" alt="" src="http://statse.webtrendslive.com/dcss9yzisf9xjyg74mgbihg8p_8d2u/njs.gif?dcsuri=/organisations%2fgppractices%2fall&amp;amp;wt.js=no&amp;amp;wt.cg_n=syndication"/&gt;
+  </tracking>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307</id>
+    <title type="text">Croft Medical Centre - Summary</title>
+    <published>2015-12-16T01:36:52Z</published>
+    <updated>2015-12-16T01:36:52Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Croft Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36931" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Croft Medical Centre - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/17307?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Croft Medical Centre</s:name>
+        <s:odscode>M89012</s:odscode>
+        <s:address>
+          <s:addressLine>Croft Medical centre</s:addressLine>
+          <s:addressLine>1 Pomeroy Way</s:addressLine>
+          <s:addressLine>Chelmsley Wood</s:addressLine>
+          <s:addressLine>Birmingham</s:addressLine>
+          <s:addressLine>West Midlands</s:addressLine>
+          <s:postcode>B37 7WB</s:postcode>
+        </s:address>
+        <s:phone>0121 270 7180</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.4778633117676</s:latitude>
+          <s:longitude>-1.72773551940918</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11442</id>
+    <title type="text">Lea Vale Medical Group - Summary</title>
+    <published>2015-10-28T03:33:25Z</published>
+    <updated>2015-10-28T03:33:25Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Lea Vale Medical Group - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41493" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Lea Vale Medical Group - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11442?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Lea Vale Medical Group</s:name>
+        <s:odscode>E81032</s:odscode>
+        <s:address>
+          <s:addressLine>Liverpool Road Health Centre</s:addressLine>
+          <s:addressLine>9 Mersey Place</s:addressLine>
+          <s:addressLine>Liverpool Road</s:addressLine>
+          <s:addressLine>Luton</s:addressLine>
+          <s:addressLine>Bedfordshire</s:addressLine>
+          <s:postcode>LU1 1HH</s:postcode>
+        </s:address>
+        <s:phone>01582 722525</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.8816261291504</s:latitude>
+          <s:longitude>-0.42301407456398</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14326</id>
+    <title type="text">1 Highdown Avenue - Summary</title>
+    <published>2016-10-29T01:36:58+01:00</published>
+    <updated>2016-10-29T01:36:58+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 1 Highdown Avenue - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38454" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Highdown Avenue - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14326?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>1 Highdown Avenue</s:name>
+        <s:odscode>H82086</s:odscode>
+        <s:address>
+          <s:addressLine>Highdown Surgery</s:addressLine>
+          <s:addressLine>1 Highdown Avenue</s:addressLine>
+          <s:addressLine>Worthing</s:addressLine>
+          <s:addressLine>West Sussex</s:addressLine>
+          <s:postcode>BN13 1PU</s:postcode>
+        </s:address>
+        <s:phone>01903 265656</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>50.8288764953613</s:latitude>
+          <s:longitude>-0.393731474876404</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15773</id>
+    <title type="text">233 Wells Road - Summary</title>
+    <published>2016-09-30T01:36:57+01:00</published>
+    <updated>2016-09-30T01:36:57+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 233 Wells Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36629" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 233 Wells Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15773?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>233 Wells Road</s:name>
+        <s:odscode>L81125</s:odscode>
+        <s:address>
+          <s:addressLine>Wells Road Surgery</s:addressLine>
+          <s:addressLine>233 Wells Road</s:addressLine>
+          <s:addressLine>Knowle</s:addressLine>
+          <s:addressLine>Bristol</s:addressLine>
+          <s:postcode>BS4 2DF</s:postcode>
+        </s:address>
+        <s:phone>0117 9770018</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.4385986328125</s:latitude>
+          <s:longitude>-2.57265019416809</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15688</id>
+    <title type="text">42 Abbotswood, Yate - Summary</title>
+    <published>2015-01-16T03:32:23Z</published>
+    <updated>2015-01-16T03:32:23Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 42 Abbotswood, Yate - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41504" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 42 Abbotswood, Yate - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/15688?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>42 Abbotswood, Yate</s:name>
+        <s:odscode>L81046</s:odscode>
+        <s:address>
+          <s:addressLine>The Surgery</s:addressLine>
+          <s:addressLine>42 Abbotswood</s:addressLine>
+          <s:addressLine>Yate</s:addressLine>
+          <s:postcode>BS37 4NG</s:postcode>
+        </s:address>
+        <s:phone>01454 313577</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.5295524597168</s:latitude>
+          <s:longitude>-2.42435455322266</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5698</id>
+    <title type="text">58 Green End Comberton - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 58 Green End Comberton - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40768" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 58 Green End Comberton - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5698?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>58 Green End Comberton</s:name>
+        <s:odscode>D81035</s:odscode>
+        <s:address>
+          <s:addressLine>58 Green End Comberton</s:addressLine>
+          <s:addressLine>Comberton</s:addressLine>
+          <s:addressLine>Cambridge</s:addressLine>
+          <s:addressLine>Cambridgeshire</s:addressLine>
+          <s:postcode>CB23 7DY</s:postcode>
+        </s:address>
+        <s:phone>01223 262500</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.189811706543</s:latitude>
+          <s:longitude>0.0186288226395845</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13257</id>
+    <title type="text">85 Battle Road - Summary</title>
+    <published>2016-05-24T01:36:54+01:00</published>
+    <updated>2016-05-24T01:36:54+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 85 Battle Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38651" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13257?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>85 Battle Road</s:name>
+        <s:odscode>G81685</s:odscode>
+        <s:address>
+          <s:addressLine>85 Battle Road</s:addressLine>
+          <s:addressLine>85 Battle Road</s:addressLine>
+          <s:addressLine>85 Battle Road</s:addressLine>
+          <s:addressLine>Hailsham</s:addressLine>
+          <s:postcode>BN27 1UA</s:postcode>
+        </s:address>
+        <s:phone>01323 848485</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>50.8718223571777</s:latitude>
+          <s:longitude>0.262096434831619</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14500</id>
+    <title type="text">A Ditri - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - A Ditri - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38444" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - A Ditri - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14500?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>A Ditri</s:name>
+        <s:odscode>H85021</s:odscode>
+        <s:address>
+          <s:addressLine>Chesser Surgery</s:addressLine>
+          <s:addressLine>121 Wrythe Lane</s:addressLine>
+          <s:addressLine>Carshalton</s:addressLine>
+          <s:addressLine>Surrey</s:addressLine>
+          <s:postcode>SM5 2RT</s:postcode>
+        </s:address>
+        <s:phone>020 8644 2727</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.374927520752</s:latitude>
+          <s:longitude>-0.17728853225708</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44654</id>
+    <title type="text">Blakenall Family Practice - Summary</title>
+    <published>2014-01-07T03:31:14Z</published>
+    <updated>2014-01-07T03:31:14Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Blakenall Family Practice - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42765" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Blakenall Family Practice - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44654?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Blakenall Family Practice</s:name>
+        <s:odscode>Y02627</s:odscode>
+        <s:address>
+          <s:addressLine>Blakenall Village Centre</s:addressLine>
+          <s:addressLine>Thames Road</s:addressLine>
+          <s:addressLine>Blakenall</s:addressLine>
+          <s:addressLine>Walsall</s:addressLine>
+          <s:addressLine>West Midlands</s:addressLine>
+          <s:postcode>WS3 1LZ</s:postcode>
+        </s:address>
+        <s:phone>01922 443729</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.6146774291992</s:latitude>
+          <s:longitude>-1.9866943359375</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12195</id>
+    <title type="text">Great Chesterford Surgery (Branch) - Summary</title>
+    <published>2014-01-23T03:31:15Z</published>
+    <updated>2014-01-23T03:31:15Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Great Chesterford Surgery (Branch) - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35370" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Great Chesterford Surgery (Branch) - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/12195?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Great Chesterford Surgery (Branch)</s:name>
+        <s:odscode>F81009</s:odscode>
+        <s:address>
+          <s:addressLine>School Street Surgery</s:addressLine>
+          <s:addressLine>School Street</s:addressLine>
+          <s:addressLine>Great Chesterford</s:addressLine>
+          <s:addressLine>Saffron Walden</s:addressLine>
+          <s:addressLine>Essex</s:addressLine>
+          <s:postcode>CB10 1NN</s:postcode>
+        </s:address>
+        <s:phone>01799 530950</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.063606262207</s:latitude>
+          <s:longitude>0.196785435080528</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5877</id>
+    <title type="text">Dr Hart &amp; Partners - Summary</title>
+    <published>2017-02-15T11:51:54Z</published>
+    <updated>2017-02-15T11:51:54Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43403" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5877?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Dr Hart &amp; Partners</s:name>
+        <s:odscode>D82068</s:odscode>
+        <s:address>
+          <s:addressLine>The Street</s:addressLine>
+          <s:addressLine>Marham</s:addressLine>
+          <s:addressLine>King's Lynn</s:addressLine>
+          <s:addressLine>Norfolk</s:addressLine>
+          <s:postcode>PE33 9HP</s:postcode>
+        </s:address>
+        <s:phone>01760 337394</s:phone>
+        <s:email>darren.martin@nhs.net</s:email>
+        <s:geographicCoordinates>
+          <s:latitude>52.6595726013184</s:latitude>
+          <s:longitude>0.52492481470108</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24716</id>
+    <title type="text">141 Argyle Street - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 141 Argyle Street - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35490" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 141 Argyle Street - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24716?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>141 Argyle Street</s:name>
+        <s:odscode>P86016</s:odscode>
+        <s:address>
+          <s:addressLine>141 Argyle Street</s:addressLine>
+          <s:addressLine>Heywood</s:addressLine>
+          <s:addressLine>Lancashire</s:addressLine>
+          <s:postcode>OL10 3SD</s:postcode>
+        </s:address>
+        <s:phone>01706 366135</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>53.5873756408691</s:latitude>
+          <s:longitude>-2.23932003974915</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44384</id>
+    <title type="text">3D Medical Centre - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 3D Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=38497" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 3D Medical Centre - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44384?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>3D Medical Centre</s:name>
+        <s:odscode>Y00186</s:odscode>
+        <s:address>
+          <s:addressLine>200 Deane Road</s:addressLine>
+          <s:addressLine>Bolton</s:addressLine>
+          <s:addressLine>Lancs</s:addressLine>
+          <s:postcode>BL3 5DP</s:postcode>
+        </s:address>
+        <s:phone>01204 463246</s:phone>
+        <s:email>ssp-3d.medical@nhs.net</s:email>
+        <s:geographicCoordinates>
+          <s:latitude>53.5730476379395</s:latitude>
+          <s:longitude>-2.44384479522705</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4759</id>
+    <title type="text">56 Melbourne St - Summary</title>
+    <published>2013-12-25T03:31:13Z</published>
+    <updated>2013-12-25T03:31:13Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 56 Melbourne St - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36620" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 56 Melbourne St - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4759?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>56 Melbourne St</s:name>
+        <s:odscode>C82031</s:odscode>
+        <s:address>
+          <s:addressLine>Melbourne street Surgery</s:addressLine>
+          <s:addressLine>56 Melbourne street</s:addressLine>
+          <s:addressLine>Leicester</s:addressLine>
+          <s:addressLine>Leicestershire</s:addressLine>
+          <s:postcode>LE2 0AS</s:postcode>
+        </s:address>
+        <s:phone>0116 253 6299</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.636344909668</s:latitude>
+          <s:longitude>-1.11437559127808</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11876</id>
+    <title type="text">82 Lillie Road Surgery - Summary</title>
+    <published>2016-03-10T05:51:44Z</published>
+    <updated>2016-03-10T05:51:44Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 82 Lillie Road Surgery - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42516" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 82 Lillie Road Surgery - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/11876?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>82 Lillie Road Surgery</s:name>
+        <s:odscode>E85008</s:odscode>
+        <s:address>
+          <s:addressLine>82 Lillie Road</s:addressLine>
+          <s:addressLine>Fulham</s:addressLine>
+          <s:addressLine>London</s:addressLine>
+          <s:postcode>SW6 1TN</s:postcode>
+        </s:address>
+        <s:phone>020 7471 2650</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.4863967895508</s:latitude>
+          <s:longitude>-0.199334859848022</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5725</id>
+    <title type="text">96 Chesterton Road - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 96 Chesterton Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40031" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 96 Chesterton Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5725?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>96 Chesterton Road</s:name>
+        <s:odscode>D81054</s:odscode>
+        <s:address>
+          <s:addressLine>The Red House Surgery</s:addressLine>
+          <s:addressLine>96 Chesterton Road</s:addressLine>
+          <s:addressLine>Cambridge</s:addressLine>
+          <s:addressLine>Cambs</s:addressLine>
+          <s:postcode>CB4 1ER</s:postcode>
+        </s:address>
+        <s:phone>01223 652202</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.2149047851563</s:latitude>
+          <s:longitude>0.129175961017609</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13726</id>
+    <title type="text">DERRY DOWNS SURGERY - Summary</title>
+    <published>2016-06-25T01:36:56+01:00</published>
+    <updated>2016-06-25T01:36:56+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - DERRY DOWNS SURGERY - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43924" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - DERRY DOWNS SURGERY - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13726?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>DERRY DOWNS SURGERY</s:name>
+        <s:odscode>G84005</s:odscode>
+        <s:address>
+          <s:addressLine>The derry Downs Surgery</s:addressLine>
+          <s:addressLine>29 Derry Downs</s:addressLine>
+          <s:addressLine>St Mary Cray</s:addressLine>
+          <s:addressLine>Orpington</s:addressLine>
+          <s:addressLine>Kent</s:addressLine>
+          <s:postcode>BR5 4DU</s:postcode>
+        </s:address>
+        <s:phone>01689 820036</s:phone>
+        <s:email>broccg.derrydowns@nhs.net</s:email>
+        <s:geographicCoordinates>
+          <s:latitude>51.3851737976074</s:latitude>
+          <s:longitude>0.116665586829185</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14563</id>
+    <title type="text">Ravensbury Park Medical Centre - Summary</title>
+    <published>2017-01-09T01:37:01Z</published>
+    <updated>2017-01-09T01:37:01Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Ravensbury Park Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35708" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Ravensbury Park Medical Centre - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14563?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Ravensbury Park Medical Centre</s:name>
+        <s:odscode>H85110</s:odscode>
+        <s:address>
+          <s:addressLine>Ravensbury Park Medical Centre</s:addressLine>
+          <s:addressLine>Ravensbury Lane</s:addressLine>
+          <s:addressLine>Off Morden Road</s:addressLine>
+          <s:addressLine>Mitcham</s:addressLine>
+          <s:addressLine>Surrey</s:addressLine>
+          <s:postcode>CR4 4DQ</s:postcode>
+        </s:address>
+        <s:phone>020 84073927</s:phone>
+        <s:email>patientenquiriesravensburyh85110@nhs.net</s:email>
+        <s:geographicCoordinates>
+          <s:latitude>51.3985786437988</s:latitude>
+          <s:longitude>-0.178447410464287</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5654</id>
+    <title type="text">1 Huntingdon Road - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 1 Huntingdon Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41214" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 1 Huntingdon Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5654?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>1 Huntingdon Road</s:name>
+        <s:odscode>D81002</s:odscode>
+        <s:address>
+          <s:addressLine>1 Huntingdon Road</s:addressLine>
+          <s:addressLine>Cambridge</s:addressLine>
+          <s:addressLine>Cambs</s:addressLine>
+          <s:postcode>CB3 0DB</s:postcode>
+        </s:address>
+        <s:phone>01223 364127</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.2140350341797</s:latitude>
+          <s:longitude>0.110104247927666</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13837</id>
+    <title type="text">306 Medical Centre - Summary</title>
+    <published>2013-11-15T03:31:13Z</published>
+    <updated>2013-11-15T03:31:13Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 306 Medical Centre - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=43550" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 306 Medical Centre - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13837?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>306 Medical Centre</s:name>
+        <s:odscode>G85091</s:odscode>
+        <s:address>
+          <s:addressLine>306 Lordship Lane</s:addressLine>
+          <s:addressLine>East Dulwich</s:addressLine>
+          <s:addressLine>London</s:addressLine>
+          <s:postcode>SE22 8LY</s:postcode>
+        </s:address>
+        <s:phone>020 8693 4704</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.450740814209</s:latitude>
+          <s:longitude>-0.07638830691576</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5689</id>
+    <title type="text">45 High Street, Sawtry - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 45 High Street, Sawtry - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=36906" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 45 High Street, Sawtry - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5689?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>45 High Street, Sawtry</s:name>
+        <s:odscode>D81027</s:odscode>
+        <s:address>
+          <s:addressLine>45 High Street</s:addressLine>
+          <s:addressLine>Sawtry</s:addressLine>
+          <s:addressLine>Huntingdon</s:addressLine>
+          <s:addressLine>Cambs</s:addressLine>
+          <s:postcode>PE28 5SU</s:postcode>
+        </s:address>
+        <s:phone>01487 830340</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.4403228759766</s:latitude>
+          <s:longitude>-0.284764975309372</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24998</id>
+    <title type="text">7 Brooks Medical Practice (Dr Alistair Partnership) - Summary</title>
+    <published>2016-11-05T01:36:59Z</published>
+    <updated>2016-11-05T01:36:59Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 7 Brooks Medical Practice (Dr Alistair Partnership) - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=46226" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 7 Brooks Medical Practice (Dr Alistair Partnership) - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/24998?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>7 Brooks Medical Practice (Dr Alistair Partnership)</s:name>
+        <s:odscode>P92652</s:odscode>
+        <s:address>
+          <s:addressLine>7 Brooks Medical Practice</s:addressLine>
+          <s:addressLine>21 Church Street</s:addressLine>
+          <s:addressLine>Manchester</s:addressLine>
+          <s:postcode>M46 9DE</s:postcode>
+        </s:address>
+        <s:phone>01942 483250</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>53.5242347717285</s:latitude>
+          <s:longitude>-2.48949432373047</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13256</id>
+    <title type="text">85 Battle Road at Deanland Clinic - Summary</title>
+    <published>2016-05-24T01:36:54+01:00</published>
+    <updated>2016-05-24T01:36:54+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 85 Battle Road at Deanland Clinic - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=35997" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 85 Battle Road at Deanland Clinic - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13256?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>85 Battle Road at Deanland Clinic</s:name>
+        <s:odscode>G81685</s:odscode>
+        <s:address>
+          <s:addressLine>85 Battle Road</s:addressLine>
+          <s:addressLine>85 Battle Road</s:addressLine>
+          <s:addressLine>Hailsham</s:addressLine>
+          <s:addressLine>East Sussex</s:addressLine>
+          <s:postcode>BN27 3RN</s:postcode>
+        </s:address>
+        <s:phone>01323 848485</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>50.8828010559082</s:latitude>
+          <s:longitude>0.169392168521881</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4233</id>
+    <title type="text">Dr N Saddiq - Summary</title>
+    <published>2014-08-23T03:31:59+01:00</published>
+    <updated>2014-08-23T03:31:59+01:00</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Dr N Saddiq - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=41401" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr N Saddiq - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4233?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Dr N Saddiq</s:name>
+        <s:odscode>B86001</s:odscode>
+        <s:address>
+          <s:addressLine>Morley Health Centre</s:addressLine>
+          <s:addressLine>Corporation Street</s:addressLine>
+          <s:addressLine>Morley</s:addressLine>
+          <s:addressLine>Leeds</s:addressLine>
+          <s:postcode>LS27 9NB</s:postcode>
+        </s:address>
+        <s:phone>0113 2954060</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>53.7447776794434</s:latitude>
+          <s:longitude>-1.6055223941803</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5876</id>
+    <title type="text">Dr Hart &amp; Partners - Summary</title>
+    <published>2017-02-15T11:51:54Z</published>
+    <updated>2017-02-15T11:51:54Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=40915" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - Dr Hart &amp; Partners - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/5876?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>Dr Hart &amp; Partners</s:name>
+        <s:odscode>D82068</s:odscode>
+        <s:address>
+          <s:addressLine>Howdale Road</s:addressLine>
+          <s:addressLine>Downham Market</s:addressLine>
+          <s:addressLine>Norfolk</s:addressLine>
+          <s:postcode>PE38 9AF</s:postcode>
+        </s:address>
+        <s:phone>01366 383405</s:phone>
+        <s:email>darren.martin@nhs.net</s:email>
+        <s:geographicCoordinates>
+          <s:latitude>52.6010246276855</s:latitude>
+          <s:longitude>0.382187962532043</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13729</id>
+    <title type="text">14 Manor Road - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 14 Manor Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=45178" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 14 Manor Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13729?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>14 Manor Road</s:name>
+        <s:odscode>G84008</s:odscode>
+        <s:address>
+          <s:addressLine>The Surgery</s:addressLine>
+          <s:addressLine>14 Manor Road</s:addressLine>
+          <s:addressLine>Beckenham</s:addressLine>
+          <s:addressLine>Kent</s:addressLine>
+          <s:postcode>BR3 5LE</s:postcode>
+        </s:address>
+        <s:phone>020 86500957</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.4071464538574</s:latitude>
+          <s:longitude>-0.022529287263751</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13643</id>
+    <title type="text">34 Plumstead Common Road - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 34 Plumstead Common Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=37846" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 34 Plumstead Common Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/13643?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>34 Plumstead Common Road</s:name>
+        <s:odscode>G83026</s:odscode>
+        <s:address>
+          <s:addressLine>34 Plumstead Common Road</s:addressLine>
+          <s:addressLine>Woolwich</s:addressLine>
+          <s:addressLine>Plumstead</s:addressLine>
+          <s:addressLine>London</s:addressLine>
+          <s:postcode>SE18 3TL</s:postcode>
+        </s:address>
+        <s:phone>020-88540229</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.4819793701172</s:latitude>
+          <s:longitude>0.0706208422780037</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14512</id>
+    <title type="text">54 Benhill Avenue - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 54 Benhill Avenue - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=45095" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 54 Benhill Avenue - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/14512?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>54 Benhill Avenue</s:name>
+        <s:odscode>H85031</s:odscode>
+        <s:address>
+          <s:addressLine>54 Benhill Avenue</s:addressLine>
+          <s:addressLine>Sutton</s:addressLine>
+          <s:addressLine>Surrey</s:addressLine>
+          <s:postcode>SM1 4EB</s:postcode>
+        </s:address>
+        <s:phone>020 86428011</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>51.3666038513184</s:latitude>
+          <s:longitude>-0.190275356173515</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4189</id>
+    <title type="text">71A Woodhouse Hill - Summary</title>
+    <published>2015-01-15T06:59:54Z</published>
+    <updated>2015-01-15T06:59:54Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 71A Woodhouse Hill - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=42390" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 71A Woodhouse Hill - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/4189?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>71A Woodhouse Hill</s:name>
+        <s:odscode>B85048</s:odscode>
+        <s:address>
+          <s:addressLine>Woodhouse Hill</s:addressLine>
+          <s:addressLine>Fartown</s:addressLine>
+          <s:addressLine>Huddersfield</s:addressLine>
+          <s:addressLine>Kirklees</s:addressLine>
+          <s:postcode>HD2 1DH</s:postcode>
+        </s:address>
+        <s:phone>01484 533833</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>53.6668128967285</s:latitude>
+          <s:longitude>-1.77135825157166</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+  <entry>
+    <id>https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44656</id>
+    <title type="text">94 Burghley Road - Summary</title>
+    <published>2013-01-08T04:30:24Z</published>
+    <updated>2013-01-08T04:30:24Z</updated>
+    <link rel="alternate" type="application/xhtml" title="Overview - 94 Burghley Road - NHS Choices" href="http://www.nhs.uk/Services/GP/Overview/DefaultView.aspx?id=39624" />
+    <link rel="self" type="application/xhtml+xml" title="Overview - 94 Burghley Road - NHS Choices" href="https://v1.syndication.nhschoices.nhs.uk/organisations/gppractices/44656?apikey=CHANGEME" />
+    <content type="application/xml">
+      <s:organisationSummary 
+        xmlns:s="http://syndication.nhschoices.nhs.uk/services">
+        <s:name>94 Burghley Road</s:name>
+        <s:odscode>Y02631</s:odscode>
+        <s:address>
+          <s:addressLine>94 Burghley Road</s:addressLine>
+          <s:addressLine>Peterborough</s:addressLine>
+          <s:addressLine>Peterborough</s:addressLine>
+          <s:addressLine>Cambridgeshire</s:addressLine>
+          <s:addressLine>England - Uk</s:addressLine>
+          <s:postcode>PE1 2QE</s:postcode>
+        </s:address>
+        <s:phone>01733 346085</s:phone>
+        <s:geographicCoordinates>
+          <s:latitude>52.5810241699219</s:latitude>
+          <s:longitude>-0.242599815130234</s:longitude>
+        </s:geographicCoordinates>
+      </s:organisationSummary>
+    </content>
+  </entry>
+</feed>
