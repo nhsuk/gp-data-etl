@@ -111,11 +111,15 @@ function startRetryQueue(workers, drain) {
   q.drain = drain;
 }
 function start(workers, drain) {
-  count = 0;
-  hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
-  const q = async.queue(processQueueItem, workers);
-  queueSyndicationIds(q);
-  q.drain = drain;
+  if (gpStore.getIds().length > 0) {
+    count = 0;
+    hitsPerWorker = config.hitsPerHour / (workers * numberOfSteps);
+    const q = async.queue(processQueueItem, workers);
+    queueSyndicationIds(q);
+    q.drain = drain;
+  } else {
+    drain();
+  }
 }
 
 module.exports = {

@@ -60,12 +60,15 @@ function addPageToQueue(q, pageNo) {
 }
 
 function start(totalPages, workers, drain) {
-  const q = async.queue(processQueueItem, workers);
+  if (totalPages > 0) {
+    const q = async.queue(processQueueItem, workers);
+    q.drain = drain;
 
-  q.drain = drain;
-
-  for (let i = 1; i <= totalPages; i++) {
-    addPageToQueue(q, i);
+    for (let i = 1; i <= totalPages; i++) {
+      addPageToQueue(q, i);
+    }
+  } else {
+    drain();
   }
 }
 

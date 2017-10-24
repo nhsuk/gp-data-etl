@@ -68,6 +68,13 @@ describe('Populate Practice Queue', function test() {
     });
   });
 
+  it('should call drain for empty queue', (done) => {
+    gpStore.addIds([]);
+    populatePracticeQueue.start(1, () => {
+      done();
+    });
+  });
+
   it('should skip already processed practice', (done) => {
     const syndicationId = 3028;
 
