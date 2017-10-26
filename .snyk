@@ -2,17 +2,15 @@
 version: v1.7.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  'npm:tunnel-agent:20170305':
-    - azure-storage > request > tunnel-agent:
-        reason: No upgrade path currently available
-        expires: '2017-09-15T12:50:08.298Z'
-# patches apply the minimum changes required to fix a vulnerability
-patch:
   'npm:tough-cookie:20170905':
-    - node-pre-gyp > request > tough-cookie:
-        patched: '2017-10-20T11:21:38.655Z'
     - azure-storage > request > tough-cookie:
-        patched: '2017-10-20T11:21:38.655Z'
+        reason: Not user facing
+        expires: '2017-11-24T08:36:46.962Z'
+    - node-pre-gyp > request > tough-cookie:
+        reason: Not user facing
+        expires: '2017-11-24T08:36:46.962Z'
   'npm:debug:20170905':
     - node-pre-gyp > tar-pack > debug:
-        patched: '2017-10-20T11:21:38.655Z'
+        reason: Not user facing
+        expires: '2017-11-24T08:36:46.962Z'
+patch: {}
