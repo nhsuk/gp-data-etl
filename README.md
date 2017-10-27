@@ -61,19 +61,19 @@ Environment variables are expected to be managed by the environment in which
 the application is being run. This is best practice as described by
 [twelve-factor](https://12factor.net/config).
 
-| Variable                           | Description                                                          | Default                 | Required   |
-| :--------------------------------- | :------------------------------------------------------------------- | ----------------------- | :--------- |
-| `NODE_ENV`                         | node environment                                                     | development             |            |
-| `LOG_LEVEL`                        | [log level](https://github.com/trentm/node-bunyan#levels)            | Depends on `NODE_ENV`   |            |
-| `SYNDICATION_API_KEY`              | API key to access syndication                                        |                         | yes        |
-| `AZURE_STORAGE_CONNECTION_STRING`  | Azure storage connection string                                      |                         | yes        |
-| `AZURE_TIMEOUT_MINUTES`            | Maximum wait time when uploading file to Azure                       | 5                       |            |
-| `CONTAINER_NAME`                   | Azure storage container name                                         | etl-output              |            |
-| `UPDATE_SCHEDULE`                  | time of day to run the upgrade                                       | * 23 * * * (11:00 pm)   |            |
-| `DISABLE_SCHEDULER`                | set to 'true' to disable the scheduler                               | false                   |            |
+| Variable                           | Description                                                                                                 | Default                 | Required  |
+| :--------------------------------- | :---------------------------------------------------------------------------------------------------------- | ----------------------- | :-------- |
+| `AZURE_STORAGE_CONNECTION_STRING`  | Azure storage connection string                                                                             |                         | yes       |
+| `AZURE_TIMEOUT_MINUTES`            | Maximum wait time when uploading file to Azure                                                              | 5                       |           |
+| `CONTAINER_NAME`                   | Azure storage container name                                                                                | etl-output              |           |
+| `DISABLE_SCHEDULER`                | Set to 'true' to disable the scheduler                                                                      | false                   |           |
+| `ETL_SCHEDULE`                     | Time of day to run the upgrade. [Syntax](https://www.npmjs.com/package/node-schedule#cron-style-scheduling) | 0 23 * * * (11:00 pm)   |           |
+| `LOG_LEVEL`                        | [log level](https://github.com/trentm/node-bunyan#levels)                                                   | Depends on `NODE_ENV`   |           |
+| `NODE_ENV`                         | node environment                                                                                            | development             |           |
+| `SYNDICATION_API_KEY`              | API key to access syndication                                                                               |                         | yes       |
 
 ## Architecture Decision Records
- 
+
 This repo uses
 [Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 to record architectural decisions for this project.
