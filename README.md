@@ -69,7 +69,7 @@ the application is being run. This is best practice as described by
 | `AZURE_STORAGE_CONNECTION_STRING`  | Azure storage connection string                                      |                         | yes        |
 | `AZURE_TIMEOUT_MINUTES`            | Maximum wait time when uploading file to Azure                       | 5                       |            |
 | `CONTAINER_NAME`                   | Azure storage container name                                         | etl-output              |            |
-| `UPDATE_SCHEDULE`                  | time of day to run the upgrade                                       | * 23 * * * (11:00 pm)   |            |
+| `ETL_SCHEDULE`                     | time of day to run the upgrade                                       | * 23 * * * (11:00 pm)   |            |
 | `DISABLE_SCHEDULER`                | set to 'true' to disable the scheduler                               | false                   |            |
 
 ## Architecture Decision Records
