@@ -40,8 +40,8 @@ function getServicesPage(syndicationId) {
 module.exports = {
   DEFAULT_URL,
   SYNDICATION_HTML_PAGE_ERROR,
-  getPracticeSummaryPage,
-  getOverviewPage,
   getFacilitiesPage,
+  getOverviewPage,
+  getPracticeSummaryPage,
   getServicesPage,
 };

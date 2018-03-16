@@ -37,18 +37,18 @@ function mapOverview(rawOverview) {
 
   return {
     _id: choicesId,
-    choicesId,
-    syndicationId,
-    name,
-    displayName: properCapitalize(name),
-    odsCode: content.odsCode,
-    address: mapAddress(content.address),
-    location: mapLocation(content.geographicCoordinates),
-    contact: mapContact(content.contact, content.website),
-    openingTimes: mapOpeningTimes.all(content.openingTimes),
-    gpCounts: mapGpCounts(content.gpcounts),
-    doctors: mapDoctors(content.doctors),
     acceptingNewPatients: getAcceptingNewPatients(content),
+    address: mapAddress(content.address),
+    choicesId,
+    contact: mapContact(content.contact, content.website),
+    displayName: properCapitalize(name),
+    doctors: mapDoctors(content.doctors),
+    gpCounts: mapGpCounts(content.gpcounts),
+    location: mapLocation(content.geographicCoordinates),
+    name,
+    odsCode: content.odsCode,
+    openingTimes: mapOpeningTimes.all(content.openingTimes),
+    syndicationId,
   };
 }
 

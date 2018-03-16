@@ -75,7 +75,7 @@ function start(totalPages, workers, drain) {
 loadState();
 
 module.exports = {
-  start,
-  saveState,
   clearState,
+  saveState,
+  start,
 };

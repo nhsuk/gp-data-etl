@@ -6,8 +6,8 @@ function getFacilityGroup(groups, name) {
 
 function mapFacility(facility) {
   return {
-    name: facility.name,
     exists: facility.facilityExists,
+    name: facility.name,
   };
 }
 
@@ -32,8 +32,8 @@ function mapFacilities(rawFacilities) {
   if (facilitiesValid(facilities)) {
     const facilityGroups = getFacilityGroups(facilities);
     return {
-      parking: getFacilities(facilityGroups, 'Parking'),
       accessibility: getFacilities(facilityGroups, 'Accessibility'),
+      parking: getFacilities(facilityGroups, 'Parking'),
     };
   }
   return undefined;

@@ -6,8 +6,8 @@ const expect = chai.expect;
 describe('Location mapper', () => {
   it('should map lat and long', () => {
     const rawLocation = {
-      longitude: '-1.72773551940918',
       latitude: '52.4778633117676',
+      longitude: '-1.72773551940918',
     };
 
     const location = mapLocation(rawLocation);
