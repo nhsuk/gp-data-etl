@@ -9,8 +9,8 @@ function getSessionType(sessions, type) {
 
 function getSession(session) {
   return {
-    opens: session.fromTime,
     closes: session.toTime,
+    opens: session.fromTime,
   };
 }
 
@@ -78,9 +78,9 @@ function sessionTypesValid(openingTimes) {
 function createAll(openingTimes) {
   const sessions = openingTimes.timesSessionTypes.timesSessionType;
   return {
+    alterations: mapAltOpeningTimes(getSessionType(sessions, 'additional')),
     reception: mapOpeningTimes(getSessionType(sessions, 'reception')),
     surgery: mapOpeningTimes(getSessionType(sessions, 'surgery')),
-    alterations: mapAltOpeningTimes(getSessionType(sessions, 'additional')),
   };
 }
 

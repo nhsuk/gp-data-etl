@@ -27,7 +27,7 @@ function getBooleanAttribute(member, field) {
 module.exports = {
   asArray,
   emptyObjectToUndefined,
-  toBoolean,
   getAttribute,
   getBooleanAttribute,
+  toBoolean,
 };

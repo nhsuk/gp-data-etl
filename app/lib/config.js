@@ -1,9 +1,9 @@
 const config = {
+  containerName: process.env.CONTAINER_NAME || 'etl-output',
   hitsPerHour: 5000,
-  saveEvery: 100,
   outputDir: './output',
   outputName: 'gp-data',
-  containerName: process.env.CONTAINER_NAME || 'etl-output',
+  saveEvery: 100,
 };
 
 module.exports = config;

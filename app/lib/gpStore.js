@@ -102,6 +102,7 @@ function saveGPs() {
 }
 
 function saveSummary() {
+  /* eslint-disable sort-keys */
   const summary = {
     totalScanned: syndicationIds.length,
     totalErroredIds: getErorredIds().length,
@@ -110,26 +111,27 @@ function saveSummary() {
     lastWritten: (new Date()).toLocaleString(),
     failedIds,
   };
+  /* eslint-enable sort-keys */
   fsHelper.saveJsonSync(summary, 'summary');
 }
 
 loadState();
 
 module.exports = {
-  getIds,
-  addIds,
-  getGP,
-  addGP,
-  saveGPs,
-  saveSummary,
+  ALL_TYPE,
+  FACILITIES_TYPE,
+  SERVICES_TYPE,
   addFailedId,
-  saveState,
-  clearState,
+  addGP,
+  addIds,
   clearFailedIds,
+  clearState,
+  getErorredIds,
   getFailedIds,
   getFailedIdsByType,
-  getErorredIds,
-  ALL_TYPE,
-  SERVICES_TYPE,
-  FACILITIES_TYPE,
+  getGP,
+  getIds,
+  saveGPs,
+  saveState,
+  saveSummary,
 };

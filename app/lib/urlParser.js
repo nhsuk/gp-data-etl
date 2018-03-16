@@ -22,4 +22,8 @@ function getPageCount(url) {
   return getMatchedNumber(url, pageCountPattern);
 }
 
-module.exports = { getChoicesId, getSyndicationId, getPageCount };
+module.exports = {
+  getChoicesId,
+  getPageCount,
+  getSyndicationId,
+};

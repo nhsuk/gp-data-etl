@@ -28,12 +28,12 @@ function mapServiceName(serviceCode, serviceTitle) {
 function mapEntryToService(entry) {
   const summary = entry.content.servicesummary;
   return {
-    title: mapServiceName(getCode(summary.type), getUnderscore(summary.type)),
-    code: getCode(summary.type),
     availabilityTimes: getText(summary.serviceBranchAvailabilityTimes),
-    introduction: getText(summary.serviceIntroduction),
-    gpReferralRequired: utils.toBoolean(getText(summary.serviceGpReferralRequired)),
+    code: getCode(summary.type),
     deliverer: getDeliverer(summary.serviceDeliverer),
+    gpReferralRequired: utils.toBoolean(getText(summary.serviceGpReferralRequired)),
+    introduction: getText(summary.serviceIntroduction),
+    title: mapServiceName(getCode(summary.type), getUnderscore(summary.type)),
   };
 }
 
@@ -44,9 +44,9 @@ function getValidEntries(rawServices) {
 
 function mapServices(rawServices) {
   return {
+    entries: getValidEntries(rawServices).map(mapEntryToService),
     epsEnabled: epsEnabled(rawServices.feed.epsIsEnabled),
     moreInformation: getUnderscore(rawServices.feed.servicesMoreInformationText),
-    entries: getValidEntries(rawServices).map(mapEntryToService),
   };
 }
 
