@@ -4,7 +4,6 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/nhsuk/gp-data-etl.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/nhsuk/gp-data-etl.svg?branch=master)](https://travis-ci.org/nhsuk/gp-data-etl)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/gp-data-etl/badge.svg)](https://coveralls.io/github/nhsuk/gp-data-etl)
-[![Known Vulnerabilities](https://snyk.io/test/github/nhsuk/gp-data-etl/badge.svg)](https://snyk.io/test/github/nhsuk/gp-data-etl)
 
 ETL to retrieve GP surgery information from [NHS Choices Syndication](http://www.nhs.uk/aboutNHSChoices/professionals/syndication/Pages/Webservices.aspx)
 and store as JSON.
