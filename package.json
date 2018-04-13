@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.json .",
     "postrewrite": "yarn git-hook",
     "precommit": "yarn git-hook",
-    "prepush": "yarn git-hook && yarn snyk test",
+    "prepush": "yarn git-hook",
     "start": "node schedule.js",
     "start-clear": "node schedule.js clear",
     "start-small": "node schedule.js small",
@@ -54,8 +54,7 @@
     "istanbul": "^0.4.5",
     "mocha": "^5.0.0",
     "nock": "^9.0.14",
-    "nodemon": "^1.11.0",
-    "snyk": "^1.40.2"
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
     "async": "^2.5.0",
