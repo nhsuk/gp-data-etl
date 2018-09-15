@@ -59,7 +59,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "azure-storage": "^2.4.0",
-    "google-libphonenumber": "^3.0.3",
+    "google-libphonenumber": "3.1.12",
     "moment": "^2.18.1",
     "nhsuk-bunyan-logger": "^1.4.1",
     "node-schedule": "^1.2.4",
