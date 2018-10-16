@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
-    "azure-storage": "^2.4.0",
+    "azure-storage": "2.10.1",
     "google-libphonenumber": "^3.0.3",
     "moment": "^2.18.1",
     "nhsuk-bunyan-logger": "^1.4.1",
