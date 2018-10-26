@@ -54,7 +54,7 @@
     "istanbul": "^0.4.5",
     "mocha": "^5.0.0",
     "nock": "^9.0.14",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.18.5"
   },
   "dependencies": {
     "async": "^2.5.0",
